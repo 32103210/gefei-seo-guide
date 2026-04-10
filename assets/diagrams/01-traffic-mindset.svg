@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="360" viewBox="0 0 800 360">
+<rect width="800" height="360" fill="#0f172a"/>
+<text x="400" y="28" text-anchor="middle" font-family="monospace" font-size="18" font-weight="bold" fill="#38bdf8">出海网站核心逻辑</text>
+<text x="400" y="48" text-anchor="middle" font-family="monospace" font-size="13" font-weight="normal" fill="#94a3b8">做网站 → 获取流量 → 实现变现</text>
+<rect x="30.0" y="75" width="220" height="160" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+<text x="140.0" y="103" text-anchor="middle" font-family="monospace" font-size="24" font-weight="normal" fill="middle">🌊</text>
+<text x="140.0" y="130" text-anchor="middle" font-family="monospace" font-size="15" font-weight="bold" fill="#38bdf8">流量</text>
+<text x="140.0" y="157" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#94a3b8">不依赖平台算法</text>
+<text x="140.0" y="179" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#94a3b8">不担心账号被封</text>
+<text x="140.0" y="201" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#94a3b8">不随平台兴衰而消亡</text>
+<rect x="290.0" y="75" width="220" height="160" rx="10" fill="#1e293b" stroke="#4ade80" stroke-width="1"/>
+<text x="400.0" y="103" text-anchor="middle" font-family="monospace" font-size="24" font-weight="normal" fill="middle">🔐</text>
+<text x="400.0" y="130" text-anchor="middle" font-family="monospace" font-size="15" font-weight="bold" fill="#4ade80">可控性</text>
+<text x="400.0" y="157" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#94a3b8">用户数据在自己手里</text>
+<text x="400.0" y="179" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#94a3b8">流量归属自己</text>
+<text x="400.0" y="201" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#94a3b8">10年老站依然有效</text>
+<rect x="550.0" y="75" width="220" height="160" rx="10" fill="#1e293b" stroke="#fb923c" stroke-width="1"/>
+<text x="660.0" y="103" text-anchor="middle" font-family="monospace" font-size="24" font-weight="normal" fill="middle">💰</text>
+<text x="660.0" y="130" text-anchor="middle" font-family="monospace" font-size="15" font-weight="bold" fill="#fb923c">变现</text>
+<text x="660.0" y="157" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#94a3b8">Adsense 躺赚10年</text>
+<text x="660.0" y="179" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#94a3b8">联盟导购</text>
+<text x="660.0" y="201" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#94a3b8">直接向用户收费</text>
+<rect x="130" y="270" width="540" height="80" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+<text x="400" y="295" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#38bdf8">Adsense 核心公式</text>
+<text x="400" y="318" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="#fbbf24">月收入(美元) ≈ 30 × UV基数 × ECPM × PV/UV比 × 广告位数</text>
+<text x="400" y="338" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">欧美 ECPM 3-10美元 | 国内 <1美元  →  差距 30-100倍</text></svg>

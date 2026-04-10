@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="420" viewBox="0 0 800 420">
+<rect width="800" height="420" fill="#0f172a"/>
+<text x="400" y="26" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#38bdf8">程序化 SEO — 海量页面生成飞轮</text>
+<text x="400" y="46" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#fbbf24">DateTimeGo 案例: 月访问量130万 × 15500个页面 × $3万/月广告费</text>
+<rect x="25.0" y="60" width="180" height="62" rx="8" fill="#1e293b" stroke="#4ade80" stroke-width="1"/>
+<text x="115.0" y="78" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">🌐 DateTimeGo.com</text>
+<text x="115.0" y="100" text-anchor="middle" font-family="monospace" font-size="20" font-weight="bold" fill="#4ade80">130万</text>
+<text x="115.0" y="116" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">月UV</text>
+<rect x="215.0" y="60" width="180" height="62" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+<text x="305.0" y="78" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">📄 Google收录</text>
+<text x="305.0" y="100" text-anchor="middle" font-family="monospace" font-size="20" font-weight="bold" fill="#38bdf8">15,500</text>
+<text x="305.0" y="116" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">页面数</text>
+<rect x="405.0" y="60" width="180" height="62" rx="8" fill="#1e293b" stroke="#fb923c" stroke-width="1"/>
+<text x="495.0" y="78" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">💰 月广告费</text>
+<text x="495.0" y="100" text-anchor="middle" font-family="monospace" font-size="20" font-weight="bold" fill="#fb923c">$3万</text>
+<text x="495.0" y="116" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">收入</text>
+<rect x="595.0" y="60" width="180" height="62" rx="8" fill="#1e293b" stroke="#c084fc" stroke-width="1"/>
+<text x="685.0" y="78" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">🎯 DateTimeGo</text>
+<text x="685.0" y="100" text-anchor="middle" font-family="monospace" font-size="20" font-weight="bold" fill="#c084fc">$9-10</text>
+<text x="685.0" y="116" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">ECPM</text>
+<rect x="22.0" y="148" width="140" height="120" rx="8" fill="#1e293b" stroke="#4ade80" stroke-width="1"/>
+<text x="92.0" y="170" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#4ade80">批量生成</text>
+<text x="92.0" y="188" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#4ade80">海量页面</text>
+<text x="92.0" y="202" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">用程序生成数十万</text>
+<text x="92.0" y="218" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">个时间/时区/汇率</text>
+<text x="92.0" y="234" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">相关页面</text>
+<line x1="162.0" y1="208.0" x2="174.0" y2="208.0" stroke="#475569" stroke-width="1.5"/><polygon points="174.0,208.0 166.0,213.0 166.0,203.0" fill="#475569"/>
+<rect x="176.0" y="148" width="140" height="120" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+<text x="246.0" y="170" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#38bdf8">提交</text>
+<text x="246.0" y="188" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#38bdf8">sitemap</text>
+<text x="246.0" y="202" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">一次性提交全部</text>
+<text x="246.0" y="218" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">URL给Google</text>
+<text x="246.0" y="234" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">加快收录</text>
+<line x1="316.0" y1="208.0" x2="328.0" y2="208.0" stroke="#475569" stroke-width="1.5"/><polygon points="328.0,208.0 320.0,213.0 320.0,203.0" fill="#475569"/>
+<rect x="330.0" y="148" width="140" height="120" rx="8" fill="#1e293b" stroke="#fb923c" stroke-width="1"/>
+<text x="400.0" y="170" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#fb923c">搜索流量</text>
+<text x="400.0" y="188" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#fb923c">涌入</text>
+<text x="400.0" y="202" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">每个页面抢长尾词</text>
+<text x="400.0" y="218" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">海量页面×长尾词</text>
+<text x="400.0" y="234" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">=海量流量</text>
+<line x1="470.0" y1="208.0" x2="482.0" y2="208.0" stroke="#475569" stroke-width="1.5"/><polygon points="482.0,208.0 474.0,213.0 474.0,203.0" fill="#475569"/>
+<rect x="484.0" y="148" width="140" height="120" rx="8" fill="#1e293b" stroke="#c084fc" stroke-width="1"/>
+<text x="554.0" y="170" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#c084fc">广告位</text>
+<text x="554.0" y="188" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#c084fc">填充</text>
+<text x="554.0" y="202" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">每个页面6个广告位</text>
+<text x="554.0" y="218" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">页面短内容少</text>
+<text x="554.0" y="234" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">广告位100%填充</text>
+<line x1="624.0" y1="208.0" x2="636.0" y2="208.0" stroke="#475569" stroke-width="1.5"/><polygon points="636.0,208.0 628.0,213.0 628.0,203.0" fill="#475569"/>
+<rect x="638.0" y="148" width="140" height="120" rx="8" fill="#1e293b" stroke="#4ade80" stroke-width="1"/>
+<text x="708.0" y="170" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#4ade80">广告费</text>
+<text x="708.0" y="188" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#4ade80">收入</text>
+<text x="708.0" y="202" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">130万UV×1.8PV</text>
+<text x="708.0" y="218" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">×6广告位×80%可见</text>
+<text x="708.0" y="234" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">= 月$3万+</text>
+<line x1="162.0" y1="268" x2="162.0" y2="278" stroke="#4ade80" stroke-width="1.5"/><polygon points="162.0,278 157.0,270.0 167.0,270.0" fill="#4ade80"/>
+<line x1="22.0" y1="278" x2="22.0" y2="268" stroke="#4ade80" stroke-width="1.5"/><polygon points="22.0,268 27.0,276.0 17.0,276.0" fill="#4ade80"/>
+<text x="92.0" y="292" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#4ade80">循环持续</text>
+<text x="400" y="322" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#fbbf24">适合程序化SEO的场景</text>
+<rect x="38.0" y="344" width="175" height="50" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+<text x="125.5" y="362" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="#38bdf8">时间戳/时区转换</text>
+<text x="125.5" y="382" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">DateTimeGo</text>
+<rect x="221.0" y="344" width="175" height="50" rx="6" fill="#1e293b" stroke="#4ade80" stroke-width="1"/>
+<text x="308.5" y="362" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="#4ade80">汇率计算</text>
+<text x="308.5" y="382" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">CurrencyConverter</text>
+<rect x="404.0" y="344" width="175" height="50" rx="6" fill="#1e293b" stroke="#fb923c" stroke-width="1"/>
+<text x="491.5" y="362" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="#fb923c">单位换算</text>
+<text x="491.5" y="382" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">Distance/Weight</text>
+<rect x="587.0" y="344" width="175" height="50" rx="6" fill="#1e293b" stroke="#c084fc" stroke-width="1"/>
+<text x="674.5" y="362" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="#c084fc">电话号码格式</text>
+<text x="674.5" y="382" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">Int'l Phone Numbers</text>
+<text x="400" y="406" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">核心: 不需要创建百万个HTML文件，程序按需生成即可（灰色地带：避免低质量重复内容）</text></svg>

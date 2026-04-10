@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="420" viewBox="0 0 800 420">
+<rect width="800" height="420" fill="#0f172a"/>
+<text x="400" y="26" text-anchor="middle" font-family="monospace" font-size="18" font-weight="bold" fill="#fb923c">六字真言 — 工具站页面SEO优化核心原则</text>
+<text x="400" y="46" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#94a3b8">Phone Number Generator 网站结构示例</text>
+<rect x="50" y="70" width="340" height="240" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+<text x="220.0" y="96" text-anchor="middle" font-family="monospace" font-size="20" font-weight="bold" fill="#38bdf8">分门别类</text>
+<text x="220.0" y="126" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#94a3b8">把相关内容聚合在一起</text>
+<text x="220.0" y="144" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#94a3b8">用合理的分类组织内容</text>
+<line x1="70" y1="166" x2="370" y2="166" stroke="#334155" stroke-width="1.5"/>
+<text x="220.0" y="190" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#e2e8f0">🇺🇸 US Phone Number</text>
+<text x="220.0" y="216" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#e2e8f0">🇬🇧 UK Phone Number</text>
+<text x="220.0" y="242" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#e2e8f0">🇨🇳 CN Phone Number</text>
+<text x="220.0" y="268" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#e2e8f0">...更多国家</text>
+<rect x="420" y="70" width="340" height="240" rx="10" fill="#1e293b" stroke="#4ade80" stroke-width="1"/>
+<text x="590.0" y="96" text-anchor="middle" font-family="monospace" font-size="20" font-weight="bold" fill="#4ade80">罗列成语</text>
+<text x="590.0" y="126" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#94a3b8">用长尾关键词作为锚文本</text>
+<text x="590.0" y="144" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#94a3b8">每个H2都是一个独立需求</text>
+<line x1="440" y1="166" x2="740" y2="166" stroke="#334155" stroke-width="1.5"/>
+<text x="590.0" y="190" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#e2e8f0">US Phone Number Generator</text>
+<text x="590.0" y="216" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#e2e8f0">UK Phone Number Generator</text>
+<text x="590.0" y="242" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#e2e8f0">CN Phone Number Generator</text>
+<text x="590.0" y="268" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#e2e8f0">...更多长尾词</text>
+<text x="400" y="330" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#fbbf24">六字真言原理: 谷歌权重传递链 — 主域名 > 子域名 > 子目录 > 内页</text>
+<text x="400" y="352" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">每个国家页面用 "国家名+Phone Number Generator" 作为关键词锚文本指向首页，形成权重传递</text>
+<rect x="130.0" y="372" width="160" height="50" rx="8" fill="#1e293b" stroke="#4ade80" stroke-width="1"/>
+<text x="210.0" y="401.0" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="#4ade80">主域名
+(gefei.vip)</text>
+<text x="305.0" y="401.0" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#94a3b8">></text>
+<rect x="320.0" y="372" width="160" height="50" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+<text x="400.0" y="401.0" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="#38bdf8">子目录
+(/us/)</text>
+<text x="495.0" y="401.0" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#94a3b8">></text>
+<rect x="510.0" y="372" width="160" height="50" rx="8" fill="#1e293b" stroke="#fb923c" stroke-width="1"/>
+<text x="590.0" y="401.0" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="#fb923c">内页
+(/us/new-york/)</text></svg>

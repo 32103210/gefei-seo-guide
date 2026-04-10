@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="340" viewBox="0 0 800 340">
+<rect width="800" height="340" fill="#0f172a"/>
+<text x="400" y="28" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#38bdf8">各地区 ECPM 对比（每千次广告展示收入）</text>
+<text x="200" y="76.0" text-anchor="middle" font-family="monospace" font-size="11" font-weight="right" fill="#e2e8f0">🇺🇸 美国</text>
+<rect x="208" y="60" width="320.0" height="22" rx="4" fill="#4ade80"/>
+<text x="532.0" y="75.0" text-anchor="middle" font-family="monospace" font-size="11" font-weight="left" fill="#4ade80">$8.0</text>
+<text x="200" y="102.0" text-anchor="middle" font-family="monospace" font-size="11" font-weight="right" fill="#e2e8f0">🇬🇧 英国</text>
+<rect x="208" y="86" width="260.0" height="22" rx="4" fill="#4ade80"/>
+<text x="472.0" y="101.0" text-anchor="middle" font-family="monospace" font-size="11" font-weight="left" fill="#4ade80">$6.5</text>
+<text x="200" y="128.0" text-anchor="middle" font-family="monospace" font-size="11" font-weight="right" fill="#e2e8f0">🇩🇪 德国</text>
+<rect x="208" y="112" width="240.0" height="22" rx="4" fill="#4ade80"/>
+<text x="452.0" y="127.0" text-anchor="middle" font-family="monospace" font-size="11" font-weight="left" fill="#4ade80">$6.0</text>
+<text x="200" y="154.0" text-anchor="middle" font-family="monospace" font-size="11" font-weight="right" fill="#e2e8f0">🇦🇺 澳洲</text>
+<rect x="208" y="138" width="220.00000000000003" height="22" rx="4" fill="#2dd4bf"/>
+<text x="432.0" y="153.0" text-anchor="middle" font-family="monospace" font-size="11" font-weight="left" fill="#2dd4bf">$5.5</text>
+<text x="200" y="180.0" text-anchor="middle" font-family="monospace" font-size="11" font-weight="right" fill="#e2e8f0">🇨🇦 加拿大</text>
+<rect x="208" y="164" width="200.0" height="22" rx="4" fill="#2dd4bf"/>
+<text x="412.0" y="179.0" text-anchor="middle" font-family="monospace" font-size="11" font-weight="left" fill="#2dd4bf">$5.0</text>
+<text x="200" y="206.0" text-anchor="middle" font-family="monospace" font-size="11" font-weight="right" fill="#e2e8f0">🇫🇷 法国</text>
+<rect x="208" y="190" width="180.0" height="22" rx="4" fill="#2dd4bf"/>
+<text x="392.0" y="205.0" text-anchor="middle" font-family="monospace" font-size="11" font-weight="left" fill="#2dd4bf">$4.5</text>
+<text x="200" y="232.0" text-anchor="middle" font-family="monospace" font-size="11" font-weight="right" fill="#e2e8f0">🇸🇬 新加坡</text>
+<rect x="208" y="216" width="140.0" height="22" rx="4" fill="#fbbf24"/>
+<text x="352.0" y="231.0" text-anchor="middle" font-family="monospace" font-size="11" font-weight="left" fill="#fbbf24">$3.5</text>
+<text x="200" y="258.0" text-anchor="middle" font-family="monospace" font-size="11" font-weight="right" fill="#e2e8f0">🇧🇷 巴西</text>
+<rect x="208" y="242" width="80.0" height="22" rx="4" fill="#fb923c"/>
+<text x="292.0" y="257.0" text-anchor="middle" font-family="monospace" font-size="11" font-weight="left" fill="#fb923c">$2.0</text>
+<text x="200" y="284.0" text-anchor="middle" font-family="monospace" font-size="11" font-weight="right" fill="#e2e8f0">🇮🇳 印度</text>
+<rect x="208" y="268" width="60.0" height="22" rx="4" fill="#fb923c"/>
+<text x="272.0" y="283.0" text-anchor="middle" font-family="monospace" font-size="11" font-weight="left" fill="#fb923c">$1.5</text>
+<text x="200" y="310.0" text-anchor="middle" font-family="monospace" font-size="11" font-weight="right" fill="#e2e8f0">🇨🇳 中国</text>
+<rect x="208" y="294" width="8.0" height="22" rx="4" fill="#f87171"/>
+<text x="220.0" y="309.0" text-anchor="middle" font-family="monospace" font-size="11" font-weight="left" fill="#f87171">$0.2</text>
+<rect x="620" y="60" width="160" height="240" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+<text x="700.0" y="82" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#38bdf8">ECPM 说明</text>
+<text x="700.0" y="104" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">Earnings per 1000</text>
+<text x="700.0" y="104" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">ad impressions</text>
+<text x="700.0" y="136" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="#4ade80">欧美: $3-10</text>
+<text x="700.0" y="160" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="#fbbf24">东南亚: $0.5-1</text>
+<text x="700.0" y="184" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="#f87171">中国: <$0.3</text>
+<text x="700.0" y="216" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#c084fc">金融/法律类</text>
+<text x="700.0" y="236" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#c084fc">关键词可达 $8-15</text>
+<text x="700.0" y="264" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#2dd4bf">工具类欧美站</text>
+<text x="700.0" y="284" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#2dd4bf">通常 $3-6</text></svg>

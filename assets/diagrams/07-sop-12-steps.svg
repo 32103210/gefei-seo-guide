@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="420" viewBox="0 0 880 420">
+<rect width="880" height="420" fill="#0f172a"/>
+<text x="440" y="26" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#38bdf8">养网站防老 SOP — 12步法完整流程</text>
+<text x="440" y="46" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#94a3b8">每一步都是养出一个长期流量资产的关键动作</text>
+<rect x="28.0" y="60" width="200" height="100" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+<text x="128.0" y="82" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#38bdf8">① 选方向</text>
+<text x="128.0" y="106" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">选好要做的细分领域</text>
+<text x="128.0" y="124" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">确定核心关键词方向</text>
+<line x1="228.0" y1="110.0" x2="234.0" y2="110.0" stroke="#475569" stroke-width="1.5"/><polygon points="234.0,110.0 226.0,115.0 226.0,105.0" fill="#475569"/>
+<rect x="236.0" y="60" width="200" height="100" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+<text x="336.0" y="82" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#38bdf8">② 竞品分析</text>
+<text x="336.0" y="106" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">Similarweb看竞品</text>
+<text x="336.0" y="124" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">爱站网查排名关键词</text>
+<line x1="436.0" y1="110.0" x2="442.0" y2="110.0" stroke="#475569" stroke-width="1.5"/><polygon points="442.0,110.0 434.0,115.0 434.0,105.0" fill="#475569"/>
+<rect x="444.0" y="60" width="200" height="100" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+<text x="544.0" y="82" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#38bdf8">③ 选关键词</text>
+<text x="544.0" y="106" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">用KDRoi公式</text>
+<text x="544.0" y="124" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">筛选高价值关键词</text>
+<line x1="644.0" y1="110.0" x2="650.0" y2="110.0" stroke="#475569" stroke-width="1.5"/><polygon points="650.0,110.0 642.0,115.0 642.0,105.0" fill="#475569"/>
+<rect x="652.0" y="60" width="200" height="100" rx="8" fill="#1e293b" stroke="#4ade80" stroke-width="1"/>
+<text x="752.0" y="82" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#4ade80">④ 建站SOP</text>
+<text x="752.0" y="106" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">注册域名</text>
+<text x="752.0" y="124" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">选主机装SSL</text>
+<line x1="128.0" y1="160" x2="128.0" y2="172" stroke="#475569" stroke-width="1.5"/><polygon points="128.0,172 123.0,164.0 133.0,164.0" fill="#475569"/>
+<rect x="28.0" y="175" width="200" height="100" rx="8" fill="#1e293b" stroke="#4ade80" stroke-width="1"/>
+<text x="128.0" y="197" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#4ade80">⑤ 域名解析</text>
+<text x="128.0" y="221" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">DNS解析</text>
+<text x="128.0" y="239" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">绑定主机</text>
+<line x1="228.0" y1="225.0" x2="234.0" y2="225.0" stroke="#475569" stroke-width="1.5"/><polygon points="234.0,225.0 226.0,230.0 226.0,220.0" fill="#475569"/>
+<rect x="236.0" y="175" width="200" height="100" rx="8" fill="#1e293b" stroke="#4ade80" stroke-width="1"/>
+<text x="336.0" y="197" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#4ade80">⑥ 多语言</text>
+<text x="336.0" y="221" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">GPT生成多语言版本</text>
+<text x="336.0" y="239" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">本地化注入</text>
+<line x1="436.0" y1="225.0" x2="442.0" y2="225.0" stroke="#475569" stroke-width="1.5"/><polygon points="442.0,225.0 434.0,230.0 434.0,220.0" fill="#475569"/>
+<rect x="444.0" y="175" width="200" height="100" rx="8" fill="#1e293b" stroke="#fb923c" stroke-width="1"/>
+<text x="544.0" y="197" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#fb923c">⑦ 页面结构</text>
+<text x="544.0" y="221" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">六字真言: 分门别类</text>
+<text x="544.0" y="239" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">罗列成语</text>
+<line x1="644.0" y1="225.0" x2="650.0" y2="225.0" stroke="#475569" stroke-width="1.5"/><polygon points="650.0,225.0 642.0,230.0 642.0,220.0" fill="#475569"/>
+<rect x="652.0" y="175" width="200" height="100" rx="8" fill="#1e293b" stroke="#fb923c" stroke-width="1"/>
+<text x="752.0" y="197" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#fb923c">⑧ ChatGPT建页</text>
+<text x="752.0" y="221" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">生成网页</text>
+<text x="752.0" y="239" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">单域名单关键词</text>
+<line x1="128.0" y1="275" x2="128.0" y2="287" stroke="#475569" stroke-width="1.5"/><polygon points="128.0,287 123.0,279.0 133.0,279.0" fill="#475569"/>
+<rect x="28.0" y="275" width="200" height="100" rx="8" fill="#1e293b" stroke="#fb923c" stroke-width="1"/>
+<text x="128.0" y="297" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#fb923c">⑨ 内容策略</text>
+<text x="128.0" y="321" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">AI高质量内容</text>
+<text x="128.0" y="339" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">保持原创性</text>
+<line x1="228.0" y1="325.0" x2="234.0" y2="325.0" stroke="#475569" stroke-width="1.5"/><polygon points="234.0,325.0 226.0,330.0 226.0,320.0" fill="#475569"/>
+<rect x="236.0" y="275" width="200" height="100" rx="8" fill="#1e293b" stroke="#c084fc" stroke-width="1"/>
+<text x="336.0" y="297" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#c084fc">⑩ OnPage SEO</text>
+<text x="336.0" y="321" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">Title/Description</text>
+<text x="336.0" y="339" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">H标签/内链</text>
+<line x1="436.0" y1="325.0" x2="442.0" y2="325.0" stroke="#475569" stroke-width="1.5"/><polygon points="442.0,325.0 434.0,330.0 434.0,320.0" fill="#475569"/>
+<rect x="444.0" y="275" width="200" height="100" rx="8" fill="#1e293b" stroke="#c084fc" stroke-width="1"/>
+<text x="544.0" y="297" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#c084fc">⑪ 外链建设</text>
+<text x="544.0" y="321" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">nofollow也有权重</text>
+<text x="544.0" y="339" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">Reddit/导航站</text>
+<line x1="644.0" y1="325.0" x2="650.0" y2="325.0" stroke="#475569" stroke-width="1.5"/><polygon points="650.0,325.0 642.0,330.0 642.0,320.0" fill="#475569"/>
+<rect x="652.0" y="275" width="200" height="100" rx="8" fill="#1e293b" stroke="#f87171" stroke-width="1"/>
+<text x="752.0" y="297" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#f87171">⑫ Adsense</text>
+<text x="752.0" y="321" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">注册+验证</text>
+<text x="752.0" y="339" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">广告位优化</text>
+<text x="72" y="90" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">Phase 1
+需求挖掘</text>
+<text x="72" y="205" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">Phase 2
+建站制作</text>
+<text x="72" y="305" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">Phase 3
+SEO变现</text>
+<text x="440" y="394" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">Phase 1: 需求挖掘(①②③)  →  Phase 2: 建站(④⑤⑥⑦⑧)  →  Phase 3: SEO+变现(⑨⑩⑪⑫)</text></svg>

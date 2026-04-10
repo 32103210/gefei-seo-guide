@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="440" viewBox="0 0 800 440">
+<rect width="800" height="440" fill="#0f172a"/>
+<text x="400" y="26" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#c084fc">内容型AI工具站 — 飞轮效应完整流程</text>
+<text x="400" y="46" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#94a3b8">Sticker.Show 案例: 工具免费 → 增值服务(高清/去水印/订阅)收费</text>
+<path d="M 400 400 Q 289 393 248 289" stroke="#38bdf8" stroke-width="2" fill="none"/>
+<rect x="335" y="355" width="130" height="90" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+<text x="400" y="379" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#38bdf8">🤖 用户使用</text>
+<text x="400" y="399" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#38bdf8">AI工具</text>
+<text x="400" y="408" text-anchor="middle" font-family="monospace" font-size="9" font-weight="normal" fill="#94a3b8">用户提供prompt</text>
+<text x="400" y="422" text-anchor="middle" font-family="monospace" font-size="9" font-weight="normal" fill="#94a3b8">工具生成内容</text>
+<path d="M 248 289 Q 220 182 306 111" stroke="#4ade80" stroke-width="2" fill="none"/>
+<rect x="183" y="244" width="130" height="90" rx="10" fill="#1e293b" stroke="#4ade80" stroke-width="1"/>
+<text x="248" y="268" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#4ade80">📋 内容出现</text>
+<text x="248" y="288" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#4ade80">公共广场</text>
+<text x="248" y="297" text-anchor="middle" font-family="monospace" font-size="9" font-weight="normal" fill="#94a3b8">生成的内容</text>
+<text x="248" y="311" text-anchor="middle" font-family="monospace" font-size="9" font-weight="normal" fill="#94a3b8">被广场展示</text>
+<path d="M 306 111 Q 400 50 494 111" stroke="#fb923c" stroke-width="2" fill="none"/>
+<rect x="241" y="66" width="130" height="90" rx="10" fill="#1e293b" stroke="#fb923c" stroke-width="1"/>
+<text x="306" y="90" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#fb923c">🔍 Google</text>
+<text x="306" y="110" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#fb923c">收录内容</text>
+<text x="306" y="119" text-anchor="middle" font-family="monospace" font-size="9" font-weight="normal" fill="#94a3b8">内容被爬虫</text>
+<text x="306" y="133" text-anchor="middle" font-family="monospace" font-size="9" font-weight="normal" fill="#94a3b8">抓取和索引</text>
+<path d="M 494 111 Q 580 182 552 289" stroke="#c084fc" stroke-width="2" fill="none"/>
+<rect x="429" y="66" width="130" height="90" rx="10" fill="#1e293b" stroke="#c084fc" stroke-width="1"/>
+<text x="494" y="90" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#c084fc">🌊 搜索流量</text>
+<text x="494" y="110" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#c084fc">涌入</text>
+<text x="494" y="119" text-anchor="middle" font-family="monospace" font-size="9" font-weight="normal" fill="#94a3b8">更多人通过搜索</text>
+<text x="494" y="133" text-anchor="middle" font-family="monospace" font-size="9" font-weight="normal" fill="#94a3b8">找到网站</text>
+<path d="M 552 289 Q 511 393 400 400" stroke="#f87171" stroke-width="2" fill="none"/>
+<rect x="487" y="244" width="130" height="90" rx="10" fill="#1e293b" stroke="#f87171" stroke-width="1"/>
+<text x="552" y="268" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#f87171">💰 增值服务</text>
+<text x="552" y="288" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#f87171">付费</text>
+<text x="552" y="297" text-anchor="middle" font-family="monospace" font-size="9" font-weight="normal" fill="#94a3b8">高清/去水印/</text>
+<text x="552" y="311" text-anchor="middle" font-family="monospace" font-size="9" font-weight="normal" fill="#94a3b8">私密生成收费</text>
+<circle cx="400" cy="240" r="36" fill="#0f172a"/>
+<text x="400" y="234" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#fbbf24">飞轮</text>
+<text x="400" y="250" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#fbbf24">效应</text>
+<text x="400" y="408" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#fbbf24">用户用得越多 → 产生内容越多 → Google收录越多 → 搜索流量越大 → 用户更多（正向循环）</text></svg>

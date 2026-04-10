@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="440" viewBox="0 0 800 440">
+<rect width="800" height="440" fill="#0f172a"/>
+<text x="400" y="28" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#38bdf8">需求挖掘工作流</text>
+<text x="400" y="48" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#94a3b8">Similarweb → 爱站网 → 站长之家 → 确定目标词</text>
+<rect x="32.0" y="72" width="175" height="200" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+<circle cx="56.0" cy="96" r="16" fill="#38bdf8"/>
+<text x="56.0" y="101" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#0f172a">1</text>
+<text x="119.5" y="124" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#38bdf8">Similarweb</text>
+<text x="119.5" y="142" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">看竞品数据</text>
+<line x1="48.0" y1="154" x2="191.0" y2="154" stroke="#334155" stroke-width="1.5"/>
+<text x="119.5" y="172" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 月访问量</text>
+<text x="119.5" y="192" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 受访网站</text>
+<text x="119.5" y="212" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 搜索关键词</text>
+<line x1="209.0" y1="172.0" x2="219.0" y2="172.0" stroke="#38bdf8" stroke-width="1.5"/><polygon points="219.0,172.0 211.0,177.0 211.0,167.0" fill="#38bdf8"/>
+<rect x="219.0" y="72" width="175" height="200" rx="10" fill="#1e293b" stroke="#4ade80" stroke-width="1"/>
+<circle cx="243.0" cy="96" r="16" fill="#4ade80"/>
+<text x="243.0" y="101" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#0f172a">2</text>
+<text x="306.5" y="124" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#4ade80">爱站网</text>
+<text x="306.5" y="142" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">查排名关键词</text>
+<line x1="235.0" y1="154" x2="378.0" y2="154" stroke="#334155" stroke-width="1.5"/>
+<text x="306.5" y="172" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 百度权重</text>
+<text x="306.5" y="192" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 涨入/跌出词</text>
+<text x="306.5" y="212" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 预估搜索量</text>
+<line x1="396.0" y1="172.0" x2="406.0" y2="172.0" stroke="#4ade80" stroke-width="1.5"/><polygon points="406.0,172.0 398.0,177.0 398.0,167.0" fill="#4ade80"/>
+<rect x="406.0" y="72" width="175" height="200" rx="10" fill="#1e293b" stroke="#fb923c" stroke-width="1"/>
+<circle cx="430.0" cy="96" r="16" fill="#fb923c"/>
+<text x="430.0" y="101" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#0f172a">3</text>
+<text x="493.5" y="124" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#fb923c">站长之家</text>
+<text x="493.5" y="142" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">验SEO难度</text>
+<line x1="422.0" y1="154" x2="565.0" y2="154" stroke="#334155" stroke-width="1.5"/>
+<text x="493.5" y="172" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 优化难度评分</text>
+<text x="493.5" y="192" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 前50名首页数</text>
+<text x="493.5" y="212" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 竞争度</text>
+<line x1="583.0" y1="172.0" x2="593.0" y2="172.0" stroke="#fb923c" stroke-width="1.5"/><polygon points="593.0,172.0 585.0,177.0 585.0,167.0" fill="#fb923c"/>
+<rect x="593.0" y="72" width="175" height="200" rx="10" fill="#1e293b" stroke="#c084fc" stroke-width="1"/>
+<circle cx="617.0" cy="96" r="16" fill="#c084fc"/>
+<text x="617.0" y="101" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#0f172a">4</text>
+<text x="680.5" y="124" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#c084fc">确定做哪个词</text>
+<text x="680.5" y="142" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">执行</text>
+<line x1="609.0" y1="154" x2="752.0" y2="154" stroke="#334155" stroke-width="1.5"/>
+<text x="680.5" y="172" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 注册域名</text>
+<text x="680.5" y="192" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• GPT建站</text>
+<text x="680.5" y="212" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 部署上线</text>
+<text x="400" y="300" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#fbbf24">从 tool.lu 可以挖到的关键词:</text>
+<rect x="50" y="316" width="700" height="36" rx="6" fill="#1e293b" stroke="#fbbf24" stroke-width="1"/>
+<text x="400" y="337" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#fbbf24">时间戳 | 时间戳转换 | IP地址查询 | IP查询 | 时间戳转换器 | 整数分区 | 视频地址解析 | unix时间戳 | timestamp</text>
+<text x="400" y="370" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#4ade80">案例: DocHub.wiki 两天上线 → 次日 1,000 UV</text>
+<text x="400" y="390" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">原因: 把散落全网的优质文档聚合到一起，用户需求量极大</text></svg>

@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+<rect width="800" height="400" fill="#0f172a"/>
+<text x="400" y="26" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#38bdf8">Google 排名三句话 + 停留时间关系</text>
+<rect x="40.0" y="60" width="220" height="160" rx="10" fill="#1e293b" stroke="#4ade80" stroke-width="1"/>
+<text x="150.0" y="86" text-anchor="middle" font-family="monospace" font-size="18" font-weight="bold" fill="#4ade80">① 爬取</text>
+<text x="150.0" y="106" text-anchor="middle" font-family="monospace" font-size="18" font-weight="bold" fill="#4ade80">Crawl</text>
+<line x1="56.0" y1="132" x2="244.0" y2="132" stroke="#334155" stroke-width="1.5"/>
+<text x="150.0" y="150" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#94a3b8">Google bot 来抓取</text>
+<text x="150.0" y="168" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#94a3b8">你的页面</text>
+<line x1="56.0" y1="192" x2="244.0" y2="192" stroke="#334155" stroke-width="1.5"/>
+<text x="150.0" y="210" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 让</text>
+<text x="150.0" y="226" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 爬</text>
+<text x="150.0" y="242" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 虫</text>
+<text x="150.0" y="258" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 能</text>
+<text x="150.0" y="274" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 到</text>
+<text x="150.0" y="290" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 达</text>
+<text x="150.0" y="306" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 每</text>
+<text x="150.0" y="322" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 个</text>
+<text x="150.0" y="338" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 页</text>
+<text x="150.0" y="354" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 面</text>
+<text x="150.0" y="370" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 
+</text>
+<text x="150.0" y="386" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• X</text>
+<text x="150.0" y="402" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• M</text>
+<text x="150.0" y="418" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• L</text>
+<text x="150.0" y="434" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">•  </text>
+<text x="150.0" y="450" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• s</text>
+<text x="150.0" y="466" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• i</text>
+<text x="150.0" y="482" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• t</text>
+<text x="150.0" y="498" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• e</text>
+<text x="150.0" y="514" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• m</text>
+<text x="150.0" y="530" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• a</text>
+<text x="150.0" y="546" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• p</text>
+<text x="150.0" y="562" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 
+</text>
+<text x="150.0" y="578" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 内</text>
+<text x="150.0" y="594" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 链</text>
+<text x="150.0" y="610" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 引</text>
+<text x="150.0" y="626" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 导</text>
+<line x1="260.0" y1="140.0" x2="288.0" y2="140.0" stroke="#475569" stroke-width="1.5"/><polygon points="288.0,140.0 280.0,145.0 280.0,135.0" fill="#475569"/>
+<rect x="290.0" y="60" width="220" height="160" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+<text x="400.0" y="86" text-anchor="middle" font-family="monospace" font-size="18" font-weight="bold" fill="#38bdf8">② 索引</text>
+<text x="400.0" y="106" text-anchor="middle" font-family="monospace" font-size="18" font-weight="bold" fill="#38bdf8">Index</text>
+<line x1="306.0" y1="132" x2="494.0" y2="132" stroke="#334155" stroke-width="1.5"/>
+<text x="400.0" y="150" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#94a3b8">页面被存入</text>
+<text x="400.0" y="168" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#94a3b8">Google数据库</text>
+<line x1="306.0" y1="192" x2="494.0" y2="192" stroke="#334155" stroke-width="1.5"/>
+<text x="400.0" y="210" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• T</text>
+<text x="400.0" y="226" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• D</text>
+<text x="400.0" y="242" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 、</text>
+<text x="400.0" y="258" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• H</text>
+<text x="400.0" y="274" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 标</text>
+<text x="400.0" y="290" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 签</text>
+<text x="400.0" y="306" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 、</text>
+<text x="400.0" y="322" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 内</text>
+<text x="400.0" y="338" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 容</text>
+<text x="400.0" y="354" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 
+</text>
+<text x="400.0" y="370" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 都</text>
+<text x="400.0" y="386" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 要</text>
+<text x="400.0" y="402" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 优</text>
+<text x="400.0" y="418" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 化</text>
+<text x="400.0" y="434" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 到</text>
+<text x="400.0" y="450" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 位</text>
+<text x="400.0" y="466" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 
+</text>
+<text x="400.0" y="482" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• C</text>
+<text x="400.0" y="498" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• a</text>
+<text x="400.0" y="514" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• n</text>
+<text x="400.0" y="530" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• o</text>
+<text x="400.0" y="546" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• n</text>
+<text x="400.0" y="562" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• i</text>
+<text x="400.0" y="578" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• c</text>
+<text x="400.0" y="594" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• a</text>
+<text x="400.0" y="610" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• l</text>
+<text x="400.0" y="626" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 无</text>
+<text x="400.0" y="642" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 误</text>
+<line x1="510.0" y1="140.0" x2="538.0" y2="140.0" stroke="#475569" stroke-width="1.5"/><polygon points="538.0,140.0 530.0,145.0 530.0,135.0" fill="#475569"/>
+<rect x="540.0" y="60" width="220" height="160" rx="10" fill="#1e293b" stroke="#fb923c" stroke-width="1"/>
+<text x="650.0" y="86" text-anchor="middle" font-family="monospace" font-size="18" font-weight="bold" fill="#fb923c">③ 排名</text>
+<text x="650.0" y="106" text-anchor="middle" font-family="monospace" font-size="18" font-weight="bold" fill="#fb923c">Rank</text>
+<line x1="556.0" y1="132" x2="744.0" y2="132" stroke="#334155" stroke-width="1.5"/>
+<text x="650.0" y="150" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#94a3b8">用户搜词时</text>
+<text x="650.0" y="168" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#94a3b8">页面被展示</text>
+<line x1="556.0" y1="192" x2="744.0" y2="192" stroke="#334155" stroke-width="1.5"/>
+<text x="650.0" y="210" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 内</text>
+<text x="650.0" y="226" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 容</text>
+<text x="650.0" y="242" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 质</text>
+<text x="650.0" y="258" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 量</text>
+<text x="650.0" y="274" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• +</text>
+<text x="650.0" y="290" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 外</text>
+<text x="650.0" y="306" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 链</text>
+<text x="650.0" y="322" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 
+</text>
+<text x="650.0" y="338" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 停</text>
+<text x="650.0" y="354" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 留</text>
+<text x="650.0" y="370" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 时</text>
+<text x="650.0" y="386" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 间</text>
+<text x="650.0" y="402" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• +</text>
+<text x="650.0" y="418" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 点</text>
+<text x="650.0" y="434" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 击</text>
+<text x="650.0" y="450" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 率</text>
+<text x="400" y="246" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#fbbf24">停留时间（Dwell Time）对排名的影响</text>
+<rect x="100" y="266" width="600" height="80" rx="8" fill="#1e293b" stroke="#fbbf24" stroke-width="1"/>
+<text x="400" y="282" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#e2e8f0">Google 通过 analytics.js 等追踪用户在你页面的停留时间</text>
+<text x="400" y="304" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#e2e8f0">停留越久 → 说明内容匹配用户意图 → Google提升排名</text>
+<text x="400" y="326" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#e2e8f0">前提: On-Page SEO 已做好（TD、H标签、内容到位）</text>
+<text x="400" y="366" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">新站收录: 48小时内提交sitemap，通常2-4天被Google抓取和索引</text>
+<text x="400" y="384" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">技巧: 首次提交后在sitemap更新时重新提交，加快收录速度</text></svg>

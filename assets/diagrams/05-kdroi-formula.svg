@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="420" viewBox="0 0 800 420">
+<rect width="800" height="420" fill="#0f172a"/>
+<text x="400" y="28" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#38bdf8">KDRoi 选词公式 — 关键词价值量化工具</text>
+<rect x="180" y="52" width="440" height="56" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+<text x="400" y="76" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#38bdf8">KDRoi  =  ( 搜索量 × CPC )  /  优化难度KD</text>
+<text x="400" y="98" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#94a3b8">KDRoi 越高，越值得做</text>
+<rect x="170.0" y="130" width="140" height="80" rx="8" fill="#1e293b" stroke="#4ade80" stroke-width="1"/>
+<text x="240.0" y="150" text-anchor="middle" font-family="monospace" font-size="15" font-weight="bold" fill="#4ade80">搜索量</text>
+<text x="240.0" y="170" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">Semrush</text>
+<text x="240.0" y="184" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">Volume</text>
+<text x="240.0" y="196" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">≥600/月 越高越好</text>
+<rect x="330.0" y="130" width="140" height="80" rx="8" fill="#1e293b" stroke="#fb923c" stroke-width="1"/>
+<text x="400.0" y="150" text-anchor="middle" font-family="monospace" font-size="15" font-weight="bold" fill="#fb923c">CPC</text>
+<text x="400.0" y="170" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">广告主</text>
+<text x="400.0" y="184" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">竞价</text>
+<text x="400.0" y="196" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">越高越好 反映商业价值</text>
+<rect x="490.0" y="130" width="140" height="80" rx="8" fill="#1e293b" stroke="#f87171" stroke-width="1"/>
+<text x="560.0" y="150" text-anchor="middle" font-family="monospace" font-size="15" font-weight="bold" fill="#f87171">KD</text>
+<text x="560.0" y="170" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">优化难度</text>
+<text x="560.0" y="184" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">Semrush</text>
+<text x="560.0" y="196" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">0-29 新手推荐 越高越难</text>
+<text x="318.0" y="172" text-anchor="middle" font-family="monospace" font-size="28" font-weight="bold" fill="#94a3b8">÷</text>
+<text x="400" y="230" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#fbbf24">Calculator 词族 KDRoi 排名示例</text>
+<rect x="60" y="258" width="560" height="22" rx="6" fill="#1e293b"/>
+<text x="85" y="274" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#38bdf8">关键词</text>
+<text x="245" y="274" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#38bdf8">搜索量</text>
+<text x="345" y="274" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#38bdf8">KD</text>
+<text x="415" y="274" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#38bdf8">CPC</text>
+<text x="505" y="274" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#38bdf8">KDRoi</text>
+<rect x="60" y="282" width="560" height="22" rx="6" fill="#162032"/>
+<text x="85" y="298" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">katy hearn macro calculator</text>
+<text x="245" y="298" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">1900</text>
+<text x="345" y="298" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">0</text>
+<text x="415" y="298" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">$0.98</text>
+<text x="505" y="298" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#4ade80">≈1900</text>
+<rect x="60" y="306" width="560" height="22" rx="6" fill="#1e293b"/>
+<text x="85" y="322" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">audiobook speed calculator</text>
+<text x="245" y="322" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">1600</text>
+<text x="345" y="322" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">7</text>
+<text x="415" y="322" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">$13.9</text>
+<text x="505" y="322" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#4ade80">3177</text>
+<rect x="60" y="330" width="560" height="22" rx="6" fill="#162032"/>
+<text x="85" y="346" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">audiobook calculator</text>
+<text x="245" y="346" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">1600</text>
+<text x="345" y="346" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">8</text>
+<text x="415" y="346" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">$12.34</text>
+<text x="505" y="346" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#4ade80">2468</text>
+<rect x="60" y="354" width="560" height="22" rx="6" fill="#1e293b"/>
+<text x="85" y="370" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">neb tm calculator</text>
+<text x="245" y="370" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">5400</text>
+<text x="345" y="370" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#f87171">19</text>
+<text x="415" y="370" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">$5.79</text>
+<text x="505" y="370" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#4ade80">1646</text>
+<rect x="60" y="378" width="560" height="22" rx="6" fill="#162032"/>
+<text x="85" y="394" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">shsat score calculator</text>
+<text x="245" y="394" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">1300</text>
+<text x="345" y="394" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#f87171">16</text>
+<text x="415" y="394" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">$12.63</text>
+<text x="505" y="394" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#4ade80">1026</text>
+<rect x="60" y="402" width="560" height="22" rx="6" fill="#1e293b"/>
+<text x="85" y="418" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">construction loan calculator</text>
+<text x="245" y="418" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">6600</text>
+<text x="345" y="418" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">14</text>
+<text x="415" y="418" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">$1.71</text>
+<text x="505" y="418" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#4ade80">806</text>
+<text x="400" y="400" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">实操: Semrush导出 → Excel计算 → 按KDRoi从高到低排序 → 优先做得分最高的词</text></svg>

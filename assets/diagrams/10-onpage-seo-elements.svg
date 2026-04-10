@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="460" viewBox="0 0 800 460">
+<rect width="800" height="460" fill="#0f172a"/>
+<text x="400" y="26" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#38bdf8">On-Page SEO — 页面优化元素层级</text>
+<text x="400" y="46" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#94a3b8">从 Title 到图片Alt，从 URL 到内链 — 每个元素都影响排名</text>
+<rect x="50" y="64" width="350" height="40" rx="6" fill="#1e293b" stroke="#f87171" stroke-width="1"/>
+<circle cx="70" cy="84.0" r="12" fill="#f87171"/>
+<text x="70" y="88.0" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#0f172a">1</text>
+<text x="90" y="88.0" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#f87171">Title 标签</text>
+<text x="280" y="88.0" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">最重要</text>
+<text x="280" y="102.0" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">60字符内</text>
+<text x="280" y="116.0" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">含核心关键词</text>
+<rect x="420" y="64" width="350" height="40" rx="6" fill="#1e293b" stroke="#fb923c" stroke-width="1"/>
+<circle cx="440" cy="84.0" r="12" fill="#fb923c"/>
+<text x="440" y="88.0" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#0f172a">2</text>
+<text x="460" y="88.0" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#fb923c">Description</text>
+<text x="650" y="88.0" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">第二大</text>
+<text x="650" y="102.0" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">160字符内</text>
+<text x="650" y="116.0" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">含关键词+吸引点击</text>
+<rect x="50" y="110" width="350" height="40" rx="6" fill="#1e293b" stroke="#fbbf24" stroke-width="1"/>
+<circle cx="70" cy="130.0" r="12" fill="#fbbf24"/>
+<text x="70" y="134.0" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#0f172a">3</text>
+<text x="90" y="134.0" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#fbbf24">H1 标签</text>
+<text x="280" y="134.0" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">页面唯一</text>
+<text x="280" y="148.0" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">含核心关键词</text>
+<rect x="420" y="110" width="350" height="40" rx="6" fill="#1e293b" stroke="#4ade80" stroke-width="1"/>
+<circle cx="440" cy="130.0" r="12" fill="#4ade80"/>
+<text x="440" y="134.0" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#0f172a">4</text>
+<text x="460" y="134.0" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#4ade80">H2/H3 标签</text>
+<text x="650" y="134.0" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">结构清晰</text>
+<text x="650" y="148.0" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">长尾关键词</text>
+<rect x="50" y="156" width="350" height="40" rx="6" fill="#1e293b" stroke="#2dd4bf" stroke-width="1"/>
+<circle cx="70" cy="176.0" r="12" fill="#2dd4bf"/>
+<text x="70" y="180.0" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#0f172a">5</text>
+<text x="90" y="180.0" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#2dd4bf">URL 结构</text>
+<text x="280" y="180.0" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">简短有意义</text>
+<text x="280" y="194.0" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">含关键词</text>
+<rect x="420" y="156" width="350" height="40" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+<circle cx="440" cy="176.0" r="12" fill="#38bdf8"/>
+<text x="440" y="180.0" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#0f172a">6</text>
+<text x="460" y="180.0" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#38bdf8">内容正文</text>
+<text x="650" y="180.0" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">500+词</text>
+<text x="650" y="194.0" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">原创有价值</text>
+<text x="650" y="208.0" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">自然植入关键词</text>
+<rect x="50" y="202" width="350" height="40" rx="6" fill="#1e293b" stroke="#c084fc" stroke-width="1"/>
+<circle cx="70" cy="222.0" r="12" fill="#c084fc"/>
+<text x="70" y="226.0" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#0f172a">7</text>
+<text x="90" y="226.0" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#c084fc">图片 Alt</text>
+<text x="280" y="226.0" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">描述图片</text>
+<text x="280" y="240.0" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">含关键词</text>
+<rect x="420" y="202" width="350" height="40" rx="6" fill="#1e293b" stroke="#f472b6" stroke-width="1"/>
+<circle cx="440" cy="222.0" r="12" fill="#f472b6"/>
+<text x="440" y="226.0" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#0f172a">8</text>
+<text x="460" y="226.0" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#f472b6">内链建设</text>
+<text x="650" y="226.0" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">锚文本传递</text>
+<text x="650" y="240.0" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">权重分配</text>
+<rect x="50" y="370" width="350" height="75" rx="8" fill="#2a1a1a" stroke="#f87171" stroke-width="1"/>
+<text x="225.0" y="388" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#f87171">❌ 错误示例</text>
+<text x="225.0" y="408" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">Title: 工具站 | Description: 工具站是最好的</text>
+<text x="225.0" y="426" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">没有关键词、没有吸引力、没有差异化</text>
+<rect x="400" y="370" width="350" height="75" rx="8" fill="#1a2a1a" stroke="#4ade80" stroke-width="1"/>
+<text x="575.0" y="388" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#4ade80">✅ 正确示例</text>
+<text x="575.0" y="408" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">Title: Free Timestamp Converter — Unix & UTC | Description:...</text>
+<text x="575.0" y="426" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">含关键词、含具体价值说明、含行动号召</text></svg>

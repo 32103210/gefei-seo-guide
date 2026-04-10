@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="380" viewBox="0 0 800 380">
+<rect width="800" height="380" fill="#0f172a"/>
+<text x="400" y="28" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#38bdf8">四种搜索意图 — Google SEO 关键词分析基础</text>
+<rect x="15.0" y="68" width="185" height="220" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+<text x="107.5" y="90" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#38bdf8">💡 信息型</text>
+<text x="107.5" y="108" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">Informational</text>
+<line x1="31.0" y1="120" x2="184.0" y2="120" stroke="#334155" stroke-width="1.5"/>
+<text x="107.5" y="142" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">用户意图</text>
+<text x="107.5" y="160" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">用户想了解某事</text>
+<text x="107.5" y="180" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">页面应提供</text>
+<text x="107.5" y="198" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 知识讲解、百科介绍、教程</text>
+<line x1="31.0" y1="236" x2="184.0" y2="236" stroke="#334155" stroke-width="1.5"/>
+<text x="107.5" y="254" text-anchor="middle" font-family="monospace" font-size="9" font-weight="normal" fill="#94a3b8">e.g. what is timestamp</text>
+<rect x="210.0" y="68" width="185" height="220" rx="10" fill="#1e293b" stroke="#4ade80" stroke-width="1"/>
+<text x="302.5" y="90" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#4ade80">🏠 导航型</text>
+<text x="302.5" y="108" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">Navigational</text>
+<line x1="226.0" y1="120" x2="379.0" y2="120" stroke="#334155" stroke-width="1.5"/>
+<text x="302.5" y="142" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">用户意图</text>
+<text x="302.5" y="160" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">用户想去某网站</text>
+<text x="302.5" y="180" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">页面应提供</text>
+<text x="302.5" y="198" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 品牌链接、官方网站</text>
+<line x1="226.0" y1="236" x2="379.0" y2="236" stroke="#334155" stroke-width="1.5"/>
+<text x="302.5" y="254" text-anchor="middle" font-family="monospace" font-size="9" font-weight="normal" fill="#94a3b8">e.g. tool.lu official site</text>
+<rect x="405.0" y="68" width="185" height="220" rx="10" fill="#1e293b" stroke="#fb923c" stroke-width="1"/>
+<text x="497.5" y="90" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#fb923c">⚖️ 商业型</text>
+<text x="497.5" y="108" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">Commercial</text>
+<line x1="421.0" y1="120" x2="574.0" y2="120" stroke="#334155" stroke-width="1.5"/>
+<text x="497.5" y="142" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">用户意图</text>
+<text x="497.5" y="160" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">用户想比较研究</text>
+<text x="497.5" y="180" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">页面应提供</text>
+<text x="497.5" y="198" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 对比评测、购买指南</text>
+<line x1="421.0" y1="236" x2="574.0" y2="236" stroke="#334155" stroke-width="1.5"/>
+<text x="497.5" y="254" text-anchor="middle" font-family="monospace" font-size="9" font-weight="normal" fill="#94a3b8">e.g. best timestamp converter</text>
+<rect x="600.0" y="68" width="185" height="220" rx="10" fill="#1e293b" stroke="#c084fc" stroke-width="1"/>
+<text x="692.5" y="90" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#c084fc">🛒 交易型</text>
+<text x="692.5" y="108" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">Transactional</text>
+<line x1="616.0" y1="120" x2="769.0" y2="120" stroke="#334155" stroke-width="1.5"/>
+<text x="692.5" y="142" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">用户意图</text>
+<text x="692.5" y="160" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">用户想完成操作</text>
+<text x="692.5" y="180" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">页面应提供</text>
+<text x="692.5" y="198" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">• 工具功能、注册入口</text>
+<line x1="616.0" y1="236" x2="769.0" y2="236" stroke="#334155" stroke-width="1.5"/>
+<text x="692.5" y="254" text-anchor="middle" font-family="monospace" font-size="9" font-weight="normal" fill="#94a3b8">e.g. unix timestamp now</text>
+<text x="400" y="310" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#fbbf24">实操: Google搜索目标词 → 鼠标放不同位置收集推荐词 → 分类整理 → 按意图设计页面</text>
+<text x="400" y="332" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">Phone Number Generator 搜索意图分析: 国家+格式+用途 → 每个意图做独立页面</text>
+<text x="400" y="354" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#38bdf8">工具类网站应优先覆盖交易型和信息型意图</text></svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+<rect width="800" height="400" fill="#0f172a"/>
+<text x="400" y="28" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#38bdf8">Adsense 收入公式 — 完整推导</text>
+<rect x="150" y="52" width="500" height="50" rx="8" fill="#1e293b" stroke="#fbbf24" stroke-width="1"/>
+<text x="400" y="70" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#fbbf24">月收入(美元) = (月PV × 广告位数 × 可见率 × ECPM) / 1000</text>
+<text x="400" y="92" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">简化版: 月收入 ≈ 30 × UV基数 × ECPM × PV/UV比  (每页3广告位, 80%可见率)</text>
+<rect x="50.0" y="120" width="160" height="80" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+<text x="130.0" y="142" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#38bdf8">UV基数</text>
+<text x="130.0" y="162" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">日独立访客(千)</text>
+<text x="130.0" y="186" text-anchor="middle" font-family="monospace" font-size="22" font-weight="bold" fill="#e2e8f0">10</text>
+<rect x="230.0" y="120" width="160" height="80" rx="8" fill="#1e293b" stroke="#4ade80" stroke-width="1"/>
+<text x="310.0" y="142" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#4ade80">ECPM</text>
+<text x="310.0" y="162" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">每千次展示收入</text>
+<text x="310.0" y="186" text-anchor="middle" font-family="monospace" font-size="22" font-weight="bold" fill="#e2e8f0">$4</text>
+<rect x="410.0" y="120" width="160" height="80" rx="8" fill="#1e293b" stroke="#fb923c" stroke-width="1"/>
+<text x="490.0" y="142" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#fb923c">PV/UV</text>
+<text x="490.0" y="162" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">每访客浏览页数</text>
+<text x="490.0" y="186" text-anchor="middle" font-family="monospace" font-size="22" font-weight="bold" fill="#e2e8f0">3</text>
+<rect x="590.0" y="120" width="160" height="80" rx="8" fill="#1e293b" stroke="#c084fc" stroke-width="1"/>
+<text x="670.0" y="142" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#c084fc">广告位</text>
+<text x="670.0" y="162" text-anchor="middle" font-family="monospace" font-size="10" font-weight="normal" fill="#94a3b8">每页广告数量</text>
+<text x="670.0" y="186" text-anchor="middle" font-family="monospace" font-size="22" font-weight="bold" fill="#e2e8f0">3</text>
+<line x1="380.0" y1="200" x2="380.0" y2="220" stroke="#38bdf8" stroke-width="1.5"/><polygon points="380.0,220 375.0,212.0 385.0,212.0" fill="#38bdf8"/>
+<rect x="200" y="230" width="400" height="90" rx="10" fill="#1a3a1a" stroke="#4ade80" stroke-width="1"/>
+<text x="400" y="252" text-anchor="middle" font-family="monospace" font-size="14" font-weight="normal" fill="#94a3b8">月收入 = 30 × 10 × 4 × 3</text>
+<text x="400" y="280" text-anchor="middle" font-family="monospace" font-size="26" font-weight="bold" fill="#4ade80">= $10,800 / 月</text>
+<text x="400" y="304" text-anchor="middle" font-family="monospace" font-size="14" font-weight="normal" fill="#4ade80">≈ ¥78,000 / 月</text>
+<text x="400" y="348" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#94a3b8">关键洞察: 工具站用户平均浏览 3-5 个页面（PV/UV=3-5），远高于内容站的 1-1.5</text>
+<text x="400" y="368" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#fbbf24">这就是工具站Adsense变现优于内容站的核心原因：同样UV，收入翻3倍</text></svg>

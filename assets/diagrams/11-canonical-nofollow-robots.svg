@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="420" viewBox="0 0 800 420">
+<rect width="800" height="420" fill="#0f172a"/>
+<text x="400" y="26" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#38bdf8">技术 SEO 三大问题 — 规范化与爬取控制</text>
+<rect x="20.0" y="60" width="240" height="280" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+<text x="140.0" y="86" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#38bdf8">Canonical</text>
+<text x="140.0" y="108" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#38bdf8">规范化</text>
+<text x="140.0" y="136" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">告诉Google</text>
+<text x="140.0" y="154" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">哪个是主URL</text>
+<line x1="36.0" y1="170" x2="244.0" y2="170" stroke="#334155" stroke-width="1.5"/>
+<text x="140.0" y="190" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">www vs 裸域 → 选其一</text>
+<text x="140.0" y="234" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">带参数URL → 用Canonical</text>
+<text x="140.0" y="278" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">多语言 → 每语言指自己</text>
+<rect x="280.0" y="60" width="240" height="280" rx="10" fill="#1e293b" stroke="#fb923c" stroke-width="1"/>
+<text x="400.0" y="86" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#fb923c">Nofollow</text>
+<text x="400.0" y="108" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#fb923c">标签</text>
+<text x="400.0" y="136" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">控制权重传递</text>
+<text x="400.0" y="154" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">和爬取优先级</text>
+<line x1="296.0" y1="170" x2="504.0" y2="170" stroke="#334155" stroke-width="1.5"/>
+<text x="400.0" y="190" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">Google修改算法后
+nofollow也有权重</text>
+<text x="400.0" y="234" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">nofollow的链接
+对排名有帮助</text>
+<text x="400.0" y="278" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">谨慎使用
+nofollow=爬取但不传递</text>
+<rect x="540.0" y="60" width="240" height="280" rx="10" fill="#1e293b" stroke="#4ade80" stroke-width="1"/>
+<text x="660.0" y="86" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#4ade80">robots.txt</text>
+<text x="660.0" y="108" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#4ade80">规则</text>
+<text x="660.0" y="136" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">精确控制</text>
+<text x="660.0" y="154" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">哪些页面被抓取</text>
+<line x1="556.0" y1="170" x2="764.0" y2="170" stroke="#334155" stroke-width="1.5"/>
+<text x="660.0" y="190" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">Disallow写死的URL</text>
+<text x="660.0" y="234" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">多语言版本要逐个Disallow</text>
+<text x="660.0" y="278" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">通配符 /*/ 要小心</text>
+<text x="660.0" y="322" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#e2e8f0">正确: Allow:/
+Disallow:/people/</text>
+<text x="400" y="364" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#f87171">常见错误: 全站Canonical写为首页 | 多语言页面Canonical写错 | robots.txt遗漏语言版本</text>
+<text x="400" y="382" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#4ade80">正确做法: 每页面Canonical写自己 | 有几种语言就写几行Disallow | 定期检查GSC的抓取错误</text></svg>

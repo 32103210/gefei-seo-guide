@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+<rect width="800" height="400" fill="#0f172a"/>
+<text x="400" y="26" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#38bdf8">多语言网站部署结构 — 子目录 + hreflang 方案</text>
+<text x="400" y="46" text-anchor="middle" font-family="monospace" font-size="12" font-weight="normal" fill="#94a3b8">为什么用子目录而非子域名？子目录继承主域名权重</text>
+<circle cx="400" cy="90" r="24" fill="#38bdf8"/>
+<text x="400" y="95" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#0f172a">gefei.vip</text>
+<rect x="75.0" y="140" width="140" height="100" rx="8" fill="#1e293b" stroke="#4ade80" stroke-width="1"/>
+<text x="145.0" y="160" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="#4ade80">🇺🇸 English</text>
+<text x="145.0" y="182" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#e2e8f0">/en/</text>
+<line x1="400" y1="114" x2="145.0" y2="140" stroke="#334155" stroke-width="1.5"/>
+<text x="145.0" y="204" text-anchor="middle" font-family="monospace" font-size="9" font-weight="normal" fill="#94a3b8"><link rel="alternate"</text>
+<text x="145.0" y="218" text-anchor="middle" font-family="monospace" font-size="9" font-weight="normal" fill="#fbbf24">hreflang="en"</text>
+<text x="145.0" y="232" text-anchor="middle" font-family="monospace" font-size="9" font-weight="normal" fill="#fbbf24">href=".../en/" /></text>
+<rect x="245.0" y="140" width="140" height="100" rx="8" fill="#1e293b" stroke="#fb923c" stroke-width="1"/>
+<text x="315.0" y="160" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="#fb923c">🇯🇵 日本語</text>
+<text x="315.0" y="182" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#e2e8f0">/ja/</text>
+<line x1="400" y1="114" x2="315.0" y2="140" stroke="#334155" stroke-width="1.5"/>
+<text x="315.0" y="204" text-anchor="middle" font-family="monospace" font-size="9" font-weight="normal" fill="#94a3b8"><link rel="alternate"</text>
+<text x="315.0" y="218" text-anchor="middle" font-family="monospace" font-size="9" font-weight="normal" fill="#fbbf24">hreflang="ja"</text>
+<text x="315.0" y="232" text-anchor="middle" font-family="monospace" font-size="9" font-weight="normal" fill="#fbbf24">href=".../ja/" /></text>
+<rect x="415.0" y="140" width="140" height="100" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+<text x="485.0" y="160" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="#38bdf8">🇫🇷 Français</text>
+<text x="485.0" y="182" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#e2e8f0">/fr/</text>
+<line x1="400" y1="114" x2="485.0" y2="140" stroke="#334155" stroke-width="1.5"/>
+<text x="485.0" y="204" text-anchor="middle" font-family="monospace" font-size="9" font-weight="normal" fill="#94a3b8"><link rel="alternate"</text>
+<text x="485.0" y="218" text-anchor="middle" font-family="monospace" font-size="9" font-weight="normal" fill="#fbbf24">hreflang="fr"</text>
+<text x="485.0" y="232" text-anchor="middle" font-family="monospace" font-size="9" font-weight="normal" fill="#fbbf24">href=".../fr/" /></text>
+<rect x="585.0" y="140" width="140" height="100" rx="8" fill="#1e293b" stroke="#fbbf24" stroke-width="1"/>
+<text x="655.0" y="160" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="#fbbf24">🇩🇪 Deutsch</text>
+<text x="655.0" y="182" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#e2e8f0">/de/</text>
+<line x1="400" y1="114" x2="655.0" y2="140" stroke="#334155" stroke-width="1.5"/>
+<text x="655.0" y="204" text-anchor="middle" font-family="monospace" font-size="9" font-weight="normal" fill="#94a3b8"><link rel="alternate"</text>
+<text x="655.0" y="218" text-anchor="middle" font-family="monospace" font-size="9" font-weight="normal" fill="#fbbf24">hreflang="de"</text>
+<text x="655.0" y="232" text-anchor="middle" font-family="monospace" font-size="9" font-weight="normal" fill="#fbbf24">href=".../de/" /></text>
+<rect x="230" y="270" width="340" height="52" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+<text x="400" y="288" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#fbbf24">首页 <link rel="alternate" hreflang="x-default"</text>
+<text x="400" y="306" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#fbbf24">href="https://gefei.vip/" /></text>
+<rect x="50" y="270" width="170" height="100" rx="8" fill="#2a1a1a" stroke="#f87171" stroke-width="1"/>
+<text x="135.0" y="288" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#f87171">❌ 子域名</text>
+<text x="135.0" y="310" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">独立权重
+需单独积累
+不推荐</text>
+<rect x="580" y="270" width="170" height="100" rx="8" fill="#1a2a1a" stroke="#4ade80" stroke-width="1"/>
+<text x="665.0" y="288" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#4ade80">✅ 子目录</text>
+<text x="665.0" y="310" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">继承主域名权重
+快速获得排名
+推荐使用</text>
+<text x="400" y="388" text-anchor="middle" font-family="monospace" font-size="11" font-weight="normal" fill="#94a3b8">GPT多语言翻译: 提取语言包 → 分语言翻译 → 注入本地化信息（电话/货币/度量单位）</text></svg>
