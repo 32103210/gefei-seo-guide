@@ -1,0 +1,3133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>出海AI工具站SEO完全指南</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:        #0f172a;
+  --bg2:       #1e293b;
+  --card:      #334155;
+  --text:      #e2e8f0;
+  --muted:     #94a3b8;
+  --blue:      #38bdf8;
+  --green:     #4ade80;
+  --orange:    #fb923c;
+  --red:       #f87171;
+  --yellow:    #fbbf24;
+  --purple:    #c084fc;
+  --border:    #1e293b;
+}
+
+html { font-size: 16px; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.75;
+  min-height: 100vh;
+}
+
+/* ── Sidebar Nav ─────────────────────────────────────────────────────── */
+#sidebar {
+  position: fixed;
+  top: 0; left: 0;
+  width: 260px;
+  height: 100vh;
+  background: #111827;
+  border-right: 1px solid var(--border);
+  overflow-y: auto;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+}
+#sidebar-header {
+  padding: 20px 16px 14px;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+#sidebar-header h1 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--blue);
+  line-height: 1.3;
+}
+#sidebar-header p {
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+#nav { padding: 12px 0 24px; flex: 1; }
+
+.nav-group { margin-bottom: 4px; }
+.nav-group-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 10px 16px 4px;
+}
+.nav-item {
+  display: block;
+  font-size: 12.5px;
+  color: var(--muted);
+  text-decoration: none;
+  padding: 5px 16px;
+  border-left: 2px solid transparent;
+  transition: color .15s, border-color .15s, background .15s;
+  line-height: 1.4;
+}
+.nav-item:hover, .nav-item.active {
+  color: var(--blue);
+  border-left-color: var(--blue);
+  background: rgba(56,189,248,.06);
+}
+.nav-item.chapter-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  margin-top: 6px;
+}
+
+/* ── Main content ────────────────────────────────────────────────────── */
+#main {
+  margin-left: 260px;
+  min-height: 100vh;
+  padding: 0 40px 80px;
+  max-width: 900px;
+}
+
+/* ── Typography ──────────────────────────────────────────────────────── */
+h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--blue);
+  margin: 48px 0 16px;
+  letter-spacing: -.02em;
+  line-height: 1.2;
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 48px 0 20px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--card);
+  letter-spacing: -.01em;
+}
+h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--blue);
+  margin: 32px 0 14px;
+}
+h4 { font-size: 1rem; font-weight: 600; color: var(--text); margin: 20px 0 8px; }
+
+p { margin: 0 0 16px; color: var(--text); }
+
+/* ── Inline ──────────────────────────────────────────────────────────── */
+strong { color: #fff; font-weight: 600; }
+em { color: var(--yellow); font-style: normal; }
+
+code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: .88em;
+  background: #1a2332;
+  color: var(--green);
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid var(--card);
+}
+pre {
+  background: #0d1117;
+  border: 1px solid var(--card);
+  border-radius: 8px;
+  padding: 16px 20px;
+  overflow-x: auto;
+  margin: 0 0 20px;
+}
+pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: .875rem;
+  color: var(--text);
+  line-height: 1.7;
+}
+
+/* ── Blockquote ─────────────────────────────────────────────────────── */
+blockquote {
+  margin: 0 0 20px;
+  padding: 14px 18px;
+  background: #1a2744;
+  border-left: 4px solid var(--blue);
+  border-radius: 0 8px 8px 0;
+  color: var(--muted);
+  font-size: .95rem;
+}
+blockquote p:last-child { margin-bottom: 0; }
+
+/* ── Tables ─────────────────────────────────────────────────────────── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 24px;
+  font-size: .9rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+thead tr {
+  background: #1a2d4a;
+}
+th {
+  padding: 10px 14px;
+  text-align: left;
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--blue);
+  border-bottom: 2px solid var(--card);
+}
+td {
+  padding: 9px 14px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  vertical-align: top;
+}
+tr:nth-child(even) td { background: rgba(30,41,59,.5); }
+tr:hover td { background: rgba(56,189,248,.04); }
+
+/* ── Lists ─────────────────────────────────────────────────────────── */
+ul, ol { margin: 0 0 16px 20px; }
+li { margin-bottom: 6px; color: var(--text); }
+li strong { color: #fff; }
+
+/* ── Horizontal rule ───────────────────────────────────────────────── */
+hr {
+  border: none;
+  border-top: 1px solid var(--card);
+  margin: 40px 0;
+}
+
+/* ── SVG Diagrams ───────────────────────────────────────────────────── */
+.diagram-wrap {
+  margin: 24px 0;
+  text-align: center;
+}
+.diagram-wrap img, .diagram-wrap svg {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid var(--card);
+}
+.caption {
+  font-size: .8rem;
+  color: var(--muted);
+  margin-top: 8px;
+}
+
+/* ── Code blocks from markdown ──────────────────────────────────────── */
+.highlight .hll { background: #1e293b; }
+
+/* ── Mobile ────────────────────────────────────────────────────────── */
+#mobile-nav {
+  display: none;
+  position: fixed;
+  top: 12px; right: 14px;
+  z-index: 200;
+  background: var(--bg2);
+  border: 1px solid var(--card);
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 13px;
+  color: var(--blue);
+  cursor: pointer;
+}
+#sidebar { display: flex; }
+
+@media (max-width: 768px) {
+  #sidebar { display: none; }
+  #sidebar.open { display: flex; width: 100%; }
+  #main { margin-left: 0; padding: 0 20px 60px; }
+  #mobile-nav { display: block; }
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.25rem; }
+}
+
+/* ── Scrollbar ─────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--card); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--muted); }
+
+/* ── Print ─────────────────────────────────────────────────────────── */
+@media print {
+  #sidebar { display: none; }
+  #main { margin-left: 0; }
+  body { background: #fff; color: #000; }
+  h1,h2,h3,h4 { color: #000; }
+  code { border: 1px solid #ccc; color: #000; }
+}
+</style>
+</head>
+<body>
+<button id="mobile-nav" onclick="document.getElementById('sidebar').classList.toggle('open')">≡ 目录</button>
+
+<div id="sidebar">
+  <div id="sidebar-header">
+    <h1>出海AI工具站<br>SEO完全指南</h1>
+    <p>基于哥飞公众号 · MIT协议开放</p>
+  </div>
+  <nav id="nav">
+<div class="nav-group">
+  <a class="nav-item chapter-title" href="#目录">目录</a>
+</div>
+<div class="nav-group">
+  <a class="nav-item chapter-title" href="#第一章-流量思维-为什么还要做网站">第一章 流量思维：为什么还要做网站</a>
+  <a class="nav-item" href="#1-1-一切从流量思维开始">1.1 一切从流量思维开始</a>
+  <a class="nav-item" href="#1-2-出海做网站的优势">1.2 出海做网站的优势</a>
+  <a class="nav-item" href="#1-3-adsense-最简单的大众变现方式">1.3 Adsense：最简单的大众变现方式</a>
+  <a class="nav-item" href="#1-4-adsense收入估算公式">1.4 Adsense收入估算公式</a>
+  <a class="nav-item" href="#1-5-关键词ecpm差异">1.5 关键词ECPM差异</a>
+</div>
+<div class="nav-group">
+  <a class="nav-item chapter-title" href="#第二章-需求挖掘-找到值得做的关键词">第二章 需求挖掘：找到值得做的关键词</a>
+  <a class="nav-item" href="#2-1-核心方法-看榜单-看数据-看他人在做什么">2.1 核心方法：看榜单、看数据、看他人在做什么</a>
+  <a class="nav-item" href="#2-2-51个财富密码关键词">2.2 51个财富密码关键词</a>
+  <a class="nav-item" href="#2-3-从出站域名发现需求">2.3 从出站域名发现需求</a>
+  <a class="nav-item" href="#2-4-从vercel子域名发现新需求">2.4 从Vercel子域名发现新需求</a>
+  <a class="nav-item" href="#2-5-ai-强需求-新工具">2.5 AI + 强需求 = 新工具</a>
+  <a class="nav-item" href="#2-6-节日词策略">2.6 节日词策略</a>
+  <a class="nav-item" href="#2-7-关键词难度判断标准">2.7 关键词难度判断标准</a>
+</div>
+<div class="nav-group">
+  <a class="nav-item chapter-title" href="#第三章-关键词研究-kdroi公式与搜索意图">第三章 关键词研究：KDRoi公式与搜索意图</a>
+  <a class="nav-item" href="#3-1-kdroi公式-选词的量化工具">3.1 KDRoi公式：选词的量化工具</a>
+  <a class="nav-item" href="#3-2-四种搜索意图">3.2 四种搜索意图</a>
+  <a class="nav-item" href="#3-3-小词的cpc价值">3.3 小词的CPC价值</a>
+  <a class="nav-item" href="#3-4-挖掘新词的判断方法">3.4 挖掘新词的判断方法</a>
+</div>
+<div class="nav-group">
+  <a class="nav-item chapter-title" href="#第四章-网站制作-从0到1完整建站流程">第四章 网站制作：从0到1完整建站流程</a>
+  <a class="nav-item" href="#4-1-建站sop-养网站防老12步法">4.1 建站SOP：养网站防老12步法</a>
+  <a class="nav-item" href="#4-2-工具站分类与技术选型">4.2 工具站分类与技术选型</a>
+  <a class="nav-item" href="#4-3-用chatgpt生成网页">4.3 用ChatGPT生成网页</a>
+  <a class="nav-item" href="#4-4-单域名单关键词策略">4.4 单域名单关键词策略</a>
+  <a class="nav-item" href="#4-5-页面结构规范">4.5 页面结构规范</a>
+  <a class="nav-item" href="#4-6-部署上线">4.6 部署上线</a>
+</div>
+<div class="nav-group">
+  <a class="nav-item chapter-title" href="#第五章-google-seo基础-谷歌如何工作">第五章 Google SEO基础：谷歌如何工作</a>
+  <a class="nav-item" href="#5-1-谷歌排名三句话">5.1 谷歌排名三句话</a>
+  <a class="nav-item" href="#5-2-谷歌喜欢的页面特征">5.2 谷歌喜欢的页面特征</a>
+  <a class="nav-item" href="#5-3-停留时间与排名">5.3 停留时间与排名</a>
+  <a class="nav-item" href="#5-4-google-search-console-使用入门">5.4 Google Search Console 使用入门</a>
+  <a class="nav-item" href="#5-5-新站收录-48小时内">5.5 新站收录：48小时内</a>
+</div>
+<div class="nav-group">
+  <a class="nav-item chapter-title" href="#第六章-on-page-seo-页面优化全攻略">第六章 On-Page SEO：页面优化全攻略</a>
+  <a class="nav-item" href="#6-1-title标签-最重要">6.1 Title标签（最重要）</a>
+  <a class="nav-item" href="#6-2-description标签">6.2 Description标签</a>
+  <a class="nav-item" href="#6-3-heading标签-h1-h2-h3">6.3 Heading标签（H1/H2/H3）</a>
+  <a class="nav-item" href="#6-4-内链建设">6.4 内链建设</a>
+  <a class="nav-item" href="#6-5-url结构">6.5 URL结构</a>
+  <a class="nav-item" href="#6-6-图片优化">6.6 图片优化</a>
+</div>
+<div class="nav-group">
+  <a class="nav-item chapter-title" href="#第七章-技术seo-元标签-结构化数据与技术细节">第七章 技术SEO：元标签、结构化数据与技术细节</a>
+  <a class="nav-item" href="#7-1-canonical标签详解-规范化url的核心指南">7.1 Canonical标签详解：规范化URL的核心指南</a>
+  <a class="nav-item" href="#7-2-nofollow标签">7.2 Nofollow标签</a>
+  <a class="nav-item" href="#7-3-robots-meta标签">7.3 robots meta标签</a>
+  <a class="nav-item" href="#7-4-robots-txt-多语言网站写法与常见错误">7.4 robots.txt 多语言网站写法与常见错误</a>
+  <a class="nav-item" href="#7-5-schema结构化数据">7.5 Schema结构化数据</a>
+  <a class="nav-item" href="#7-6-多语言网站的正确做法">7.6 多语言网站的正确做法</a>
+  <a class="nav-item" href="#7-8-viewport-meta标签-移动端适配">7.8 Viewport Meta标签：移动端适配</a>
+  <a class="nav-item" href="#7-9-open-graph社交媒体标签">7.9 Open Graph社交媒体标签</a>
+  <a class="nav-item" href="#7-10-charset字符集标签">7.10 Charset字符集标签</a>
+  <a class="nav-item" href="#7-11-完整的seo元标签组合示例">7.11 完整的SEO元标签组合示例</a>
+  <a class="nav-item" href="#7-12-技术seo检查清单">7.12 技术SEO检查清单</a>
+</div>
+<div class="nav-group">
+  <a class="nav-item chapter-title" href="#第八章-外链建设-nofollow也有权重">第八章 外链建设：nofollow也有权重</a>
+  <a class="nav-item" href="#8-1-外链的本质">8.1 外链的本质</a>
+  <a class="nav-item" href="#8-2-nofollow也有权重">8.2 nofollow也有权重</a>
+  <a class="nav-item" href="#8-3-外链建设方法">8.3 外链建设方法</a>
+</div>
+<div class="nav-group">
+  <a class="nav-item chapter-title" href="#第九章-内容策略-ai生成高质量内容">第九章 内容策略：AI生成高质量内容</a>
+  <a class="nav-item" href="#9-1-谷歌对ai内容的态度">9.1 谷歌对AI内容的态度</a>
+  <a class="nav-item" href="#9-2-ai内容的常见错误">9.2 AI内容的常见错误</a>
+  <a class="nav-item" href="#9-3-正确方法-提供参考资料">9.3 正确方法：提供参考资料</a>
+  <a class="nav-item" href="#9-4-保持内容原创性">9.4 保持内容原创性</a>
+  <a class="nav-item" href="#9-5-页面内容质量标准">9.5 页面内容质量标准</a>
+  <a class="nav-item" href="#9-6-内容型ai工具站-ai-seo的新范式">9.6 内容型AI工具站：AI+SEO的新范式</a>
+</div>
+<div class="nav-group">
+  <a class="nav-item chapter-title" href="#第十章-多语言网站-全球市场的门票">第十章 多语言网站：全球市场的门票</a>
+  <a class="nav-item" href="#10-1-为什么需要多语言">10.1 为什么需要多语言</a>
+  <a class="nav-item" href="#10-2-用chatgpt做多语言">10.2 用ChatGPT做多语言</a>
+  <a class="nav-item" href="#10-3-注入本地化信息">10.3 注入本地化信息</a>
+  <a class="nav-item" href="#10-4-多语言部署结构">10.4 多语言部署结构</a>
+</div>
+<div class="nav-group">
+  <a class="nav-item chapter-title" href="#第十一章-程序化seo-生成海量页面获取流量">第十一章 程序化SEO：生成海量页面获取流量</a>
+  <a class="nav-item" href="#11-1-程序化seo的威力">11.1 程序化SEO的威力</a>
+  <a class="nav-item" href="#11-2-datetimego案例-seo引爆点">11.2 DateTimeGo案例：SEO引爆点</a>
+  <a class="nav-item" href="#11-3-程序化seo适合的场景">11.3 程序化SEO适合的场景</a>
+  <a class="nav-item" href="#11-4-批量生成的技术实现">11.4 批量生成的技术实现</a>
+  <a class="nav-item" href="#11-5-灰色地带与注意风险">11.5 灰色地带与注意风险</a>
+</div>
+<div class="nav-group">
+  <a class="nav-item chapter-title" href="#第十二章-adsense变现-从广告费到财务自由">第十二章 Adsense变现：从广告费到财务自由</a>
+  <a class="nav-item" href="#12-1-adsense账号注册">12.1 Adsense账号注册</a>
+  <a class="nav-item" href="#12-2-pin码验证">12.2 Pin码验证</a>
+  <a class="nav-item" href="#12-3-广告位优化">12.3 广告位优化</a>
+  <a class="nav-item" href="#12-4-adsense收入提升实战">12.4 Adsense收入提升实战</a>
+  <a class="nav-item" href="#12-5-收入估算实操">12.5 收入估算实操</a>
+  <a class="nav-item" href="#12-6-datetimego完整广告费计算">12.6 DateTimeGo完整广告费计算</a>
+  <a class="nav-item" href="#12-7-为什么ecpm可以做到10美元">12.7 为什么ECPM可以做到10美元</a>
+</div>
+<div class="nav-group">
+  <a class="nav-item chapter-title" href="#第十三章-进阶变现-超越广告费">第十三章 进阶变现：超越广告费</a>
+  <a class="nav-item" href="#13-1-变现路径图">13.1 变现路径图</a>
+  <a class="nav-item" href="#13-2-stripe收款">13.2 Stripe收款</a>
+  <a class="nav-item" href="#13-3-内容型ai工具站变现">13.3 内容型AI工具站变现</a>
+  <a class="nav-item" href="#13-4-工具站订阅模式">13.4 工具站订阅模式</a>
+  <a class="nav-item" href="#13-5-浏览器插件-网站-留存问题的创新解法">13.5 浏览器插件+网站：留存问题的创新解法</a>
+  <a class="nav-item" href="#13-6-内容型ai工具站的飞轮效应">13.6 内容型AI工具站的飞轮效应</a>
+</div>
+<div class="nav-group">
+  <a class="nav-item chapter-title" href="#第十四章-避坑指南-真实失败案例解析">第十四章 避坑指南：真实失败案例解析</a>
+  <a class="nav-item" href="#14-1-深度复盘-首页内容膨胀导致降权的完整过程">14.1 深度复盘：首页内容膨胀导致降权的完整过程</a>
+  <a class="nav-item" href="#14-2-canonical标签写错导致降权">14.2 Canonical标签写错导致降权</a>
+  <a class="nav-item" href="#14-3-robots-txt多语言写法踩坑">14.3 robots.txt多语言写法踩坑</a>
+  <a class="nav-item" href="#14-4-ai内容-凭空捏造-导致低质量">14.4 AI内容"凭空捏造"导致低质量</a>
+  <a class="nav-item" href="#14-5-选错关键词白费功夫">14.5 选错关键词白费功夫</a>
+  <a class="nav-item" href="#14-6-常见seo问题判断">14.6 常见SEO问题判断</a>
+  <a class="nav-item" href="#14-7-seo评测报告模板-以-stickerbaker-为例">14.7 SEO评测报告模板：以 StickerBaker 为例</a>
+</div>
+<div class="nav-group">
+  <a class="nav-item chapter-title" href="#第十五章-实战案例-群友的成功经验">第十五章 实战案例：群友的成功经验</a>
+  <a class="nav-item" href="#15-1-threads新站上线9天获得11030个独立访客">15.1 Threads新站上线9天获得11030个独立访客</a>
+  <a class="nav-item" href="#15-2-工具站日收入破千美元">15.2 工具站日收入破千美元</a>
+  <a class="nav-item" href="#15-3-日pv从10万到20万-仅13天">15.3 日PV从10万到20万（仅13天）</a>
+  <a class="nav-item" href="#15-4-adsense实验-测试不同广告配置">15.4 AdSense实验：测试不同广告配置</a>
+  <a class="nav-item" href="#15-5-custom-cursor-网站-浏览器插件留存飞轮">15.5 Custom Cursor：网站+浏览器插件留存飞轮</a>
+  <a class="nav-item" href="#15-6-千篇国学-双引擎优化的内容站典范">15.6 千篇国学：双引擎优化的内容站典范</a>
+  <a class="nav-item" href="#15-7-reddit推广实战-如何快速积累karma获得曝光">15.7 Reddit推广实战：如何快速积累Karma获得曝光</a>
+  <a class="nav-item" href="#15-8-更多群友喜报-从日uv破万到月入万刀">15.8 更多群友喜报：从日UV破万到月入万刀</a>
+  <a class="nav-item" href="#15-9-做网站任何时候都不晚-新词策略的持续验证">15.9 做网站任何时候都不晚：新词策略的持续验证</a>
+</div>
+<div class="nav-group">
+  <a class="nav-item chapter-title" href="#附录">附录</a>
+  <a class="nav-item" href="#a-常用工具清单">A. 常用工具清单</a>
+  <a class="nav-item" href="#b-kdroi计算器">B. KDRoi计算器</a>
+  <a class="nav-item" href="#c-建站模板">C. 建站模板</a>
+  <a class="nav-item" href="#d-快速上站sop">D. 快速上站SOP</a>
+</div>
+<div class="nav-group">
+  <a class="nav-item chapter-title" href="#后记">后记</a>
+</div>
+
+  </nav>
+</div>
+
+<div id="main">
+<h1>出海AI工具站SEO完全指南</h1>
+<h3>—— 基于哥飞公众号120+篇文章整理</h3>
+<hr />
+<p><strong>作者</strong>：哥飞（公众号：gefei）
+<strong>整理</strong>：Claude
+<strong>版本</strong>：v1.0
+<strong>日期</strong>：2026-04-10
+<strong>说明</strong>：本书由哥飞公众号2023-2024年发布的120余篇文章整理汇编而成，涵盖需求挖掘、网站制作、Google SEO优化、Adsense变现完整体系。</p>
+<hr />
+<h2>目录</h2>
+<ul>
+<li><a href="#第一章-流量思维为什么还要做网站">第一章 流量思维：为什么还要做网站</a></li>
+<li><a href="#第二章-需求挖掘找到值得做的关键词">第二章 需求挖掘：找到值得做的关键词</a></li>
+<li><a href="#第三章-关键词研究kdroi公式与搜索意图">第三章 关键词研究：KDRoi公式与搜索意图</a></li>
+<li><a href="#第四章-网站制作从0到1完整建站流程">第四章 网站制作：从0到1完整建站流程</a></li>
+<li><a href="#第五章-google-seo基础谷歌如何工作">第五章 Google SEO基础：谷歌如何工作</a></li>
+<li><a href="#第六章-on-page-seo页面优化全攻略">第六章 On-Page SEO：页面优化全攻略</a></li>
+<li><a href="#第七章-技术seo元标签结构化数据与技术细节">第七章 技术SEO：元标签、结构化数据与技术细节</a></li>
+<li><a href="#第八章-外链建设nofollow也有权重">第八章 外链建设：nofollow也有权重</a></li>
+<li><a href="#第九章-内容策略ai生成高质量内容">第九章 内容策略：AI生成高质量内容</a></li>
+<li><a href="#第十章-多语言网站全球市场的门票">第十章 多语言网站：全球市场的门票</a></li>
+<li><a href="#第十一章-程序化seo生成海量页面获取流量">第十一章 程序化SEO：生成海量页面获取流量</a></li>
+<li><a href="#第十二章-adsense变现从广告费到财务自由">第十二章 Adsense变现：从广告费到财务自由</a></li>
+<li><a href="#第十三章-进阶变现超越广告费">第十三章 进阶变现：超越广告费</a></li>
+<li><a href="#第十四章-避坑指南真实失败案例解析">第十四章 避坑指南：真实失败案例解析</a></li>
+<li><a href="#第十五章-实战案例群友的成功经验">第十五章 实战案例：群友的成功经验</a></li>
+</ul>
+<hr />
+<h2>第一章 流量思维：为什么还要做网站</h2>
+<p><img alt="出海网站核心逻辑：流量 + 可控性 + 变现" src="/Users/oubin/gefei-seo-guide/assets/diagrams/01-traffic-mindset.svg" title="出海网站核心逻辑：流量 + 可控性 + 变现" /></p>
+<h3>1.1 一切从流量思维开始</h3>
+<p>做网站，本质上是一种<strong>流量思维</strong>的体现。</p>
+<p>无论你是在抖音发视频、在小红书写笔记，还是在知乎写文章，<strong>目的都是为了获取流量</strong>。流量在哪里？流量在搜索引擎里，在推荐算法里，在社交媒体的转发里。</p>
+<p>而网站，是承接流量的最佳容器。</p>
+<p>当你有了网站，你就拥有了：
+- <strong>可控的流量</strong>：不依赖平台算法，不担心账号被封
+- <strong>可控的用户</strong>：用户数据在自己手里
+- <strong>可控的收入</strong>：Adsense广告、联盟导购、直接收费，多种变现方式</p>
+<p>流量思维的关键是：<strong>先获取流量，再考虑变现</strong>。而不是反过来，先想怎么赚钱，再去找流量。</p>
+<h3>1.2 出海做网站的优势</h3>
+<p><img alt="各地区 ECPM 对比 — 欧美与中国差距30-100倍" src="/Users/oubin/gefei-seo-guide/assets/diagrams/02-ecpm-comparison.svg" title="各地区 ECPM 对比 — 欧美与中国差距30-100倍" /></p>
+<p>为什么要做英文网站（出海）？核心原因是<strong>ECPM（每千次展示收入）的巨大差距</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>地区</th>
+<th>ECPM（美元）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>欧美发达国家</td>
+<td>3-10美元</td>
+</tr>
+<tr>
+<td>东南亚</td>
+<td>0.5-1美元</td>
+</tr>
+<tr>
+<td>中国</td>
+<td>0.1-0.3美元</td>
+</tr>
+</tbody>
+</table>
+<p>做一个面向美国用户的网站，ECPM可能是国内网站的<strong>30-100倍</strong>。这意味着同样的流量，收入差了30-100倍。</p>
+<p>所以哥飞反复强调：<strong>做英文站，不是只做英文，可以加上多语言支持，但首要目标是英文世界。</strong></p>
+<h3>1.3 Adsense：最简单的大众变现方式</h3>
+<p>变现有多种方式：
+- <strong>向用户收费</strong>：做工具收费、社群收费、课程收费——最赚钱但最复杂
+- <strong>联盟导购</strong>：Amazon Associates等——需要一定流量基础
+- <strong>广告变现（Adsense）</strong>：最简单，新手友好</p>
+<p>Adsense最简单的模式是：<strong>做一个网站 → 放上广告代码 → 躺赚10年</strong>。</p>
+<p>哥飞举过一个例子：他在2012年创建了一个域名查询网站"秋玉米"，代码10年没改过，到现在还在持续产生收入。这就是Adsense的魅力——<strong>做一次，管十年</strong>。</p>
+<p>当然，躺赚的前提是：你需要多个网站分散风险。一个网站可能收入逐渐减少，但10个、20个网站叠加，收入就非常可观了。</p>
+<p>这就是<strong>养网站防老</strong>的核心逻辑。</p>
+<h3>1.4 Adsense收入估算公式</h3>
+<p>理解Adsense的收入模型，是做网站决策的基础。</p>
+<p><strong>基础概念</strong>：</p>
+<ul>
+<li><strong>PV（Page View）</strong>：页面访问次数，用户每打开一个页面算1次PV</li>
+<li><strong>UV（Unique Visitor）</strong>：独立访客数，同一用户多次访问只算1次UV</li>
+<li><strong>ECPM（Effective Cost Per Mille）</strong>：每千次广告展示收入，单位是美元</li>
+<li><strong>可见率</strong>：广告被实际看到才算展示，Scroll广告通常可见率约80%</li>
+</ul>
+<p><strong>核心公式推导</strong>：</p>
+<p>首先理解"每千次展示"的概念：
+- 1个页面放3个广告位 → 1次PV = 3次广告展示机会
+- 1000次展示 ÷ 3个/页 = 333次PV才能产生1000次展示
+- 如果ECPM=9美元，即1000次展示收入$9
+- 那么：333 PV → $9 → 每111 PV → $3 → 每37 PV → $1</p>
+<p>工具站的特点是用户查完一个词会继续查下一个，平均浏览<strong>3-5个页面</strong>。</p>
+<p>按保守的3个页面计算（每来110人有330PV）：</p>
+<blockquote>
+<p>每来<strong>110个访客</strong>就有330PV，就有<strong>10美元</strong>收入
+每来<strong>11个访客</strong>就有<strong>1美元</strong>收入</p>
+</blockquote>
+<p>这是数据好的网站（ECPM接近10美元）。数据差的网站也有2美元ECPM。</p>
+<p><strong>标准公式</strong>：</p>
+<pre><code>月收入(美元) = (月PV × 广告位数 × 可见率 × ECPM) / 1000
+</code></pre>
+<p>简化版（每页3个广告位、80%可见率）：</p>
+<pre><code>月收入(美元) ≈ 30 × UV基数 × ECPM(美元) × PV/UV比
+</code></pre>
+<p><strong>公式解释</strong>：
+- 30 = 基准常数（1 UV × 1 ECPM × 1 PV × 1广告位 = $1/天 × 30天）
+- UV基数 = 日独立访客数（单位：1000）
+- ECPM = 每千次广告展示收入
+- PV/UV = 每访客浏览页面数
+- 广告位数 = 每页广告数量（最多3个）</p>
+<p><strong>实际计算案例</strong>：
+<img alt="Adsense 收入公式 — 完整推导与计算案例" src="/Users/oubin/gefei-seo-guide/assets/diagrams/03-adsense-formula.svg" title="Adsense 收入公式 — 完整推导与计算案例" /></p>
+<p>一个面向美国用户的查询工具站：
+- 日UV = 10,000（基数=10）
+- ECPM = 4美元（欧美发达国家）
+- PV/UV = 3（查询工具站用户通常浏览3-5页）
+- 广告位 = 3</p>
+<p>月收入 = 30 × 10 × 4 × 3 × 3 = <strong>$10,800 ≈ ¥78,000</strong></p>
+<h3>1.5 关键词ECPM差异</h3>
+<p>同一关键词在不同国家，ECPM差距巨大。</p>
+<p>金融、法律、健康类关键词的ECPM远高于娱乐、通用工具类。</p>
+<p>工具站的特点是用户查询意图明确，愿意在页面上停留，广告展示率高，是做Adsense的优质网站类型。</p>
+<hr />
+<p><img alt="出海网站核心逻辑 — 流量 + 可控性 + 变现" src="/Users/oubin/gefei-seo-guide/assets/diagrams/01-traffic-mindset.svg" title="出海网站核心逻辑 — 流量 + 可控性 + 变现" /></p>
+<h2>第二章 需求挖掘：找到值得做的关键词</h2>
+<h3>2.1 核心方法：看榜单、看数据、看他人在做什么</h3>
+<p>需求挖掘的真传一句话：<strong>看榜单，看数据，看别人都做了什么。</strong></p>
+<p><strong>第一步：用Similarweb看竞品</strong></p>
+<p>打开 Similarweb（https://www.similarweb.com/ ），无需注册即可查看网站月访问量、流量来源、搜索关键词等数据。</p>
+<p><strong>实操步骤（以挖掘在线工具需求为例）：</strong></p>
+<ol>
+<li>在谷歌搜索"在线工具"，找到排在前列的网站，如 tool.lu</li>
+<li>打开 Similarweb，输入目标域名，地址：https://www.similarweb.com/zh/website/tool.lu/#overview</li>
+<li>首先查看<strong>月访问量</strong>（如 tool.lu 月访问量170万），判断网站整体规模</li>
+<li>查看<strong>用户兴趣 → 其他受访网站</strong>，发现 json.cn、bejson.com、cnblogs.com、w3cschool.cn 等同类网站，右键新标签页逐个打开备用</li>
+<li>查看<strong>竞争对手和类似网站</strong>，同样逐个右键打开备用</li>
+<li>查看<strong>流量来源分布</strong>，分析直接访问与搜索引擎（自然搜索）的比例，比例高说明SEO价值大</li>
+<li>查看<strong>搜索关键词</strong>，可以看到排名前几的搜索词（如"时间戳"、"时间戳转换"、"ip地址查询"等），每个词都可以单独做一个工具站</li>
+</ol>
+<p><strong>从 tool.lu 可以挖到的关键词包括</strong>：时间戳、时间戳转换、IP地址查询、IP查询、IP、时间戳转换器、在线工具、整数分区、视频地址解析、下载地址转换、整数分区计算器、unix时间戳、timestamp、unixtimestamp、在线拆字。每一个都可以注册域名单独做一个工具站。</p>
+<p><strong>第二步：用爱站网查百度权重</strong></p>
+<p><strong>实操步骤：</strong></p>
+<ol>
+<li>打开爱站网首页 https://www.aizhan.com ，在下拉框选择"百度权重"，输入竞品域名（如 tool.lu），点击"查询"按钮</li>
+<li>打开的地址格式为 https://baidurank.aizhan.com/baidu/tool.lu/</li>
+<li>拉到页面中部，查看<strong>PC端和移动端的涨入/跌出关键词列表</strong>，了解近期排名上升和下降的词</li>
+<li>继续查看页面下方表格，这里列出了该站点<strong>所有有排名的关键词列表</strong>，第三列为预估的PC端百度搜索量</li>
+<li>用爱站数据交叉验证Similarweb中挖掘到的关键词，确认搜索量和竞争情况</li>
+</ol>
+<p><strong>第三步：用站长之家验证SEO难度（可选）</strong></p>
+<ol>
+<li>打开 https://tool.chinaz.com/kwevaluate ，输入目标关键词</li>
+<li>查看整体优化难度评分：<strong>低于86分</strong>可以尝试，超过90分竞争激烈建议换词</li>
+<li>重点关注"前50名搜索结果中首页数量"，首页数量越少机会越大</li>
+</ol>
+<p><strong>完整工作流</strong>：Similarweb看竞品数据 → 爱站网查排名关键词 → 站长工具验难度 → 确定做哪个词
+<img alt="需求挖掘工作流：Similarweb → 爱站网 → 站长之家 → 执行" src="/Users/oubin/gefei-seo-guide/assets/diagrams/04-demand-mining-workflow.svg" title="需求挖掘工作流：Similarweb → 爱站网 → 站长之家 → 执行" /></p>
+<p><img alt="需求挖掘工作流 — Similarweb → 爱站网 → 站长之家 → 确定目标词" src="/Users/oubin/gefei-seo-guide/assets/diagrams/04-demand-mining-workflow.svg" title="需求挖掘工作流 — Similarweb → 爱站网 → 站长之家 → 确定目标词" /></p>
+<h3>2.2 51个财富密码关键词</h3>
+<p>哥飞整理了51个挖掘需求时能用得上的核心关键词。每一个词都可以作为建站方向。（关键词来源：哥飞收集了大部分，阳光杉木补充了部分，三林补充了部分）</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>关键词</th>
+<th>含义</th>
+<th>用户需求</th>
+<th>常见搭配</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Translator</td>
+<td>翻译器</td>
+<td>用户搜索Translator来寻找在线翻译工具，以便翻译文本、句子或文件</td>
+<td>Google Translator、Online Translator、Language Translator</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Generator</td>
+<td>生成器</td>
+<td>用户搜索Generator通常是为了生成随机密码、文章内容、图像等</td>
+<td>Password Generator、Name Generator、QR Code Generator</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Example</td>
+<td>示例</td>
+<td>用户搜索Example常常是为了找到示例代码、示例文本或示例问题的解答</td>
+<td>Code Example、Resume Example、Math Example</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Convert</td>
+<td>转换</td>
+<td>用户搜索Convert通常是为了将文件、图像或数据从一种格式或单位转换为另一种</td>
+<td>PDF to Word Convert、Currency Convert、Video Convert</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Online</td>
+<td>在线</td>
+<td>用户搜索Online通常是为了找到在线工具、资源或服务</td>
+<td>Online Shopping、Online Banking、Online Learning</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Downloader</td>
+<td>下载器</td>
+<td>用户搜索Downloader通常是为了下载在线媒体或文件</td>
+<td>YouTube Downloader、MP3 Downloader、Video Downloader</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Maker</td>
+<td>制作器</td>
+<td>用户搜索Maker通常是为了创建图像、视频、音乐等内容</td>
+<td>Logo Maker、Video Maker、Music Maker</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Creator</td>
+<td>创作者</td>
+<td>用户搜索Creator通常是为了找到创意工具或了解创作过程</td>
+<td>Content Creator、Logo Creator、Game Creator</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Editor</td>
+<td>编辑器</td>
+<td>用户搜索Editor通常是为了编辑或修改文件或媒体内容</td>
+<td>Photo Editor、Video Editor、Text Editor</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Processor</td>
+<td>处理器</td>
+<td>用户搜索Processor通常是为了执行数据处理、图像处理或计算任务</td>
+<td>Data Processor、Image Processor、Word Processor</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Designer</td>
+<td>设计师</td>
+<td>用户搜索Designer通常是为了找到设计师服务或设计工具</td>
+<td>Graphic Designer、Web Designer、Logo Designer</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Compiler</td>
+<td>编译器</td>
+<td>用户搜索Compiler通常是为了编译程序代码</td>
+<td>C++ Compiler、Java Compiler、Compiler Download</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Analyzer</td>
+<td>分析器</td>
+<td>用户搜索Analyzer通常是为了数据分析、文本分析或性能分析</td>
+<td>Data Analyzer、Text Analyzer、Performance Analyzer</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Evaluator</td>
+<td>评估器</td>
+<td>用户搜索Evaluator通常是为了找到产品或服务的评估工具或专家</td>
+<td>Product Evaluator、Website Evaluator、Performance Evaluator</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Sender</td>
+<td>发件人</td>
+<td>用户搜索Sender通常是为了了解或配置电子邮件或通信设置</td>
+<td>Email Sender、Bluetooth Sender、Message Sender</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Receiver</td>
+<td>收件人</td>
+<td>用户搜索Receiver通常是为了了解或配置电子邮件或通信设置</td>
+<td>Email Receiver、Bluetooth Receiver、Message Receiver</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Interpreter</td>
+<td>解释器</td>
+<td>用户搜索Interpreter通常是为了运行特定编程语言的脚本</td>
+<td>Python Interpreter、JavaScript Interpreter、PHP Interpreter</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Uploader</td>
+<td>上传者</td>
+<td>用户搜索Uploader通常是为了共享或备份文件</td>
+<td>File Uploader、Image Uploader、Video Uploader</td>
+</tr>
+<tr>
+<td>19</td>
+<td>Calculator</td>
+<td>计算器</td>
+<td>用户搜索Calculator通常是为了进行数学、金融或科学计算</td>
+<td>Online Calculator、Scientific Calculator、Mortgage Calculator</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Sample</td>
+<td>样本</td>
+<td>用户搜索Sample通常是为了找到示例文件、样本代码或可编辑的模板</td>
+<td>Resume Sample、Code Sample、Music Sample</td>
+</tr>
+<tr>
+<td>21</td>
+<td>Template</td>
+<td>模板</td>
+<td>用户搜索Template通常是为了找到可编辑的模板文件</td>
+<td>Resume Template、Website Template、Email Template</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Format</td>
+<td>格式</td>
+<td>用户搜索Format通常是为了格式化文档、图像或视频</td>
+<td>Text Format、Image Format、Video Format</td>
+</tr>
+<tr>
+<td>23</td>
+<td>Builder</td>
+<td>构建器</td>
+<td>用户搜索Builder通常是为了找到应用程序开发工具、网站构建器等</td>
+<td>App Builder、Website Builder、Game Builder</td>
+</tr>
+<tr>
+<td>24</td>
+<td>Scheme</td>
+<td>方案</td>
+<td>用户搜索Scheme通常是为了找到解决问题的计划或设计方案</td>
+<td>Business Scheme、Color Scheme、Payment Scheme</td>
+</tr>
+<tr>
+<td>25</td>
+<td>Pattern</td>
+<td>模式</td>
+<td>用户搜索Pattern通常是为了找到设计模式、图案或问题解决模式</td>
+<td>Knitting Pattern、Design Pattern、Behavioral Pattern</td>
+</tr>
+<tr>
+<td>26</td>
+<td>Checker</td>
+<td>检查器</td>
+<td>用户搜索Checker通常是为了验证拼写、检测病毒或发现问题</td>
+<td>Grammar Checker、Virus Checker、Plagiarism Checker</td>
+</tr>
+<tr>
+<td>27</td>
+<td>Detector</td>
+<td>检测器</td>
+<td>用户搜索Detector通常是为了检测特定物体或发现安全问题</td>
+<td>Metal Detector、Liar Detector、Plagiarism Detector</td>
+</tr>
+<tr>
+<td>28</td>
+<td>Scraper</td>
+<td>爬虫</td>
+<td>用户搜索Scraper通常是为了进行网页数据采集或爬虫操作</td>
+<td>Web Scraper、Data Scraper、Email Scraper</td>
+</tr>
+<tr>
+<td>29</td>
+<td>Manager</td>
+<td>管理器</td>
+<td>用户搜索Manager通常是为了寻找项目管理工具、任务管理工具或管理职位</td>
+<td>Project Manager、Task Manager、Property Manager</td>
+</tr>
+<tr>
+<td>30</td>
+<td>Explorer</td>
+<td>浏览器</td>
+<td>用户搜索Explorer通常是为了找到文件浏览器、网页浏览器或资源浏览器</td>
+<td>File Explorer、Web Explorer、Resource Explorer</td>
+</tr>
+<tr>
+<td>31</td>
+<td>Dashboard</td>
+<td>仪表盘</td>
+<td>用户搜索Dashboard通常是为了找到数据分析仪表盘或管理面板</td>
+<td>Data Dashboard、Project Dashboard、Dashboard Design</td>
+</tr>
+<tr>
+<td>32</td>
+<td>Planner</td>
+<td>计划器</td>
+<td>用户搜索Planner通常是为了找到日程安排工具或计划应用程序</td>
+<td>Event Planner、Trip Planner、Wedding Planner</td>
+</tr>
+<tr>
+<td>33</td>
+<td>Tracker</td>
+<td>追踪器</td>
+<td>用户搜索Tracker通常是为了追踪包裹、项目进度或健康数据</td>
+<td>Package Tracker、Project Tracker、Fitness Tracker</td>
+</tr>
+<tr>
+<td>34</td>
+<td>Recorder</td>
+<td>录制器</td>
+<td>用户搜索Recorder通常是为了录制音乐、视频教程或会议</td>
+<td>Audio Recorder、Video Recorder、Screen Recorder</td>
+</tr>
+<tr>
+<td>35</td>
+<td>Optimizer</td>
+<td>优化器</td>
+<td>用户搜索Optimizer通常是为了优化计算机性能、网站速度或广告投放</td>
+<td>PC Optimizer、Website Optimizer、SEO Optimizer</td>
+</tr>
+<tr>
+<td>36</td>
+<td>Scheduler</td>
+<td>调度器</td>
+<td>用户搜索Scheduler通常是为了安排会议、飞行或日程安排</td>
+<td>Meeting Scheduler、Flight Scheduler、Work Schedule</td>
+</tr>
+<tr>
+<td>37</td>
+<td>Converter</td>
+<td>转换器</td>
+<td>用户搜索Converter通常是为了将文件、图像或货币进行转换</td>
+<td>Currency Converter、PDF Converter、Image Converter</td>
+</tr>
+<tr>
+<td>38</td>
+<td>Viewer</td>
+<td>查看器</td>
+<td>用户搜索Viewer通常是为了查看PDF、图像或电影</td>
+<td>PDF Viewer、Image Viewer、Video Viewer</td>
+</tr>
+<tr>
+<td>39</td>
+<td>Extractor</td>
+<td>提取器</td>
+<td>用户搜索Extractor通常是为了提取文本、图像或音频数据</td>
+<td>Text Extractor、Image Extractor、Audio Extractor</td>
+</tr>
+<tr>
+<td>40</td>
+<td>Monitor</td>
+<td>监视器</td>
+<td>用户搜索Monitor通常是为了监视电脑性能、网络活动或健康数据</td>
+<td>System Monitor、Network Monitor、Health Monitor</td>
+</tr>
+<tr>
+<td>41</td>
+<td>Notifier</td>
+<td>通知器</td>
+<td>用户搜索Notifier通常是为了接收电子邮件通知、日程提醒或新闻更新</td>
+<td>Email Notifier、Reminder Notifier、News Notifier</td>
+</tr>
+<tr>
+<td>42</td>
+<td>Verifier</td>
+<td>验证器</td>
+<td>用户搜索Verifier通常是为了进行身份验证、验证码验证或数据验证</td>
+<td>Identity Verifier、Code Verifier、Data Verifier</td>
+</tr>
+<tr>
+<td>43</td>
+<td>Simulator</td>
+<td>模拟器</td>
+<td>用户搜索Simulator通常是为了模拟飞行、驾驶或游戏</td>
+<td>Flight Simulator、Driving Simulator、Game Simulator</td>
+</tr>
+<tr>
+<td>44</td>
+<td>Assistant</td>
+<td>助手</td>
+<td>用户搜索Assistant通常是为了找到虚拟助手、智能助手或个人助手应用</td>
+<td>Virtual Assistant、AI Assistant、Personal Assistant</td>
+</tr>
+<tr>
+<td>45</td>
+<td>Constructor</td>
+<td>构建者</td>
+<td>用户搜索Constructor通常是为了找到建筑工具、网站构建器或产品设计师</td>
+<td>Website Constructor、Product Constructor、Building Constructor</td>
+</tr>
+<tr>
+<td>46</td>
+<td>Comparator</td>
+<td>比较器</td>
+<td>用户搜索Comparator通常是为了比较价格、产品或特性</td>
+<td>Price Comparator、Product Comparator、Feature Comparator</td>
+</tr>
+<tr>
+<td>47</td>
+<td>Navigator</td>
+<td>导航器</td>
+<td>用户搜索Navigator通常是为了寻找GPS导航、地图应用或网站导航</td>
+<td>GPS Navigator、Map Navigator、Website Navigator</td>
+</tr>
+<tr>
+<td>48</td>
+<td>Syncer</td>
+<td>同步器</td>
+<td>用户搜索Syncer通常是为了同步手机、云存储或电子邮件</td>
+<td>Phone Syncer、Cloud Syncer、Email Syncer</td>
+</tr>
+<tr>
+<td>49</td>
+<td>Connector</td>
+<td>连接器</td>
+<td>用户搜索Connector通常是为了寻找特定类型的连接器，以便连接电缆、电线、设备或组件</td>
+<td>USB Connector、Ethernet Connector、Power Connector</td>
+</tr>
+<tr>
+<td>50</td>
+<td>Cataloger</td>
+<td>目录制作人</td>
+<td>用户搜索Cataloger通常是为了找到目录制作工具、图书馆分类员或数字资源管理工具</td>
+<td>Library Cataloger、Online Cataloger、Digital Asset Cataloger</td>
+</tr>
+<tr>
+<td>51</td>
+<td>Responder</td>
+<td>响应器</td>
+<td>用户搜索Responder通常是为了找到自动响应系统、紧急事件响应团队或客户服务响应工具</td>
+<td>Emergency Responder、Customer Support Responder、Automated Responder</td>
+</tr>
+</tbody>
+</table>
+<p><strong>如何深挖</strong>：
+选好一个核心词后，用 Semrush 查看该词下的所有相关关键词。例如输入"Calculator"，可以找到357个相关关键词，每个都是一个潜在的页面方向。</p>
+<p><strong>使用技巧</strong>：51个词不需要全部记住，先从 Calculator、Generator、Converter、Checker、Viewer 这几个最常见的核心词开始挖掘，每个词下面都有大量可做的细分需求。</p>
+<h3>2.3 从出站域名发现需求</h3>
+<p>用 Semrush 或 Ahrefs 查看竞品网站的外链来源。别人链向这个竞品，说明他们在为用户提供相关的工具或服务——而你也可以做类似的事情。</p>
+<p>这个方法是<strong>从竞品的流量来源反向挖掘需求</strong>，比自己漫无目的地想需求要可靠得多。</p>
+<h3>2.4 从Vercel子域名发现新需求</h3>
+<p>Similarweb 可以查看某个域名下的所有子域名。进入 Similarweb，查询 vercel.app，查看自然落地页，选择"新发现"过滤条件，可以看到最近新出现的子域名，这些往往代表着新出现的工具需求。</p>
+<p>案例：
+- check-your-khodam.vercel.app → "check your khodam" 是6月份才出现的新词
+- 各种 chatgpt premium cookies 相关的工具</p>
+<p>这个方法可以让你<strong>在需求刚出现时就发现它</strong>，比竞争对手抢先一步。</p>
+<h3>2.5 AI + 强需求 = 新工具</h3>
+<p>AI时代，用AI改造传统需求，可以创造全新的产品。</p>
+<p><strong>已验证的AI+组合</strong>：
+- AI + 头像 = AI证件照、AI艺术照
+- AI + PDF = ChatPDF、ChatDoc
+- AI + 视频 = 视频总结、字幕生成
+- AI + 老照片 = 照片修复、高清化
+- AI + 文字 = 图片生成、视频生成、音乐生成
+- AI + 数据 = 智能分析、报表生成
+- AI + 论文 = 论文阅读理解</p>
+<h3>2.6 节日词策略</h3>
+<p>带年份的节日词（如"mothers day 2024"）每年更新，竞争度骤降，是新站切入的好机会。</p>
+<p><strong>操作方法</strong>：
+1. 分析某个节日词的搜索量和竞争度
+2. 如果节日词太难，加上具体年份后难度骤降
+3. 提前布局下一年节日词（如现在就布局 mothers day 2025）</p>
+<h3>2.7 关键词难度判断标准</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>新手推荐</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>搜索量（Semrush Volume）</td>
+<td>≥600/月</td>
+<td>太低不值得做</td>
+</tr>
+<tr>
+<td>优化难度（KD）</td>
+<td>0-29</td>
+<td>超过29竞争激烈</td>
+</tr>
+<tr>
+<td>竞争度（Semrush）</td>
+<td>&lt;60%</td>
+<td>太高不适合新站</td>
+</tr>
+<tr>
+<td>CPC</td>
+<td>越高越好</td>
+<td>反映商业价值</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>第三章 关键词研究：KDRoi公式与搜索意图</h2>
+<h3>3.1 KDRoi公式：选词的量化工具</h3>
+<p><img alt="KDRoi 选词公式 — 搜索量×CPC÷KD" src="/Users/oubin/gefei-seo-guide/assets/diagrams/05-kdroi-formula.svg" title="KDRoi 选词公式 — 搜索量×CPC÷KD" /></p>
+<p>哥飞自创的关键词价值量化公式：</p>
+<pre><code>KDRoi = (搜索量 × CPC) / 优化难度KD
+</code></pre>
+<p><strong>解读</strong>：
+- KDRoi 越高，这个关键词越值得做
+- 搜索量大 × CPC高 ÷ KD低 = 高回报
+- 用 Semrush 导出关键词数据，在 Excel 中计算</p>
+<p><strong>实操步骤</strong>：
+1. 在 Semrush 输入目标关键词，设置筛选：搜索量≥600，KD为0-29，CPC&gt;0.1
+2. 导出关键词表格（CSV或XLSX）
+3. 在 Excel 中保留 Keyword、Volume、KD、CPC 四列
+4. 新增一列，输入公式 <code>=B2*D2/C2</code>（即 Volume × CPC / KD）
+5. 按新列从高到低排序，得分最高的就是最值得做的词</p>
+<p><strong>KDRoi前10关键词示例</strong>（Calculator词族）：
+| 关键词 | 搜索量 | KD | CPC | KDRoi |
+|--------|--------|-----|------|-------|
+| katy hearn macro calculator | 1900 | 0 | $0.98 | ~1900 |
+| audiobook speed calculator | 1600 | 7 | $13.9 | 3177 |
+| audiobook calculator | 1600 | 8 | $12.34 | 2468 |
+| neb tm calculator | 5400 | 19 | $5.79 | 1646 |
+| shsat score calculator | 1300 | 16 | $12.63 | 1026 |
+| construction loan calculator | 6600 | 14 | $1.71 | 806 |</p>
+<h3>3.2 四种搜索意图</h3>
+<p><img alt="四种搜索意图 — 信息型/导航型/商业型/交易型" src="/Users/oubin/gefei-seo-guide/assets/diagrams/06-four-search-intents.svg" title="四种搜索意图 — 信息型/导航型/商业型/交易型" /></p>
+<p>分析关键词时，必须理解搜索意图：</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>用户意图</th>
+<th>页面应该提供</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>信息型</strong></td>
+<td>用户想了解某事</td>
+<td>知识讲解、百科介绍</td>
+</tr>
+<tr>
+<td><strong>导航型</strong></td>
+<td>用户想去某网站</td>
+<td>品牌链接、官方网站</td>
+</tr>
+<tr>
+<td><strong>商业型</strong></td>
+<td>用户想比较研究</td>
+<td>对比评测、购买指南</td>
+</tr>
+<tr>
+<td><strong>交易型</strong></td>
+<td>用户想完成操作</td>
+<td>工具功能、注册入口</td>
+</tr>
+</tbody>
+</table>
+<p><strong>分析步骤</strong>：
+1. 在 Google 搜索目标关键词，查看相关推荐词
+2. 鼠标放在不同位置（开头、中间、结尾），收集所有推荐词
+3. 分类整理，理解用户在不同场景下的需求
+4. 根据意图设计页面：工具类→提供工具，内容类→提供文章</p>
+<p><strong>Phone Number Generator 搜索意图分析案例</strong>：</p>
+<p>搜索"phone number generator"，收集到以下真实需求：
+- phone number generator python（程序员想用Python生成）
+- phone number generator for youtube（做YouTube账号需要）
+- phone number generator with sms（需要能收短信的号码）
+- phone number generator malaysia/india/brazil（需要特定国家的号码）</p>
+<p>这说明：<strong>同一关键词背后有多种国别需求</strong>，做多语言版本非常重要。</p>
+<h3>3.3 小词的CPC价值</h3>
+<p>容易被忽略的小词，往往有很高的CPC。</p>
+<p>关键词"CPC"（Cost Per Click，每次点击成本）代表了广告主愿意为这个关键词付多少钱——<strong>CPC越高，意味着商业价值越高，用户越愿意付费</strong>。</p>
+<p>即使搜索量只有几百的"小词"，如果CPC高达10美元以上，其KDRoi可能远超搜索量上万但CPC只有0.1美元的大词。</p>
+<p><strong>核心思路</strong>：与其做大词的凤尾，不如做小词的鸡头。小词竞争少，容易拿排名，积累下来收入也很可观。</p>
+<h3>3.4 挖掘新词的判断方法</h3>
+<p>Google 每天处理的搜索中，有<strong>15%是从来没有被搜索过的新词</strong>。这意味着每天有约1.2亿次全新搜索等待被满足。</p>
+<p><strong>新词出现的信号</strong>：
+- Google Trends 出现从0开始的上升曲线
+- 相关工具在 Product Hunt 上线
+- 某个话题突然在社交媒体爆发
+- Vercel、GitHub 等平台出现相关子域名/项目</p>
+<p><strong>判断关键词出现时间</strong>：
+用 Google Trends 检查某个词是否有突然上升趋势。如果从0开始出现，说明是新词机会。</p>
+<hr />
+<h2>第四章 网站制作：从0到1完整建站流程</h2>
+<h3>4.1 建站SOP：养网站防老12步法</h3>
+<p><img alt="养网站防老 SOP 12步法 — 从需求挖掘到Adsense变现" src="/Users/oubin/gefei-seo-guide/assets/diagrams/07-sop-12-steps.svg" title="养网站防老 SOP 12步法 — 从需求挖掘到Adsense变现" /></p>
+<table>
+<thead>
+<tr>
+<th>步骤</th>
+<th>内容</th>
+<th>关键动作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>第0步</strong></td>
+<td>编程基础准备</td>
+<td>无编程基础 → 先学免费视频教程</td>
+</tr>
+<tr>
+<td><strong>第1步</strong></td>
+<td>挖掘第1个需求</td>
+<td>用51个关键词或新词法找到方向</td>
+</tr>
+<tr>
+<td><strong>第1.5步</strong></td>
+<td>KDRoi公式选词</td>
+<td>Semrush + Excel量化分析</td>
+</tr>
+<tr>
+<td><strong>第2步</strong></td>
+<td>分析搜索意图</td>
+<td>收集相关词，理解用户真实需求</td>
+</tr>
+<tr>
+<td><strong>第3步</strong></td>
+<td>ChatGPT生成网页</td>
+<td>提供参考资料，按格式输出</td>
+</tr>
+<tr>
+<td><strong>第4步</strong></td>
+<td>手动调整布局样式</td>
+<td>优化Logo、导航、按钮、Footer</td>
+</tr>
+<tr>
+<td><strong>第5步</strong></td>
+<td>内页和内链建设</td>
+<td>制作国家内页，建立内链结构</td>
+</tr>
+<tr>
+<td><strong>第6步</strong></td>
+<td>多语言支持</td>
+<td>ChatGPT提取语言包，批量生成</td>
+</tr>
+<tr>
+<td><strong>第7步</strong></td>
+<td>域名+部署上线</td>
+<td>注册域名，Vercel/Cloudflare部署</td>
+</tr>
+<tr>
+<td><strong>第8步</strong></td>
+<td>GSC+统计+外链</td>
+<td>GA统计+GSC提交+导航站外链</td>
+</tr>
+<tr>
+<td><strong>第9步</strong></td>
+<td>AI高质量内容</td>
+<td>提供参考资料，不凭空捏造</td>
+</tr>
+<tr>
+<td><strong>第0步（饱和式）</strong></td>
+<td>程序化批量建站</td>
+<td>生成海量页面</td>
+</tr>
+</tbody>
+</table>
+<h3>4.2 工具站分类与技术选型</h3>
+<p><img alt="六字真言 — 分门别类、罗列成语" src="/Users/oubin/gefei-seo-guide/assets/diagrams/08-six-character-truth.svg" title="六字真言 — 分门别类、罗列成语" /></p>
+<p><strong>纯前端站</strong>（最适合新手）：
+- 示例：JSON格式化、Base64编解码、MD5加密、字数统计
+- 技术：HTML + CSS + JavaScript，无需后端
+- 部署：任何静态托管平台（Vercel、GitHub Pages）</p>
+<p><strong>需要后端的站</strong>：
+- 示例：Whois查询、视频下载（解析第三方网页）
+- 技术：Node.js / Python + Serverless Functions
+- 部署：Vercel Functions、Cloudflare Workers</p>
+<p><strong>六字真言：分门别类、罗列成语</strong></p>
+<p>这是网页优化的核心思路，也是让谷歌快速理解网站主题的关键：</p>
+<p><strong>分门别类</strong>：用下拉菜单/分类标签把功能组织好，让用户能够按类别快速找到需要的内容。对于面向全球用户的网站，每个国家的电话号码格式不同，需要分别制作页面，在首页把各个国家分门别类列出。</p>
+<p><strong>罗列成语</strong>：把所有相关的长尾关键词都列出来，让谷歌理解你的页面覆盖范围。例如做"phone number generator"网站，需要罗列出"us phone number generator"、"china phone number generator"、"india phone number generator"等每个国家的长尾词页面，每一个H2都是一个国家名+关键词的组合。</p>
+<p><strong>六字真言的实操案例</strong>：</p>
+<p>以"phone number generator"为例：
+- 在首页H1写"phone number generator"
+- H1下方列出所有国家名字列表（如US、China、India等）
+- 每个国家一个H2，格式为"[国家名] + phone number generator"（如"US Phone Number Generator"）
+- H2下方是描述段落和按钮，点击后跳转到对应国家的专属页面
+- 这就实现了"分门别类"（国家分类展示）和"罗列成语"（每个国家都是长尾关键词）的双重优化</p>
+<h3>4.3 用ChatGPT生成网页</h3>
+<p><strong>关键方法：提供参考资料，不凭空捏造</strong></p>
+<p>不要直接让AI"随便生成一个xxx网页"。正确做法是：</p>
+<ol>
+<li>先在 Semrush 找到目标关键词和其相关搜索词</li>
+<li>找一个做得好的参考页面（搜索结果前3名）</li>
+<li>把参考页面的URL发给GPT，让它学习格式和结构</li>
+<li>要求GPT"按照这个格式，但替换为我的关键词"</li>
+<li>输出完整的HTML代码</li>
+</ol>
+<p><strong>GPT生成网页的完整提示词</strong></p>
+<p>以下是从零开始让GPT4生成"Phone Number Generator"网站的完整对话过程：</p>
+<p><strong>第一轮：初始需求（哥飞发给GPT4的完整提示词）</strong></p>
+<pre><code>你是一个SEO专家和前端开发专家，擅长使用html+css实现符合SEO要求的前端页面。我现在要建立一个关于&quot;phone number generator&quot;的网站，要求能够帮助全球各个国家的用户都生成电话号码，每个国家的电话号码格式都不一样，所以我会给每个国家制作一个页面，如&quot;us phone number generator&quot;、&quot;china phone number generator&quot;等，这就要求在首页把各个国家都列出来。我的想法是先在网站顶部用h1写出&quot;phone number generator&quot;，之后列出各个国家的名字，之后生成很多的 h2 ，每一个 h2 就是一个国家的名字+phone number generator，所以完整的 h2 举例是&quot;us phone number generator&quot;。每一个h2下方会有一小段描述文字，用p标签，描述文字下方是一个按钮，按钮文字为&quot;us phone number generator&quot;，不同的国家需要替换成不同的名字，点击按钮后打开新页面，不同的国家，新页面url不一样，如美国则页面url为&quot;us-phone-number-generator&quot;，现在，请帮我生成页面，要求符合SEO规范。对于我没有提要求的地方，你可以按照你的理解去做。
+</code></pre>
+<p>GPT4回复后生成了基本的HTML结构，包含了语义化标签（header、nav、main、section、footer）和两个示例国家（US、China）。</p>
+<p><strong>第二轮：补充国家列表需求</strong></p>
+<pre><code>你漏掉了我的一个需求，在h1下方，需要设置一块区域，显示所有国家名字列表
+</code></pre>
+<p>GPT4补充了CSS样式（country-list的flex布局）和HTML代码，在header的h1下方新增了国家名字链接列表。</p>
+<p><strong>第三轮：扩展为10个国家</strong></p>
+<pre><code>目前你只列出来了2个国家，请按照互联网用户数量，列出10个国家，并生成相关代码
+</code></pre>
+<p>GPT4按互联网用户数量列出了10个国家：中国、印度、美国、印度尼西亚、巴西、巴基斯坦、尼日利亚、孟加拉国、俄罗斯、日本，并生成了完整的HTML代码（包括header中的国家列表导航 + main中10个国家的section）。</p>
+<p><strong>生成网页的提示词模板</strong></p>
+<p>在实际使用中，核心提示词结构如下：</p>
+<pre><code>我有一个范文示例：
+[粘贴参考页面的HTML或内容]
+请学习这个范例，之后我每给你一个关键词，
+你都返回这种格式的介绍内容。
+</code></pre>
+<p>或者从零开始生成的模板：</p>
+<pre><code>你是一个SEO专家和前端开发专家，擅长使用html+css实现符合SEO要求的前端页面。我现在要建立一个关于&quot;[目标关键词]&quot;的网站，要求[具体需求描述]。我的想法是[页面结构描述]，现在请帮我生成页面，要求符合SEO规范。对于我没有提要求的地方，你可以按照你的理解去做。
+</code></pre>
+<h3>4.4 单域名单关键词策略</h3>
+<p>竞争对手已经用大站内页占据了某些关键词，新站怎么办？</p>
+<p><strong>答案：单域名单关键词。</strong></p>
+<ul>
+<li>不要只在大站的内页里和对手竞争</li>
+<li>用关键词注册独立域名（如 base64.xxx），专门做一个词</li>
+<li>每个关键词做多个相关页面，都指向首页</li>
+<li>首页title放主关键词，内页title放长尾关键词</li>
+</ul>
+<p><strong>关键词→页面映射示例</strong>（Phone Number Generator）：
+- 首页：Phone Number Generator（主关键词）
+- 内页1：China Phone Number Generator
+- 内页2：India Phone Number Generator
+- 内页3：US Phone Number Generator
+- ……（每个国家一个页面）</p>
+<p><strong>内链结构</strong>：
+- 每个内页都有一个指向首页的链接，用主关键词作为锚文本
+- 首页列出所有内页，每个内页链接都用关键词锚文本</p>
+<h3>4.5 页面结构规范</h3>
+<p><strong>HTML标签的SEO权重</strong>（从高到低）：
+1. <strong>Title</strong> - 最关键，告诉搜索引擎页面主题
+2. <strong>H1</strong> - 每个页面只有一个，表示页面核心主题
+3. <strong>H2/H3</strong> - 内容层级结构
+4. <strong>Alt</strong> - 图片描述
+5. <strong>内链锚文本</strong> - 链接到其他页面的文字</p>
+<p><strong>图片SEO规范</strong>：
+- 每张图片加描述性Alt文本
+- 工具站每页放一张大图（大于A4尺寸）
+- 图片URL包含关键词
+- 提交图片到 Google 图片搜索</p>
+<p><strong>内链规范</strong>：</p>
+<pre><code class="language-html">&lt;!-- 内页指向首页 --&gt;
+&lt;a href=&quot;首页URL&quot; title=&quot;关键词描述&quot;&gt;主关键词&lt;/a&gt;
+
+&lt;!-- 首页指向所有内页 --&gt;
+&lt;a href=&quot;内页URL&quot; title=&quot;内页关键词描述&quot;&gt;内页关键词&lt;/a&gt;
+</code></pre>
+<h3>4.6 部署上线</h3>
+<p><strong>域名注册</strong>：
+- 首选：关键词.com / 关键词-net.com
+- 次选：关键词-xxx.com（加横杠）
+- 备选：关键词其他后缀
+- 可以购买老域名（有过往权重积累）</p>
+<p><strong>部署平台选择</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>平台</th>
+<th>适合场景</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Vercel</strong></td>
+<td>前端/SSR</td>
+<td>免费、自动HTTPS、自动部署</td>
+</tr>
+<tr>
+<td><strong>Cloudflare Pages</strong></td>
+<td>静态/带宽密集型</td>
+<td>免费、R2存储、全球CDN</td>
+</tr>
+<tr>
+<td><strong>Cloudflare Workers</strong></td>
+<td>Serverless API</td>
+<td>免费额度大、边缘计算</td>
+</tr>
+</tbody>
+</table>
+<p><strong>快速上线流程</strong>：
+1. GitHub 创建仓库
+2. Vercel 导入仓库
+3. 自动部署，获得URL
+4. 购买域名，解析到 Vercel
+5. 网站上线</p>
+<hr />
+<h2>第五章 Google SEO基础：谷歌如何工作</h2>
+<h3>5.1 谷歌排名三句话</h3>
+<p><img alt="Google 排名机制 — 爬取→索引→排名" src="/Users/oubin/gefei-seo-guide/assets/diagrams/09-google-ranking.svg" title="Google 排名机制 — 爬取→索引→排名" /></p>
+<p>理解谷歌排名机制，记住三句话即可：</p>
+<p><strong>第一句：Title和H1等页面元素确保你的网页进入关键词搜索的候选范围。</strong></p>
+<p>也就是说，如果你的页面Title和H1里没有某个关键词，谷歌基本不会考虑把你的页面展示给搜索这个词的用户。</p>
+<p><strong>第二句：外链帮助你进入谷歌搜索前10位置。</strong></p>
+<p>即使你的页面进入了候选范围，还需要足够的外部链接才能在众多候选者中脱颖而出，进入前10名。</p>
+<p><strong>第三句：网站体验（停留时间、跳出率等）决定最终排名。</strong></p>
+<p>进入前10后，用户行为数据会成为最终排名的决定因素。用户越喜欢你的页面（停留久、不跳出、多翻几页），你的排名就越稳定、越靠前。</p>
+<h3>5.2 谷歌喜欢的页面特征</h3>
+<p>谷歌本质上是在帮用户找到最合适的页面。所以，<strong>谷歌喜欢的页面 = 用户喜欢的页面</strong>。</p>
+<p><strong>一、用户体验</strong>
+1. <strong>加载速度快</strong> - 速度慢不仅影响排名，还拖慢谷歌爬虫抓取
+2. <strong>移动端友好</strong> - 现在移动端流量已超过50%
+3. <strong>内链结构好</strong> - 把新内容在首页列出，是加快收录屡试不爽的方法</p>
+<p><strong>二、互动性（用户行为信号）</strong>
+4. <strong>用户停留时间长</strong> - 说明内容满足了搜索意图
+5. <strong>跳出率低</strong> - 不立即关闭，说明内容相关
+6. <strong>平均访问页面多</strong> - 用户愿意继续探索</p>
+<p><strong>三、内容质量</strong>
+7. <strong>原创度高</strong> - 不搬运、不抄袭。谷歌能判断整个网站的内容重复度
+8. <strong>内容权威</strong> - 把事情掰开揉碎讲清楚 ≠ 名人撰写
+9. <strong>内容实用</strong> - 真正解决问题
+10. <strong>关键词密度不下降</strong> - 标题与内容匹配，不要堆砌</p>
+<p><strong>四、技术优化</strong>
+11. <strong>定期更新</strong> - 内容随时间可能过时，谷歌喜欢活跃的网站
+12. <strong>工具页面也要有文字</strong> - 用文字描述工具功能
+13. <strong>合理书写TD</strong> - 每个页面TD不同，体现差异化
+14. <strong>合理Headings</strong> - H1主题、H2二级、H3三级
+15. <strong>图片Alt属性</strong> - 让图片进入Google图片搜索</p>
+<h3>5.3 停留时间与排名</h3>
+<p><strong>停留时间（dwell time）是重要的排名信号。</strong></p>
+<p>用户点击你的页面后，如果很快返回搜索结果并点击其他网站，谷歌会认为你的页面没有满足用户需求，排名下降。</p>
+<p>反之，如果用户在你的页面停留很久，说明内容确实有用，排名上升。</p>
+<p><strong>提高停留时间的方法</strong>：
+- 内容真的解决用户问题
+- 工具站：用户需要输入多次查询才能完成任务
+- 内链引导用户继续浏览其他页面</p>
+<h3>5.4 Google Search Console 使用入门</h3>
+<p>GSC 是监控网站在谷歌表现的必备工具。</p>
+<p><strong>核心功能</strong>：
+- <strong>效果报告</strong>：查看曝光量、点击量、排名位置
+- <strong>URL检查</strong>：检查某个页面是否被收录
+- <strong>覆盖率报告</strong>：查看收录情况和未收录原因
+- <strong>站点地图提交</strong>：加快全站页面收录</p>
+<p><strong>site:指令</strong>：
+- <code>site:example.com</code> 查询网站总收录页数
+- <code>site:example.com 关键词</code> 查询某关键词的排名页面
+- 选择"过去一小时"，可以判断谷歌爬虫抓取频率</p>
+<p>site:结果显示"过去一小时有新页面被抓取"，说明网站活跃，爬虫频繁来访。</p>
+<h3>5.5 新站收录：48小时内</h3>
+<p>新网站上线后，最快48小时内就能从谷歌获得搜索流量。</p>
+<p><strong>加快收录的方法</strong>：
+1. 在高权重网站发布内容并附链接（Reddit、V2EX等）
+2. 主动提交到 Google Search Console
+3. 生成并提交XML网站地图
+4. 在首页及时展示新页面链接</p>
+<hr />
+<h2>第六章 On-Page SEO：页面优化全攻略</h2>
+<p><img alt="On-Page SEO 元素层级 — 从 Title 到内链" src="/Users/oubin/gefei-seo-guide/assets/diagrams/10-onpage-seo-elements.svg" title="On-Page SEO 元素层级 — 从 Title 到内链" /></p>
+<p><img alt="On-Page SEO 元素层级 — Title / Description / H标签 / 内链" src="/Users/oubin/gefei-seo-guide/assets/diagrams/10-onpage-seo-elements.svg" title="On-Page SEO 元素层级 — Title / Description / H标签 / 内链" /></p>
+<h3>6.1 Title标签（最重要）</h3>
+<p>Title 告诉搜索引擎：你的页面是关于什么的。</p>
+<p><strong>最佳实践</strong>：
+- 每个页面Title不同
+- Title 包含该页面核心关键词
+- 主关键词放前面
+- 可加品牌名（域名）作为后缀
+- 控制在60字符以内</p>
+<p><strong>好例子</strong>：</p>
+<pre><code class="language-html">&lt;title&gt;China Phone Number Generator - Free Random CN Phone Numbers&lt;/title&gt;
+</code></pre>
+<p><strong>Title的变化带来广泛匹配</strong>：</p>
+<p>谷歌现在能基于语义理解标题，不要求严格匹配。做好一个高质量页面，不仅能拿到目标关键词流量，还能拿到大量相关关键词流量。</p>
+<p>例如，一个"File Type Checker"的网站，同时在以下4个相关搜索中排名第一：
+- file type checker
+- check file type
+- file type lookup
+- what file type is this</p>
+<h3>6.2 Description标签</h3>
+<p>Description 出现在搜索结果中的第三行（紧跟URL和Title之后），直接影响点击率。</p>
+<p><strong>最佳实践</strong>：
+- 每个页面描述不同
+- 用关键词自然描述页面内容
+- 包含行动号召（"免费"、"快速"等）
+- 控制在155字符以内
+- 让用户一眼想点进来</p>
+<p><strong>好例子</strong>：</p>
+<pre><code class="language-html">&lt;meta name=&quot;description&quot; content=&quot;Easily generate random Chinese phone numbers for testing, verification, and other purposes. Authentic format with comprehensive coverage.&quot;&gt;
+</code></pre>
+<h3>6.3 Heading标签（H1/H2/H3）</h3>
+<p><strong>H1</strong>：每个页面只能有一个，表示页面最核心的主题
+<strong>H2</strong>：主要章节标题
+<strong>H3</strong>：子章节标题</p>
+<p><strong>结构示例</strong>：</p>
+<pre><code class="language-html">&lt;h1&gt;Phone Number Generator&lt;/h1&gt;
+&lt;p&gt;简介段落...&lt;/p&gt;
+
+&lt;h2&gt;China Phone Numbers&lt;/h2&gt;
+&lt;p&gt;介绍...&lt;/p&gt;
+
+&lt;h3&gt;How to Use China Phone Numbers&lt;/h3&gt;
+&lt;p&gt;使用说明...&lt;/p&gt;
+</code></pre>
+<h3>6.4 内链建设</h3>
+<p>内链是SEO中最容易被忽视但效果显著的环节。</p>
+<p><strong>内链的作用</strong>：
+1. 帮助爬虫发现和抓取页面
+2. 传递页面权重
+3. 告诉搜索引擎页面的主题</p>
+<p><strong>首页内链最佳实践</strong>：
+- 首页列出所有内页链接
+- 链接锚文本用目标关键词
+- 每个内页都从首页获得入口</p>
+<p><strong>内页内链最佳实践</strong>：
+- 每个内页都有一个指向首页的链接
+- 锚文本用主关键词</p>
+<pre><code class="language-html">&lt;a href=&quot;/&quot; title=&quot;Phone Number Generator&quot;&gt;Phone Number Generator&lt;/a&gt;
+</code></pre>
+<p><strong>频道页/分类页</strong>：
+- 频道页可以用子目录（/china/、/tools/）
+- 子目录的权重高于内页
+- 适合做中等竞争度的二级关键词</p>
+<h3>6.5 URL结构</h3>
+<p><strong>URL优化的核心原则</strong>：
+- 简短有意义
+- 包含关键词
+- 用横杠分隔单词
+- 避免无意义的参数</p>
+<p><strong>好例子</strong>：</p>
+<pre><code>https://example.com/china-phone-number-generator.html
+https://example.com/password-generator/
+</code></pre>
+<p><strong>坏例子</strong>：</p>
+<pre><code>https://example.com/page?id=12345
+https://example.com/cat=tools&amp;item=china
+</code></pre>
+<h3>6.6 图片优化</h3>
+<p><strong>Alt文本</strong>：</p>
+<pre><code class="language-html">&lt;img src=&quot;china-phone-generator.jpg&quot; alt=&quot;China Phone Number Generator tool&quot;&gt;
+</code></pre>
+<p><strong>为什么重要</strong>：
+1. 图片无法显示时的占位文字
+2. 读屏软件用户可以理解图片
+3. Google图片搜索的排名信号</p>
+<p><strong>图片尺寸</strong>：
+- 工具站每页放一张大图（大于A4纸）
+- 大图更容易在 Google图片搜索中出现</p>
+<hr />
+<h2>第七章 技术SEO：元标签、结构化数据与技术细节</h2>
+<h3>7.1 Canonical标签详解：规范化URL的核心指南</h3>
+<p><img alt="技术 SEO 三大问题 — Canonical / Nofollow / robots.txt" src="/Users/oubin/gefei-seo-guide/assets/diagrams/11-canonical-nofollow-robots.svg" title="技术 SEO 三大问题 — Canonical / Nofollow / robots.txt" /></p>
+<p>Canonical标签（规范化标签）用于告诉搜索引擎，当前页面的<strong>唯一规范网址</strong>是哪个，解决重复URL导致的权重分散问题。</p>
+<h4>7.1.1 为什么需要Canonical</h4>
+<p>同一个网页在以下情况下会产生多个URL：</p>
+<p><strong>（1）www vs 裸域名同时可访问</strong></p>
+<p>例如 <code>www.example.com</code> 和 <code>example.com</code> 都能打开同一个页面，加上HTTPS后又多一个变体。</p>
+<p><strong>（2）目录默认文件</strong></p>
+<p>如 <code>/about/</code>、<code>/about/index.html</code>、<code>/about/index.php</code> 都能访问同一个页面。</p>
+<p><strong>（3）跟踪参数</strong></p>
+<p>用户从不同渠道分享链接，带有不同的跟踪参数：
+- 张三分享：<code>/shequn/?ref=zs</code>
+- 李四分享：<code>/shequn/?via=ls</code>
+- Reddit引流：<code>/shequn/?r=reddit</code></p>
+<p>以上这些URL返回的内容完全相同，但在搜索引擎眼里是完全不同的"重复网页"。</p>
+<h4>7.1.2 www与裸域名的处理原则</h4>
+<p><strong>最佳做法</strong>：选定一个作为主域名，另一个通过301重定向过去。</p>
+<pre><code class="language-nginx"># Nginx 配置示例：将 www 重定向到裸域名
+server {
+    listen 80;
+    server_name www.example.com;
+    return 301 $scheme://example.com$request_uri;
+}
+</code></pre>
+<p><strong>特殊情况</strong>（大网站防止Cookie泄漏）：
+有些大型网站会将 www 版作为主域名，把裸域名用301跳转到 www，防止Cookie跨域泄漏。哥飞建议普通网站优先选择裸域名作为主域名。</p>
+<h4>7.1.3 带参数的URL处理</h4>
+<p>外链带上跟踪参数（如 <code>?r=reddit</code>、<code>?ref=zs</code>）是常态。不设置Canonical，这些外链的权重就分散到各个带参数的URL上；正确设置后，所有外链权重汇聚到规范URL。</p>
+<pre><code class="language-html">&lt;!-- 无论用户从哪个带参数的URL进来，规范URL始终是这一个 --&gt;
+&lt;link rel=&quot;canonical&quot; href=&quot;https://example.com/shequn/&quot;&gt;
+</code></pre>
+<h4>7.1.4 多语言网站的Canonical写法</h4>
+<p>多语言网站（子目录结构）每个语言版本的Canonical必须指向自己的真实URL：</p>
+<pre><code class="language-html">&lt;!-- 中文页面（默认语言）的Canonical --&gt;
+&lt;link rel=&quot;canonical&quot; href=&quot;https://example.com/shequn/&quot;&gt;
+
+&lt;!-- 英文页面的Canonical --&gt;
+&lt;link rel=&quot;canonical&quot; href=&quot;https://example.com/en/shequn/&quot;&gt;
+
+&lt;!-- 日语页面的Canonical --&gt;
+&lt;link rel=&quot;canonical&quot; href=&quot;https://example.com/ja/shequn/&quot;&gt;
+</code></pre>
+<p><strong>重要</strong>：不同语言页面的Canonical值必须不同，各自指向自己的URL。绝对不能所有语言都写死成同一个URL。</p>
+<h4>7.1.5 正确写法总览</h4>
+<pre><code class="language-html">&lt;!-- 首页规范 --&gt;
+&lt;link rel=&quot;canonical&quot; href=&quot;https://example.com/&quot;&gt;
+
+&lt;!-- 内页规范 --&gt;
+&lt;link rel=&quot;canonical&quot; href=&quot;https://example.com/china-phone-generator.html&quot;&gt;
+</code></pre>
+<h4>7.1.6 失败案例</h4>
+<p><strong>案例一：全站所有页面Canonical都写为首页</strong></p>
+<p>有些开发者对Canonical不理解，在所有页面的<code>&lt;head&gt;</code>里都写：</p>
+<pre><code class="language-html">&lt;link rel=&quot;canonical&quot; href=&quot;https://example.com/&quot;&gt;
+</code></pre>
+<p>这会导致搜索引擎认为所有页面都是首页的副本，<strong>内页的权重全部流失到首页</strong>，整站排名急速下降。</p>
+<p><strong>案例二：多语言页面Canonical写错</strong></p>
+<p>英文页面错误地写成了中文页面的URL：</p>
+<pre><code class="language-html">&lt;!-- 英文页面错误写法 --&gt;
+&lt;link rel=&quot;canonical&quot; href=&quot;https://example.com/zh/about.html&quot;&gt;
+</code></pre>
+<p>搜索引擎会收到混乱信号，不知道这个英文页面究竟对应哪个URL，轻则不收录，重则降权。</p>
+<p><strong>案例三：忘记写Canonical导致权重分散</strong></p>
+<p>张三在Reddit上给 <code>/shequn/?r=reddit</code> 做外链，李四在Product Hunt上给 <code>/shequn/?r=ph</code> 做外链。如果不设置Canonical，这两个外链的权重分别被谷歌计入两个不同URL，无法叠加，导致排名效果大打折扣。</p>
+<h3>7.2 Nofollow标签</h3>
+<p><strong>nofollow 链接的演变</strong>：</p>
+<p>最初 nofollow 是用来告诉爬虫"不要继续爬这个链接"。但后来，谷歌发现<strong>用户自发传播的链接往往是nofollow的，而交易链接才是dofollow的</strong>。于是修改算法，现在 nofollow 对权重提升也有作用。</p>
+<p><strong>正确理解</strong>：
+- nofollow 外链也有价值，不要嫌弃
+- 追求自然的外链组合</p>
+<p><strong>nofollow的使用场景</strong>：
+- 用户生成内容中的外链
+- 付费/赞助链接
+- 不受信任的链接</p>
+<pre><code class="language-html">&lt;a href=&quot;外链URL&quot; rel=&quot;noopener noreferrer nofollow&quot;&gt;锚文本&lt;/a&gt;
+</code></pre>
+<h3>7.3 robots meta标签</h3>
+<p>控制单个页面的抓取行为：</p>
+<pre><code class="language-html">&lt;!-- 禁止抓取但允许索引 --&gt;
+&lt;meta name=&quot;robots&quot; content=&quot;noindex, follow&quot;&gt;
+
+&lt;!-- 禁止抓取也禁止索引 --&gt;
+&lt;meta name=&quot;robots&quot; content=&quot;noindex, nofollow&quot;&gt;
+</code></pre>
+<p><strong>使用场景</strong>：
+- 感谢页面、登录页面等不需要搜索流量的页面
+- 内部管理页面</p>
+<h3>7.4 robots.txt 多语言网站写法与常见错误</h3>
+<p>多语言网站用子目录形式时，robots.txt 需要逐个语言版本设置禁止规则。</p>
+<h4>7.4.1 正确写法</h4>
+<pre><code>User-Agent: *
+Allow: /
+Disallow: /people/
+Disallow: /ja/people/
+Disallow: /fr/people/
+Disallow: /ko/people/
+Disallow: /zh/people/
+</code></pre>
+<p><strong>核心原则：有多少种语言就要写多少行。</strong></p>
+<h4>7.4.2 失败案例</h4>
+<p>哥飞在实际项目中就踩过这个坑：网站默认语言的 <code>/people/</code> 目录正确禁止抓取了，但日语 <code>/ja/people/</code>、韩语 <code>/ko/people/</code> 等多语言版本仍然被谷歌抓取到了。</p>
+<p>原因是 robots.txt 只写了 <code>Disallow: /people/</code>，这只对默认语言生效，对子目录 <code>/ja/</code>、<code>/ko/</code> 下的路径无效。</p>
+<h4>7.4.3 通配符陷阱</h4>
+<p>有人为了省事，会这样写：</p>
+<pre><code>User-Agent: *
+Allow: /
+Disallow: /*/people/
+</code></pre>
+<p>哥飞特别提醒：<strong>不要用通配符偷懒</strong>，这会导致不可预知的问题。例如你有一个页面 <code>/abc/def/people/</code> 也会被这个规则覆盖，而它实际上是你希望被抓取的页面。</p>
+<p><strong>推荐方式</strong>：手动为每种语言写一行禁止规则，并定期检查更新——每当网站新增语言支持时，记得在这里同步增加一行。</p>
+<blockquote>
+<p>技术补充：如果你用的是 Next.js 框架，在 App Router 下可以用 <code>robots.ts</code> 动态生成 robots.txt，里面可以写逻辑自动处理多语言路径。
+参考：https://nextjs.org/docs/app/api-reference/file-conventions/metadata/robots</p>
+</blockquote>
+<h3>7.5 Schema结构化数据</h3>
+<p>结构化数据让谷歌在搜索结果中展示更丰富的样式（星级评分、价格区间、FAQ等），显著提升点击率。</p>
+<p><strong>常用结构化数据类型</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>适用场景</th>
+<th>SEO效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FAQ</td>
+<td>问答页面</td>
+<td>显示问答摘要</td>
+</tr>
+<tr>
+<td>HowTo</td>
+<td>教程页面</td>
+<td>显示步骤</td>
+</tr>
+<tr>
+<td>Product</td>
+<td>产品页面</td>
+<td>显示价格、评分</td>
+</tr>
+<tr>
+<td>Article</td>
+<td>文章页面</td>
+<td>显示作者、日期</td>
+</tr>
+<tr>
+<td>VideoObject</td>
+<td>视频内容</td>
+<td>显示视频缩略图</td>
+</tr>
+</tbody>
+</table>
+<p><strong>JSON-LD示例</strong>：</p>
+<pre><code class="language-html">&lt;script type=&quot;application/ld+json&quot;&gt;
+{
+  &quot;@context&quot;: &quot;https://schema.org&quot;,
+  &quot;@type&quot;: &quot;FAQPage&quot;,
+  &quot;mainEntity&quot;: [{
+    &quot;@type&quot;: &quot;Question&quot;,
+    &quot;name&quot;: &quot;What is a Phone Number Generator?&quot;,
+    &quot;acceptedAnswer&quot;: {
+      &quot;@type&quot;: &quot;Answer&quot;,
+      &quot;text&quot;: &quot;A phone number generator is a tool that creates valid phone numbers for testing and verification purposes.&quot;
+    }
+  }]
+}
+&lt;/script&gt;
+</code></pre>
+<p><strong>10种结构化搜索结果样式</strong>（哥飞详细整理过），善用结构化数据可以让你的搜索结果在众多结果中脱颖而出。</p>
+<h3>7.6 多语言网站的正确做法</h3>
+<p><strong>子目录 vs 子域名</strong>：</p>
+<p>哥飞建议用<strong>子目录</strong>而非子域名：
+- <code>example.com/en/</code>（推荐）
+- <code>en.example.com</code>（不推荐）</p>
+<p>原因：子目录可以继承主域名的权重，而子域名基本需要单独积累权重。</p>
+<p><strong>hreflang标签</strong>：</p>
+<pre><code class="language-html">&lt;link rel=&quot;alternate&quot; hreflang=&quot;en&quot; href=&quot;https://example.com/&quot;&gt;
+&lt;link rel=&quot;alternate&quot; hreflang=&quot;ja&quot; href=&quot;https://example.com/ja/&quot;&gt;
+&lt;link rel=&quot;alternate&quot; hreflang=&quot;zh&quot; href=&quot;https://example.com/zh/&quot;&gt;
+</code></pre>
+<h3>7.8 Viewport Meta标签：移动端适配</h3>
+<p>Viewport元标签用于配置网页在不同大小屏幕下的缩放和显示方式，是移动端适配的基础。</p>
+<p><strong>标准写法</strong>：</p>
+<pre><code class="language-html">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+</code></pre>
+<p><strong>参数含义</strong>：
+- <code>width=device-width</code>：使页面宽度与设备屏幕宽度匹配（以设备独立像素为单位）
+- <code>initial-scale=1</code>：建立CSS像素与设备独立像素1:1的关系，并考虑屏幕方向</p>
+<p><strong>为什么重要</strong>：
+- 谷歌明确表示移动端友好占排名因素的5%权重
+- 未设置Viewport的页面在移动端会被强制缩放，用户体验极差
+- 移动端友好是现代网站的必备条件</p>
+<p><strong>不设置Viewport的效果</strong>：页面会被缩放得很小，用户必须放大才能操作，这会直接导致高跳出率和低排名。</p>
+<h3>7.9 Open Graph社交媒体标签</h3>
+<p>社交媒体元标签控制网页被分享到社交平台（Facebook、LinkedIn、微信等）时展示的效果，包括标题、描述、图片等。</p>
+<h4>7.9.1 Open Graph是什么</h4>
+<p>Open Graph（OG标签）最初由Facebook提出，目前Facebook、LinkedIn、微信等主流平台都支持。Twitter则有自己的Twitter Cards规范（基于OG协议，但有自己的特殊要求）。</p>
+<h4>7.9.2 常用OG标签</h4>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>og:title</code></td>
+<td>控制分享时显示的标题</td>
+</tr>
+<tr>
+<td><code>og:url</code></td>
+<td>控制显示的网址（可加跟踪参数）</td>
+</tr>
+<tr>
+<td><code>og:description</code></td>
+<td>控制分享时显示的描述</td>
+</tr>
+<tr>
+<td><code>og:image</code></td>
+<td>控制分享时显示的图片</td>
+</tr>
+<tr>
+<td><code>og:type</code></td>
+<td>页面类型（website/article/product等）</td>
+</tr>
+<tr>
+<td><code>og:image:alt</code></td>
+<td>图片的alt文字</td>
+</tr>
+<tr>
+<td><code>og:image:width</code> / <code>og:image:height</code></td>
+<td>图片宽高（便于平台预渲染）</td>
+</tr>
+</tbody>
+</table>
+<h4>7.9.3 完整代码示例</h4>
+<pre><code class="language-html">&lt;meta property=&quot;og:title&quot; content=&quot;Free China Phone Number Generator - Instant Results&quot;&gt;
+&lt;meta property=&quot;og:description&quot; content=&quot;Generate valid Chinese phone numbers for testing and verification. Free, instant, no registration required.&quot;&gt;
+&lt;meta property=&quot;og:url&quot; content=&quot;https://example.com/china-phone-generator&quot;&gt;
+&lt;meta property=&quot;og:type&quot; content=&quot;website&quot;&gt;
+&lt;meta property=&quot;og:image&quot; content=&quot;https://example.com/og-image.jpg&quot;&gt;
+&lt;meta property=&quot;og:image:alt&quot; content=&quot;China Phone Number Generator Tool&quot;&gt;
+&lt;meta property=&quot;og:image:width&quot; content=&quot;1200&quot;&gt;
+&lt;meta property=&quot;og:image:height&quot; content=&quot;630&quot;&gt;
+</code></pre>
+<h4>7.9.4 Twitter Cards</h4>
+<p>Twitter Cards基于OG协议，但需要在HTML中额外添加一个meta标签来声明Twitter卡片类型：</p>
+<pre><code class="language-html">&lt;meta name=&quot;twitter:card&quot; content=&quot;summary_large_image&quot;&gt;
+</code></pre>
+<p>Twitter Cards 主要类型：
+- <code>summary</code>：小图卡片
+- <code>summary_large_image</code>：<strong>最常用</strong>，大图卡片，展示效果最好
+- <code>app</code>：移动应用卡片
+- <code>player</code>：视频/音频卡片</p>
+<h4>7.9.5 图片尺寸建议</h4>
+<table>
+<thead>
+<tr>
+<th>平台</th>
+<th>建议尺寸</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Facebook</td>
+<td>1200 x 630 px</td>
+</tr>
+<tr>
+<td>Twitter</td>
+<td>1200 x 628 px（summary_large_image）</td>
+</tr>
+<tr>
+<td>LinkedIn</td>
+<td>1200 x 627 px</td>
+</tr>
+<tr>
+<td>通用OG</td>
+<td>1200 x 630 px（最小600px）</td>
+</tr>
+</tbody>
+</table>
+<h4>7.9.6 为什么社交标签对SEO也很重要</h4>
+<p>虽然社交平台的链接分享本身不直接影响搜索引擎排名，但间接影响很大：</p>
+<ul>
+<li>社交媒体上的内容传播会带来更多外链</li>
+<li>好的分享卡片（配图、标题）显著提升点击率和分享意愿</li>
+<li>被社交平台收录的内容会增加品牌曝光</li>
+</ul>
+<h3>7.10 Charset字符集标签</h3>
+<p>字符集标签声明网页使用的字符编码，是HTML <code>&lt;head&gt;</code> 中应放置的最前面的meta标签之一。</p>
+<p><strong>必须放在 <code>&lt;head&gt;</code> 最前面</strong>，在所有其他meta标签之前：</p>
+<pre><code class="language-html">&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;title&gt;...&lt;/title&gt;
+...
+&lt;/head&gt;
+</code></pre>
+<p><strong>常见字符集</strong>：
+- <code>UTF-8</code>：支持全球几乎所有语言字符（推荐，几乎所有网站都用这个）
+- <code>ISO-8859-1</code>：仅支持拉丁字母，已基本淘汰</p>
+<p><strong>注意事项</strong>：
+- 必须放在head最前面，因为某些浏览器在读到字符集声明前就开始解析HTML
+- 现代网站统一使用UTF-8，无需考虑其他编码
+- 如果你的网站使用非UTF-8编码，浏览器可能显示乱码，直接影响用户体验和SEO</p>
+<h3>7.11 完整的SEO元标签组合示例</h3>
+<p>以下是一个完整的 <code>&lt;head&gt;</code> 部分示例，涵盖所有重要元标签：</p>
+<pre><code class="language-html">&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;China Phone Number Generator - Free Random CN Numbers&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;Generate valid Chinese phone numbers for testing. Free, instant, no registration. Supports all major carriers.&quot;&gt;
+    &lt;meta name=&quot;robots&quot; content=&quot;index, follow&quot;&gt;
+
+    &lt;!-- Open Graph --&gt;
+    &lt;meta property=&quot;og:title&quot; content=&quot;China Phone Number Generator - Free Random CN Numbers&quot;&gt;
+    &lt;meta property=&quot;og:description&quot; content=&quot;Generate valid Chinese phone numbers for testing. Free, instant, no registration.&quot;&gt;
+    &lt;meta property=&quot;og:url&quot; content=&quot;https://example.com/china-phone-generator&quot;&gt;
+    &lt;meta property=&quot;og:type&quot; content=&quot;website&quot;&gt;
+    &lt;meta property=&quot;og:image&quot; content=&quot;https://example.com/og-image.jpg&quot;&gt;
+
+    &lt;!-- Twitter Cards --&gt;
+    &lt;meta name=&quot;twitter:card&quot; content=&quot;summary_large_image&quot;&gt;
+    &lt;meta name=&quot;twitter:title&quot; content=&quot;China Phone Number Generator&quot;&gt;
+    &lt;meta name=&quot;twitter:description&quot; content=&quot;Free Chinese phone number generator for testing.&quot;&gt;
+    &lt;meta name=&quot;twitter:image&quot; content=&quot;https://example.com/twitter-image.jpg&quot;&gt;
+
+    &lt;!-- Canonical --&gt;
+    &lt;link rel=&quot;canonical&quot; href=&quot;https://example.com/china-phone-generator&quot;&gt;
+
+    &lt;!-- Hreflang（多语言） --&gt;
+    &lt;link rel=&quot;alternate&quot; hreflang=&quot;en&quot; href=&quot;https://example.com/china-phone-generator&quot;&gt;
+    &lt;link rel=&quot;alternate&quot; hreflang=&quot;zh&quot; href=&quot;https://example.com/zh/china-phone-generator&quot;&gt;
+    &lt;link rel=&quot;alternate&quot; hreflang=&quot;x-default&quot; href=&quot;https://example.com/china-phone-generator&quot;&gt;
+&lt;/head&gt;
+</code></pre>
+<h3>7.12 技术SEO检查清单</h3>
+<p>新站上线前必查项目：</p>
+<ul>
+<li>[ ] Title 每个页面不同，包含对应关键词</li>
+<li>[ ] Description 每个页面不同，155字符以内</li>
+<li>[ ] H1 每个页面只有一个</li>
+<li>[ ] H2/H3 层级清晰</li>
+<li>[ ] 图片都有 Alt 描述</li>
+<li>[ ] Canonical 标签正确设置（每个页面指向自己）</li>
+<li>[ ] Charset 声明为 UTF-8，且放在head最前面</li>
+<li>[ ] Viewport 标签正确配置</li>
+<li>[ ] Open Graph 标签设置（og:title / og:description / og:image）</li>
+<li>[ ] Twitter Card 标签设置</li>
+<li>[ ] robots meta 标签设置正确（noindex/nofollow等）</li>
+<li>[ ] robots.txt 正确配置（多语言逐行设置）</li>
+<li>[ ] hreflang 标签完整（多语言网站）</li>
+<li>[ ] 没有死链（404页面）</li>
+<li>[ ] 移动端显示正常</li>
+<li>[ ] 页面加载速度 &lt; 3秒</li>
+<li>[ ] HTTPS 加密</li>
+<li>[ ] XML网站地图已提交 GSC</li>
+</ul>
+<hr />
+<h2>第八章 外链建设：nofollow也有权重</h2>
+<h3>8.1 外链的本质</h3>
+<p>外链是其他网站给你的"投票"。越多高权重网站链接你，谷歌认为你越可信。</p>
+<p><strong>外链类型</strong>（按质量从高到低）：
+1. <strong>政府/教育机构链接</strong>（.gov、.edu）—— 极难获得
+2. <strong>新闻媒体报道</strong>
+3. <strong>高权重行业网站</strong>
+4. <strong>论坛/社区自然提及</strong>
+5. <strong>社交媒体分享</strong></p>
+<h3>8.2 nofollow也有权重</h3>
+<p>重要发现：<strong>谷歌已经修改算法，nofollow链接对权重提升也有作用。</strong></p>
+<p>原因：用户自发传播的链接通常是nofollow的，而交易链接（花钱买的）是dofollow的。谷歌意识到，如果只看dofollow，会被大量人工操控。所以现在<strong>nofollow外链也被计入权重计算</strong>。</p>
+<p><strong>实际影响</strong>：不要只追求dofollow外链，nofollow外链同样有价值，有就要。</p>
+<h3>8.3 外链建设方法</h3>
+<p><strong>免费外链渠道</strong>：
+- Reddit/HackerNews 分享产品
+- 导航站提交（Tool站集合网站）
+- Product Hunt 发布
+- 社群分享（独立开发者社区）</p>
+<p><strong>高质量外链</strong>：
+- 写有价值的文章，被其他网站引用
+- 做有传播性的工具，别人自发链接
+- 参与行业社区，建立影响力</p>
+<p><strong>外链是内链的补充</strong>：
+新网站先做扎实内容（内链），同时做适量外链。等网站有了一定权重后，再大量做外链。</p>
+<hr />
+<h2>第九章 内容策略：AI生成高质量内容</h2>
+<h3>9.1 谷歌对AI内容的态度</h3>
+<p><strong>核心立场</strong>：谷歌奖励高质量内容，<strong>无论内容是如何生成的</strong>。</p>
+<p>2023年2月谷歌官方明确表示："奖励高质量的内容，无论它是如何生产的。"</p>
+<p>关键点：
+- 谷歌不看内容是人工写还是AI生成
+- 谷歌只看内容是否<strong>有用、可靠、以人为本</strong>
+- 不管生成方式，只看内容质量</p>
+<h3>9.2 AI内容的常见错误</h3>
+<p><strong>错误做法：凭空捏造</strong></p>
+<p>直接让GPT"帮我写一篇关于xxx的文章"，出来的内容通常是泛泛而谈、缺乏深度的垃圾内容。</p>
+<p>特征：
+- 内容空洞，没有实际价值
+- 数据可能胡编乱造
+- 用户一眼能看出是AI写的（"首先...其次...最后..."）
+- 跳出率高，排名反而下降</p>
+<h3>9.3 正确方法：提供参考资料</h3>
+<p><strong>核心原则</strong>：不要让AI凭空创作，而是提供参考资料让它按格式输出。</p>
+<p><strong>操作步骤</strong>：
+1. 找到一个做得好的参考页面
+2. 把参考页面发给GPT，让它学习格式和内容结构
+3. 提供你的目标关键词
+4. 要求GPT"按照参考页面的格式，生成关于[关键词]的内容"
+5. 人工审核，补充本地化信息</p>
+<p><strong>提示词模板</strong>：</p>
+<pre><code>我有一个范文示例：
+[粘贴参考内容]
+请学习这个范例的格式和风格。
+现在请按照这个格式，生成关于&quot;XXX&quot;的内容，
+包含H2标题、段落描述和工具介绍。
+</code></pre>
+<h3>9.4 保持内容原创性</h3>
+<p><strong>避免重复</strong>：
+- 谷歌能判断网站与网站之间的内容重复度
+- 不要搬运或改写别人已有的内容
+- 每篇文章要有独特价值</p>
+<p><strong>AI辅助而非AI替代</strong>：
+- 让GPT帮你生成框架和初稿
+- 加入你的专业知识、独特见解
+- 补充真实数据、案例
+- 人类编辑审核把关</p>
+<h3>9.5 页面内容质量标准</h3>
+<p><strong>字数标准</strong>：单页单词数不低于600个。</p>
+<p><strong>高质量内容特征</strong>：
+- 把一个问题讲透彻，而不是蜻蜓点水
+- 提供实用的工具或资源
+- 回答用户的真实问题
+- 内容格式清晰（标题层级分明）</p>
+<h3>9.6 内容型AI工具站：AI+SEO的新范式</h3>
+<p><img alt="内容型AI工具站飞轮 — Sticker.Show 案例" src="/Users/oubin/gefei-seo-guide/assets/diagrams/14-content-ai-tool-flywheel.svg" title="内容型AI工具站飞轮 — Sticker.Show 案例" /></p>
+<p><strong>什么是内容型AI工具站？</strong></p>
+<p>这是哥飞原创的概念（2024年3月提出）。传统AI工具站是"用户来、用完走"，没有留下任何内容给搜索引擎抓取。而内容型AI工具站的核心区别在于：<strong>用户使用工具产生的内容，会自动出现在网站的公共区域（广场），被Google发现并收录。</strong></p>
+<blockquote>
+<p>网站提供工具给用户使用，用户使用过程中产生的内容会出现在广场上被更多人看到。当然也会被Google看到，进而被抓取被索引。当有人在Google搜索某些相关关键词时，我的这个网站的图片就有可能出现在搜索结果里，从而吸引用户点击打开我的网站。</p>
+<p><strong>用户用得越多，产生的内容越多，这些内容又通过搜索引擎带来更多的用户。</strong></p>
+</blockquote>
+<p><strong>这就是内容型AI工具站</strong>。</p>
+<h4>核心案例：Sticker.Show</h4>
+<p>Sticker.Show（https://sticker.show/）是哥飞团队上线的AI贴纸生成器，是内容型AI工具站的典型实践。</p>
+<p><strong>完整飞轮效应</strong>：</p>
+<pre><code>用户生成贴纸 → 内容展示在广场 → Google收录 → 图片出现在搜索结果
+→ 更多用户搜索点击进入 → 更多用户使用 → 更多内容产生 → 更大流量
+</code></pre>
+<p><strong>关键点</strong>：
+- 用户输入提示词，AI生成贴纸，生成的贴纸自动展示在公开页面
+- 这些页面被Google图片搜索收录
+- 搜索相关贴纸关键词的用户会发现并点击进入网站
+- 更多用户使用 → 更多内容 → 更大搜索流量</p>
+<h4>为什么这个模式有价值？</h4>
+<table>
+<thead>
+<tr>
+<th>对比维度</th>
+<th>传统工具站</th>
+<th>内容型AI工具站</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>用户离开后</td>
+<td>什么也没留下</td>
+<td>内容留在广场被收录</td>
+</tr>
+<tr>
+<td>SEO内容来源</td>
+<td>需要自己人工创作</td>
+<td>用户使用中自动生成</td>
+</tr>
+<tr>
+<td>流量增长</td>
+<td>缓慢，靠内容页积累</td>
+<td>有飞轮效应，用户越多流量越多</td>
+</tr>
+<tr>
+<td>内容丰富度</td>
+<td>受限于建站者精力</td>
+<td>由用户需求驱动，无限丰富</td>
+</tr>
+</tbody>
+</table>
+<p><strong>本质区别</strong>：传统工具站的内容需要站长自己创作，而内容型AI工具站把"创作内容"这件事众包给了用户——用户使用工具的同时，也在帮你生成SEO内容。</p>
+<h4>商业模式：工具免费，增值服务收费</h4>
+<p>内容型AI工具站的变现设计非常清晰：</p>
+<p><strong>免费层</strong>：
+- 基础AI生成功能
+- 生成的内容在广场展示</p>
+<p><strong>付费层（增值服务）</strong>：
+- 下载高清大图（普通下载免费，高清需付费）
+- 去除水印
+- 私密生成（不公开到广场）
+- 订阅会员（无限使用）</p>
+<blockquote>
+<p>当用户不想生成的内容被公开，或者想要下载高清大图时，就可以付费订阅。相当于<strong>工具免费，增值服务收费</strong>。</p>
+</blockquote>
+<h4>这种站是垃圾站吗？</h4>
+<p>显然不是。</p>
+<p><strong>判断标准</strong>：
+- 有真实的工具满足用户的个性化需求
+- 有真实用户产生的真实内容供大家消费
+- 内容来源于用户实际使用，不是凭空捏造的</p>
+<p>这与传统的"采集站"、"AI生成内容站"有本质区别——所有内容都是用户在解决自己问题时产生的副产品，完全以人为本。</p>
+<h4>适用场景与扩展</h4>
+<p>这个模式可以套用到大量需求上：</p>
+<p><strong>输入类型</strong>：文字、图片、视频、网址
+<strong>输出类型</strong>：文章、图片、视频、Web App</p>
+<p><strong>可以做的内容型AI工具站</strong>：
+- AI贴纸生成 → 头像生成 → 壁纸生成
+- AI图片编辑（换背景、修复、去水印）
+- AI视频剪辑（字幕生成、视频摘要）
+- AI文档处理（PDF转Word、OCR识别）
+- AI配色生成、Logo生成、海报生成</p>
+<p>哥飞在做Sticker.Show时已经将其模板化，可以快速迁移到其他类型的AI工具站。一次开发，可以上多个站，每个站覆盖不同的用户需求和关键词。</p>
+<hr />
+<h2>第十章 多语言网站：全球市场的门票</h2>
+<h3>10.1 为什么需要多语言</h3>
+<p><img alt="多语言网站结构 — 子目录 + hreflang 方案" src="/Users/oubin/gefei-seo-guide/assets/diagrams/12-multilingual-structure.svg" title="多语言网站结构 — 子目录 + hreflang 方案" /></p>
+<p>同一个关键词在不同国家搜索量不同，用户需求不同。</p>
+<p><strong>Phone Number Generator 各国搜索量</strong>：
+1. 美国（US）- 搜索量最大
+2. 英国（UK）
+3. 印度（IN）- 人口大国
+4. 菲律宾（PH）
+5. 尼日利亚（NG）
+6. 加纳（GH）</p>
+<p>做多语言版本，不仅是翻译，更是<strong>满足不同国家用户的具体需求</strong>。</p>
+<h3>10.2 用ChatGPT做多语言</h3>
+<p><strong>步骤</strong>：
+1. 做好英文版首页
+2. 让GPT将首页文字提取为语言包
+3. 为每个目标语言生成翻译
+4. 创建对应语言的子目录页面</p>
+<p><strong>提示词模板</strong>：</p>
+<pre><code>以下是网站首页的文字内容：
+[粘贴英文内容]
+
+这些是不同国家的缩写和语言：
+US-英语, JP-日语, KR-韩语, FR-法语, DE-德语, 
+BR-葡萄牙语, ES-西班牙语, IN-印地语, ID-印尼语
+
+请将这些文字翻译为日语（ja）、韩语（kr）、法语（fr），
+保持HTML结构不变。
+</code></pre>
+<h3>10.3 注入本地化信息</h3>
+<p>语言翻译只是第一步，本地化才是关键：</p>
+<p><strong>电话号码格式</strong>：每个国家电话号码格式不同
+<strong>货币单位</strong>：USD/EUR/GBP/JPY
+<strong>度量单位</strong>：英制/公制
+<strong>文化差异</strong>：不同国家对同一事物可能有不同需求</p>
+<p>让GPT参考目标国家的信息做内容，而非简单翻译。</p>
+<h3>10.4 多语言部署结构</h3>
+<p><strong>推荐结构</strong>：</p>
+<pre><code>example.com/           (英语默认)
+example.com/ja/         (日语)
+example.com/zh/        (中文)
+example.com/fr/        (法语)
+example.com/es/        (西班牙语)
+</code></pre>
+<p><strong>每个语言版本需要的SEO配置</strong>：
+- hreflang 标签（让谷歌知道语言版本对应关系）
+- 各语言独立TD（Title、Description）
+- 独立的内链结构</p>
+<hr />
+<h2>第十一章 程序化SEO：生成海量页面获取流量</h2>
+<h3>11.1 程序化SEO的威力</h3>
+<p><img alt="程序化 SEO 飞轮 — DateTimeGo 月$3万案例" src="/Users/oubin/gefei-seo-guide/assets/diagrams/13-programmatic-seo-flywheel.svg" title="程序化 SEO 飞轮 — DateTimeGo 月$3万案例" /></p>
+<p><strong>核心思路</strong>：找到关键词规律，用模板批量生成大量页面，覆盖海量长尾搜索。</p>
+<p><strong>典型案例：distance.to</strong></p>
+<ul>
+<li>月访问量：1297万</li>
+<li>Google收录：129万个页面</li>
+<li>解决的需求：甲地到乙地的距离</li>
+</ul>
+<p>仅"两个地点之间的距离"这一个需求：
+- 200多个国家两两组合 = 4万多个问题
+- 各国内部省市区两两组合 = 几百万个问题</p>
+<p><strong>每个页面都是模板生成，无需手动创建</strong>。</p>
+<h3>11.2 DateTimeGo案例：SEO引爆点</h3>
+<ul>
+<li>月访问量：130万</li>
+<li>Google收录：1.5万个页面</li>
+<li>月广告收入：约3万美元</li>
+</ul>
+<p><strong>页面覆盖的关键词模式</strong>：</p>
+<pre><code>What Time Will It Be [数字] Hours From Now
+What Was The Date [数字] Days Ago From Today
+Weeks From Today?
+What Date Will It Be [数字] Months From Today
+</code></pre>
+<p>穷举 + 模板 = 海量页面。</p>
+<h3>11.3 程序化SEO适合的场景</h3>
+<p><strong>适合</strong>：
+- 有明确关键词规律的领域（日期计算、单位转换、地理位置）
+- 可以穷举的需求（国家名、产品型号、颜色等）
+- 数据驱动的内容（股市数据、天气、历史事件）</p>
+<p><strong>不适合</strong>：
+- 需要大量原创内容的主题
+- 高度主观/创意类需求
+- 用户需求高度个性化</p>
+<h3>11.4 批量生成的技术实现</h3>
+<p><strong>不需要真的创建百万个HTML文件</strong>：</p>
+<p>可以用以下方式实现：
+1. <strong>数据库 + 模板</strong>：数据存在数据库，用户访问时动态渲染
+2. <strong>静态生成（SSG）</strong>：提前生成所有HTML，部署到CDN
+3. <strong>ISR/增量静态再生成</strong>：Vercel等平台的混合方案</p>
+<p><strong>对于关键词穷举</strong>：
+- 准备好关键词列表（如国家列表）
+- 用程序组合生成所有可能
+- 每个组合生成一个URL和对应内容</p>
+<h3>11.5 灰色地带与注意风险</h3>
+<ul>
+<li><strong>关键词密度稀释</strong>：页面太多可能导致首页/频道页的关键词密度下降</li>
+<li><strong>内容质量</strong>：模板内容需要有实际价值，不能是垃圾内容</li>
+<li><strong>避免过度优化</strong>：所有页面Title/Description要有差异化</li>
+</ul>
+<hr />
+<h2>第十二章 Adsense变现：从广告费到财务自由</h2>
+<h3>12.1 Adsense账号注册</h3>
+<p><strong>申请条件</strong>：
+- 网站有实质内容（至少10-20篇）
+- 不是纯模板站
+- 内容原创，不违规
+- 网站有完整TD设置</p>
+<p><strong>审核避坑</strong>：
+- 不要网站刚上线就申请，等几天有内容积累
+- 内容少的网站容易被拒
+- 避免网站内容涉及违禁类别（赌博、成人内容等）</p>
+<h3>12.2 Pin码验证</h3>
+<p>Adsense 账户达到一定收入后，谷歌会寄实体邮件到你的地址，信里有Pin码。</p>
+<p><strong>Pin码验证方法</strong>：
+- 谷歌邮寄实体信，大约2-4周到达
+- 上传身份证件完成验证
+- 如果邮件丢失，可以申请重新发送或人工验证</p>
+<h3>12.3 广告位优化</h3>
+<p><strong>广告位数量</strong>：每个页面最多3个广告位。3个即可，不要超过3个。</p>
+<p><strong>广告位布局原则</strong>：
+- <strong>内容中间位置ECPM最高</strong>（用户阅读注意力集中）
+- 工具查询页在查询结果下方插入广告
+- 测试不同位置的广告组合</p>
+<p><strong>开启Adsense实验功能</strong>：
+Adsense后台有A/B测试功能，可以测试不同广告格式、不同位置的收益差异，持续优化。</p>
+<h3>12.4 Adsense收入提升实战</h3>
+<p><strong>从每月$800提升到$2000的实战经验</strong>：</p>
+<p>哥飞实际做过的案例，主要做了三件事：</p>
+<ol>
+<li><strong>重写网站前后端，优化加载速度</strong></li>
+<li>减少服务器响应时间</li>
+<li>压缩图片</li>
+<li>
+<p>启用缓存</p>
+</li>
+<li>
+<p><strong>站内SEO处理</strong></p>
+</li>
+<li>优化TD标签</li>
+<li>完善内链结构</li>
+<li>
+<p>提交sitemap</p>
+</li>
+<li>
+<p><strong>优化Adsense广告位布局</strong></p>
+</li>
+<li>增加广告展示位置</li>
+<li>调整广告格式（展示广告 vs 搜索广告）</li>
+<li>测试不同位置组合</li>
+</ol>
+<h3>12.5 收入估算实操</h3>
+<p><strong>步骤</strong>：
+1. Similarweb 查看网站UV（月访问量）
+2. 在Similarweb查看平均每个UV产生的访问次数
+3. 在Similarweb查看平均每个UV产生的PV数
+4. 在Adsense后台查看ECPM数据
+5. 计算月收入</p>
+<p><strong>案例（calculator-online.net）</strong>：
+- 月UV ≈ 180万次访问 / 30天 = 6万日UV
+- 平均每个UV 2.36个PV
+- 网站在首页和内页都有广告位
+- ECPM ≈ 4美元（欧美用户）</p>
+<h3>12.6 DateTimeGo完整广告费计算</h3>
+<p><strong>DateTimeGo.com</strong> 是程序化SEO的经典变现案例，以下是完整的广告费计算推导过程。</p>
+<p><strong>已知数据</strong>：
+- 月访问量：130万UV
+- 平均PV/UV：1.8（每个访客平均浏览1.8个页面）
+- 每月总PV：130万 × 1.8 = <strong>234万PV</strong>
+- 广告位数：6个/页（首页+内容区+底部）
+- 广告可见率：约80%（滚动广告实际被看到的比例）
+- ECPM：约3美元（日期时间类工具站）</p>
+<p><strong>完整计算推导</strong>：</p>
+<pre><code>月广告展示次数 = 月PV × 广告位数 × 可见率
+               = 234万 × 6 × 80%
+               = 234万 × 4.8
+               = 约1123万次
+
+月广告费 = 广告展示次数 / 1000 × ECPM
+         = 1123万 / 1000 × 3
+         = 1123 × 3
+         = 约3369美元/月
+</code></pre>
+<p><strong>实际验证</strong>：原文计算为"1123万×6×0.8×3/1000 ≈ 3.4万美元/月"，与网站后台数据（月广告费3万美元）基本吻合。</p>
+<p><strong>这个案例说明什么</strong>：
+1. 程序化生成页面能够带来稳定的大流量
+2. 工具站PV/UV偏低（1.8），但通过大量广告位（6个）弥补
+3. ECPM虽然只有3美元（不如金融类10美元），但流量够大，收入依然可观</p>
+<h3>12.7 为什么ECPM可以做到10美元</h3>
+<p>在Adsense变现文章中，有人现场提问："为什么你的那几个站，最高可以做到10美元的ECPM？"</p>
+<p><strong>ECPM的核心决定因素</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>因素</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>广告主竞价</strong></td>
+<td>竞争越激烈的关键词，广告主愿意出的CPC越高</td>
+</tr>
+<tr>
+<td><strong>用户购买力</strong></td>
+<td>发达国家用户广告点击价值更高</td>
+</tr>
+<tr>
+<td><strong>关键词类型</strong></td>
+<td>金融、法律、健康类关键词ECPM远高于娱乐类</td>
+</tr>
+</tbody>
+</table>
+<p><strong>不同类型网站的ECPM参考</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>网站类型</th>
+<th>ECPM范围</th>
+<th>原因</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>金融/贷款类</td>
+<td>8-15美元</td>
+<td>广告主竞价极高，单次点击价值几十美元</td>
+</tr>
+<tr>
+<td>法律咨询类</td>
+<td>6-12美元</td>
+<td>涉及大额消费决策</td>
+</tr>
+<tr>
+<td>健康/医疗类</td>
+<td>4-8美元</td>
+<td>监管严格但需求刚</td>
+</tr>
+<tr>
+<td>工具类（欧美）</td>
+<td>3-6美元</td>
+<td>覆盖人群广，竞争适中</td>
+</tr>
+<tr>
+<td>工具类（中国）</td>
+<td>0.2-0.5美元</td>
+<td>人民币计价差距巨大</td>
+</tr>
+</tbody>
+</table>
+<p><strong>做英文站 vs 中文站的收入差距</strong>：</p>
+<p>同样是工具站，英文站ECPM可能是中文站的<strong>30-50倍</strong>：
+- 英文工具站：ECPM ≈ 4美元
+- 中文工具站：ECPM ≈ 0.1美元
+- 差距：40倍</p>
+<p>这意味着，做英文站是出海变现的必选项，而不是可选项。</p>
+<hr />
+<h2>第十三章 进阶变现：超越广告费</h2>
+<p><img alt="出海网站变现路径 — 从流量到收入" src="/Users/oubin/gefei-seo-guide/assets/diagrams/15-monetization-path.svg" title="出海网站变现路径 — 从流量到收入" /></p>
+<p><img alt="出海网站变现路径 — 从流量到Adsense/联盟/订阅" src="/Users/oubin/gefei-seo-guide/assets/diagrams/15-monetization-path.svg" title="出海网站变现路径 — 从流量到Adsense/联盟/订阅" /></p>
+<h3>13.1 变现路径图</h3>
+<pre><code>Adsense广告 → 联盟导购 → 订阅付费 → Stripe收款
+</code></pre>
+<p><strong>阶段1：Adsense</strong>（最简单，新手友好）
+- 注册Adsense，放上代码，躺赚</p>
+<p><strong>阶段2：联盟导购</strong>（需要一定流量）
+- Amazon Associates（图书、电子产品佣金）
+- 工具类联盟（CJ Affiliate、Awin）
+- 在内容中自然植入产品推荐</p>
+<p><strong>阶段3：直接收费</strong>（收入最高）
+- 工具付费订阅
+- 高级功能付费解锁
+- 捐赠链接（Buy Me a Coffee、Ko-fi）</p>
+<h3>13.2 Stripe收款</h3>
+<p><strong>Stripe是什么</strong>：美国公司开发的支付网关，支持全球多种支付方式（信用卡、Apple Pay、Google Pay等）。</p>
+<p><strong>接入Stripe的条件</strong>：
+- 注册美国公司（或香港公司）
+- 拥有美国/香港银行账户
+- 网站有明确的商业用途</p>
+<p><strong>Stripe vs Adsense</strong>：
+- Adsense是被动收入（广告展示就有钱）
+- Stripe是主动收入（必须有用户付费）</p>
+<h3>13.3 内容型AI工具站变现</h3>
+<p><strong>概念</strong>（哥飞原创）：
+- 用户使用AI工具 → 生成的内容出现在广场
+- 内容被Google收录 → 带来更多搜索流量
+- 工具免费，增值服务（高清、去水印）收费</p>
+<p><strong>飞轮效应</strong>：
+用户越多 → 内容越多 → 搜索收录越多 → 流量越多 → 用户更多</p>
+<p><strong>案例：Sticker.Show</strong>
+- AI贴纸生成工具
+- 用户生成的内容自动展示在公开页面
+- Google图片搜索可以找到这些内容
+- 高级功能（高清下载、无水印）付费</p>
+<h3>13.4 工具站订阅模式</h3>
+<p><strong>Freemium（免费增值）模式</strong>：
+- 基础功能免费
+- 高级功能付费
+- 适合：PDF工具、图片处理、AI生成等</p>
+<p><strong>付费点设计</strong>：
+- 下载次数限制
+- 输出质量限制（高清vs标清）
+- 功能数量限制
+- 使用频率限制</p>
+<h3>13.5 浏览器插件+网站：留存问题的创新解法</h3>
+<p>网站普遍面临一个难题：留存差，用户用完就走，很难让用户持续回来。</p>
+<p>而 <strong>custom-cursor.com</strong> 这个网站，完美地解决了这个问题。</p>
+<p><strong>案例背景</strong></p>
+<p>custom-cursor.com 是一个帮助用户设置自定义鼠标光标图案的网站。哥飞在谷歌搜索"Cursor"时发现了它，其配套的浏览器插件周活高达400万。</p>
+<p><strong>核心机制：流量循环</strong></p>
+<p>这个案例的关键在于<strong>网站与浏览器插件的协同</strong>：</p>
+<ol>
+<li>用户通过谷歌搜索发现网站</li>
+<li>网站引导用户安装浏览器插件</li>
+<li>用户使用插件时，右下角的"更多游标"按钮会打开官网</li>
+<li>官网提供更多光标样式，吸引用户持续访问</li>
+</ol>
+<p>这样就形成了完整的流量循环：网站引导安装插件 → 用户使用插件时打开网站 → 流量再回到网站。</p>
+<p><strong>流量数据</strong></p>
+<p>根据 Similarweb 估算的数据：
+- 最近12个月访问量：2028万
+- 流量来源：直接访问（52.18%）+ 自然搜索（45.55%），两者合计97.73%
+- 自然搜索月均新增：约76万
+- 插件周活：400万（本周至少有1次浏览器活动的留存用户）</p>
+<p>400万周活用户中，很大一部分是早期安装后持续留存下来的用户，正是这些用户每天在使用浏览器时，会时不时点击插件图标回到官网浏览更多光标样式。</p>
+<p><strong>变现方式</strong></p>
+<p>网站的主要变现方式是在官网页面放置Adsense广告。</p>
+<p>按照Adsense收入估算方法（参考12.5节）：
+- 年访问量：2028万次
+- 页面广告位：约2个
+- 年广告展示：约4056万次
+- ECPM按3美元/千次计算</p>
+<p>估算结果：网站最近12个月的广告收入约<strong>12万美元（约87万人民币）</strong>。</p>
+<p><strong>为什么这个案例值得关注</strong></p>
+<ol>
+<li><strong>开发成本低</strong>：网站+浏览器插件的开发难度并不大，维护成本极低</li>
+<li><strong>留存率高</strong>：通过插件把用户沉淀下来，不用担心用户流失</li>
+<li><strong>产品矩阵</strong>：该开发者不止做了这一款产品，仅官网就展示了其他5款产品，综合年收入可能超过200万人民币</li>
+<li><strong>可复制性</strong>：这个模式可以应用到其他领域——任何浏览器插件+配套网站的组合，都可以用类似方式实现留存和变现</li>
+</ol>
+<p><strong>核心启发</strong>：如果你的工具站面临留存问题，不妨考虑用浏览器插件作为留存载体，让用户每次使用浏览器时都有可能回到你的网站。</p>
+<h3>13.6 内容型AI工具站的飞轮效应</h3>
+<p><img alt="内容型AI工具站飞轮效应 — 工具免费、增值服务收费" src="/Users/oubin/gefei-seo-guide/assets/diagrams/14-content-ai-tool-flywheel.svg" title="内容型AI工具站飞轮效应 — 工具免费、增值服务收费" /></p>
+<p>在13.3节提到内容型AI工具站时，哥飞只简略描述了其飞轮效应，本节将完整展开其核心机制。</p>
+<p><strong>什么是内容型AI工具站</strong></p>
+<p>这是一种"内容"和"工具"深度融合的工具站新形式。</p>
+<p>网站提供AI工具给用户使用，用户使用过程中产生的内容会自动出现在网站的公开页面（广场）上。这些内容不仅对其他访客可见，也会被Google发现、抓取和索引。当有人在Google图片搜索中搜索相关关键词时，这些由真实用户生成的内容就有机会出现在搜索结果中，从而吸引更多用户点击进入网站。</p>
+<p><strong>飞轮效应的完整流程</strong></p>
+<pre><code>用户使用AI工具
+      ↓
+生成的内容出现在公开广场
+      ↓
+Google发现并收录这些内容
+      ↓
+用户在Google搜索中发现这些内容，点击进入网站
+      ↓
+更多新用户注册使用工具
+      ↓
+用户更多 → 内容更多 → 收录更多 → 流量更多
+      ↑
+      └── 循环往复，飞轮越转越快
+</code></pre>
+<p>这个飞轮一旦转动起来，就会形成自我强化的增长循环：用户越多，生成的内容越多，Google收录的页面越多，来自搜索的流量越多，吸引的新用户也越多。</p>
+<p><strong>关键机制拆解</strong></p>
+<ol>
+<li><strong>内容来自用户</strong>：不需要自己批量生成内容，用户使用工具的过程就是内容生产的过程</li>
+<li><strong>Google免费帮你做SEO</strong>：每一张生成的图片、每一段生成的文字，都是一个可能被Google收录的页面</li>
+<li><strong>内容增长速度是指数级的</strong>：传统内容站的内容增长速度是线性的，而内容型工具站的内容增长速度完全取决于用户量，用户量越大，内容增长越快</li>
+<li><strong>工具免费，增值服务收费</strong>：基础功能免费，高级功能（高清下载、无水印、去限制）订阅收费</li>
+</ol>
+<p><strong>以 Sticker.Show 为例</strong></p>
+<p>AI贴纸生成工具 Sticker.Show 是哥飞团队推出的内容型AI工具站代表作：</p>
+<ul>
+<li>用户输入提示词，AI生成贴纸图案</li>
+<li>生成的贴纸自动出现在广场页面上</li>
+<li>Google图片搜索可以找到这些内容</li>
+<li>用户不想生成的内容被公开，或想下载高清大图时，可以付费订阅</li>
+</ul>
+<p><strong>为什么用户愿意生成内容</strong></p>
+<p>用户生成内容后，可以：
+- 在广场上展示自己的作品，获得社交认可
+- 获得公开链接，方便分享
+- 被其他人看到，满足展示心理</p>
+<p>用户有分享和展示的需求，工具站提供了展示的平台，形成了天然的正向循环。</p>
+<p><strong>适用范围</strong></p>
+<p>内容型AI工具站的模式适合任何"输入→AI处理→输出内容"的场景：
+- AI贴纸生成器
+- AI头像生成器
+- AI背景生成器
+- AI图片修复/高清化工具
+- AI视频生成/剪辑工具
+- ……</p>
+<p><strong>内容型AI工具站的优势</strong></p>
+<table>
+<thead>
+<tr>
+<th>对比维度</th>
+<th>传统内容站</th>
+<th>传统工具站</th>
+<th>内容型AI工具站</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>内容来源</td>
+<td>人工创作/AI批量生成</td>
+<td>无</td>
+<td>用户使用工具时产生</td>
+</tr>
+<tr>
+<td>留存能力</td>
+<td>弱</td>
+<td>弱</td>
+<td>强（内容吸引回访）</td>
+</tr>
+<tr>
+<td>SEO效果</td>
+<td>一般</td>
+<td>工具页面有限</td>
+<td>指数级增长（用户越多内容越多）</td>
+</tr>
+<tr>
+<td>变现方式</td>
+<td>主要靠广告</td>
+<td>工具付费</td>
+<td>广告+增值服务</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心本质</strong></p>
+<p>内容型AI工具站既不是"加了工具的内容站"，也不是"加了内容的工具站"，而是一种<strong>全新的产品形态</strong>：
+- 工具驱动内容生产
+- 内容吸引新用户使用工具
+- 用户越多，内容越多，搜索越可见，流量越大</p>
+<p>完全符合谷歌评价高质量内容的两大核心标准：<strong>以人为中心（Human-first）</strong>和<strong>有用、可靠</strong>——真实用户使用工具生成真实内容，内容真正对他人有用。</p>
+<hr />
+<h2>第十四章 避坑指南：真实失败案例解析</h2>
+<h3>14.1 深度复盘：首页内容膨胀导致降权的完整过程</h3>
+<p>这是一个真实发生的SEO失败案例，发生在哥飞自己的套壳AI站 ChatGPT4o.ai 上。哥飞把这个案例完整复盘出来，希望帮助大家避免踩同样的坑。</p>
+<h4>背景知识：为什么谷歌爬虫会频繁抓取某些网站？</h4>
+<p>在分析失败原因之前，先理解一个关键概念：谷歌爬虫的抓取频率不是固定不变的。</p>
+<p>用 Google <code>site:指令</code> 查询某个网站时，可以把时间范围设置为"过去一小时"（Past hour），这样可以看到谷歌爬虫最近一小时抓取了哪些页面。从 V2EX 的例子可以看到，1小时内谷歌爬取了大量新帖子——这说明 V2EX 是一个非常活跃的社区，时刻都在产生新内容，谷歌为了不错过，就频繁过来爬取。</p>
+<p>那么，如果我们想让谷歌爬虫也频繁来访我们的网站，应该怎么做？</p>
+<p>答案很简单：<strong>在首页增加一个模块，显示最新的几个内页链接。</strong> 这样做的好处是：每次搜索引擎爬虫来访，都能发现有新东西可以抓，于是越来越频繁地来访，收录的页面也越来越多。</p>
+<p>ChatGPT4o.ai 就是这么做的——在首页问答模块下方增加了一个"最新问答"模块，显示最新的6条问答链接。这本来是一个正确的做法，但问题就出在某次发版之后。</p>
+<h4>问题发生的完整过程</h4>
+<p>某次发版之后，工程师的一个"无心之失"改变了一切：<strong>"最新问答"列表模块把问题和回答的全文都在首页输出了。</strong></p>
+<p>什么意思呢？来看看数据对比：</p>
+<table>
+<thead>
+<tr>
+<th>版本</th>
+<th>首页单词数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>发版前</td>
+<td>约400个单词</td>
+<td>正常的首页体量</td>
+</tr>
+<tr>
+<td>发版后</td>
+<td>两三千个单词</td>
+<td>问题和回答全文堆在首页</td>
+</tr>
+</tbody>
+</table>
+<p>原本只需要展示问答的标题和链接，结果变成了在首页直接展示完整的问答内容。这意味着首页的主题从"GPT 4o AI问答工具"变成了各种杂七杂八的用户问答内容。</p>
+<h4>关键词密度下降：问题的核心</h4>
+<p>关键词密度（Keyword Density）指的是某个核心关键词在页面所有单词中出现的比例。首页的核心关键词是"GPT 4o"或"AI"相关词汇，当首页只有400个单词时，核心关键词出现的比例是合理的。</p>
+<p>但当首页膨胀到两三千个单词之后，核心关键词的密度骤降——因为填充进来的是大量用户问答的正文内容，这些内容里核心关键词的出现频率远低于原本首页的刻意优化。</p>
+<p><strong>如何判断关键词密度？</strong> 有几种常用方法：</p>
+<ol>
+<li><strong>手动估算</strong>：将目标关键词在页面中出现的次数除以页面总单词数（通常认为 1%-3% 为合理区间）</li>
+<li><strong>使用SEO工具</strong>：AITDK SEO Extension、Semrush 等工具可以自动计算页面关键词密度</li>
+<li><strong>Google 语义分析辅助判断</strong>：即使关键词密度数字看起来还行，如果页面内容语义上与关键词不匹配，谷歌也会识别出来</li>
+</ol>
+<h4>谷歌语义分析惩罚机制</h4>
+<p>关键词密度只是表面问题，更深层的原因是<strong>谷歌的语义分析能力</strong>。</p>
+<p>谷歌不仅仅统计关键词出现次数，它还会分析页面的整体语义主题。谷歌认为：一个自称是"GPT 4o AI问答站"的网站，首页应该围绕 AI 问答这个主题展开内容。如果首页充斥着大量与 AI 工具无关的用户问答（比如"今天天气怎么样"、"给我讲个笑话"等），谷歌语义分析之后发现：<strong>你这个网站首页内容乱七八糟的，跟 GPT 4o 没多大关系了。</strong></p>
+<p>于是惩罚机制触发：谷歌直接减少该网站的曝光量，降低排名，不给点击。</p>
+<h4>后果与教训</h4>
+<p>虽然后来哥飞紧急下掉了这个模块，把首页恢复到了正常状态，但网站的排名至今还没有完全恢复——被谷歌惩罚后的恢复期往往比下滑期更长。</p>
+<p><strong>这个案例的核心教训</strong>：</p>
+<ul>
+<li><strong>首页要保持主题集中</strong>：首页是网站的"脸面"，是告诉谷歌"你这个站是做什么的"最关键的地方。首页内容必须围绕核心关键词展开。</li>
+<li><strong>不要在首页堆砌内页内容</strong>：内页的内容应该在内页展示，不应该把内页全文直接输出到首页。即使是动态生成的内容，也要控制首页体量。</li>
+<li><strong>发版前要做SEO检查</strong>：任何涉及首页内容结构的变化，在发版前都应该检查对关键词密度和语义主题的影响。</li>
+<li><strong>谷歌语义分析已经相当成熟</strong>：不要以为关键词密度降到某个阈值以下才会出问题，语义不匹配本身就足以触发惩罚。</li>
+</ul>
+<h3>14.2 Canonical标签写错导致降权</h3>
+<p><strong>常见错误</strong>：
+- 网站所有页面都返回首页的 Canonical URL
+- Canonical URL 和当前页面 URL 不一致</p>
+<p><strong>后果</strong>：谷歌不知道哪个是真实页面，权重分散或降权。</p>
+<p><strong>正确做法</strong>：</p>
+<pre><code class="language-html">&lt;!-- 正确的Canonical --&gt;
+&lt;link rel=&quot;canonical&quot; href=&quot;当前页面完整URL&quot;&gt;
+</code></pre>
+<h3>14.3 robots.txt多语言写法踩坑</h3>
+<p><strong>错误</strong>：</p>
+<pre><code>Disallow: /people/
+</code></pre>
+<p>只会禁止默认语言的 /people/ 目录，/ja/people/、/fr/people/ 仍会被抓取。</p>
+<p><strong>正确</strong>：</p>
+<pre><code>Disallow: /people/
+Disallow: /ja/people/
+Disallow: /fr/people/
+Disallow: /ko/people/
+</code></pre>
+<p>有多少种语言版本，就需要写多少行禁止规则。<strong>有比没有好，但写错了比不写更糟糕。</strong></p>
+<h3>14.4 AI内容"凭空捏造"导致低质量</h3>
+<p><strong>问题</strong>：直接让GPT生成内容，不提供参考资料，导致内容空洞、重复率高。</p>
+<p><strong>后果</strong>：
+- 谷歌判断重复率高，不给排名
+- 用户跳出率高，排名持续下降
+- 网站整体权重受损</p>
+<p><strong>正确做法</strong>：
+- 始终提供参考资料
+- 加入人工审核
+- 补充真实数据和案例</p>
+<h3>14.5 选错关键词白费功夫</h3>
+<p><strong>问题</strong>：没做关键词调研就开发网站，做了半天发现没有搜索流量。</p>
+<p><strong>后果</strong>：
+- 竞争激烈的关键词，新站根本没机会
+- 搜索量太低的关键词，做了也没流量
+- 时间精力浪费</p>
+<p><strong>正确做法</strong>：
+- 先用 KDRoi 公式筛选
+- 优先选择 KD&lt;29、Volume&gt;600、CPC 较高的词
+- 新站不要硬碰大词，从长尾词切入</p>
+<h3>14.6 常见SEO问题判断</h3>
+<table>
+<thead>
+<tr>
+<th>问题现象</th>
+<th>可能原因</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>site:查不到页面</td>
+<td>页面未收录，检查 robots.txt/noindex</td>
+</tr>
+<tr>
+<td>有收录但无曝光</td>
+<td>关键词选择错误或内容质量问题</td>
+</tr>
+<tr>
+<td>有曝光但无点击</td>
+<td>Title/Description 不吸引人</td>
+</tr>
+<tr>
+<td>有点击但跳出率高</td>
+<td>内容不满足搜索意图</td>
+</tr>
+<tr>
+<td>排名突然下降</td>
+<td>可能是谷歌算法更新或被惩罚</td>
+</tr>
+</tbody>
+</table>
+<h3>14.7 SEO评测报告模板：以 StickerBaker 为例</h3>
+<p>哥飞在社群中开设了"评站"栏目，会不定期点评一些网站的 SEO 做得如何。以下是评站方法论的完整模板，以 AI 贴纸生成网站 StickerBaker.com 为实际案例，供大家学习如何给自己的网站做完整 SEO 自查。</p>
+<h4>第一步：网站数据概览</h4>
+<p>用 AITDK SEO Extension 或 Semrush 打开网站首页，查看基础 SEO 信息：</p>
+<table>
+<thead>
+<tr>
+<th>检查项</th>
+<th>StickerBaker 现状</th>
+<th>评价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Title</td>
+<td>"Stickers AI"（12个字符）</td>
+<td>浪费，Title 推荐60个字符，应充分利用</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>"Stickers AI"（21个字符）</td>
+<td>浪费，Description 推荐160个字符</td>
+</tr>
+<tr>
+<td>Keywords</td>
+<td>未设置</td>
+<td>正确，哥飞不推荐使用 Keywords</td>
+</tr>
+<tr>
+<td>Canonical</td>
+<td>缺失</td>
+<td>不应该，建议每个页面都设置</td>
+</tr>
+<tr>
+<td>Sitemap</td>
+<td>有 sitemap.xml</td>
+<td>良好，页面有限时谷歌也能爬完</td>
+</tr>
+<tr>
+<td>H 标签</td>
+<td>首页出现两个 H1，层级混乱</td>
+<td>需要改进</td>
+</tr>
+<tr>
+<td>图片 Alt</td>
+<td>大部分有 Alt，生成图片 Alt 较短</td>
+<td>基本合格，可优化</td>
+</tr>
+<tr>
+<td>社媒标签</td>
+<td>Open Graph 和 Twitter Card 已设置</td>
+<td>良好</td>
+</tr>
+<tr>
+<td>结构化数据</td>
+<td>未设置</td>
+<td>建议增加，丰富搜索结果样式</td>
+</tr>
+<tr>
+<td>hreflangs</td>
+<td>未设置（暂无多语言）</td>
+<td>后续做多语言时需添加</td>
+</tr>
+</tbody>
+</table>
+<h4>第二步：逐页面 SEO 分析</h4>
+<p><strong>（一）首页：核心入口页</strong></p>
+<p><strong>做得好的地方</strong>：</p>
+<ol>
+<li><strong>工具入口直接放置</strong>：首页最核心区域直接放置工具入口，用户一打开就能看到并开始使用，提高页面停留时间。</li>
+<li><strong>最新作品列表</strong>：每次刷新取出最新生成的贴纸，对于搜索引擎来说，这是一个频繁更新的页面，爬虫每次来访都有新内容可抓，从而加快收录速度。</li>
+<li><strong>社会认同营造</strong>：最新作品列表不断冒出新的贴纸，给用户感觉"这个网站很火，还有很多人在用，我也要试试"。</li>
+<li><strong>社媒分享标签完善</strong>：Open Graph 和 Twitter Card 均已设置，分享到社交媒体时显示效果良好。</li>
+</ol>
+<p><strong>需要改进的地方</strong>：</p>
+<ol>
+<li><strong>Title 太短</strong>：只用12个字符，没有充分利用 Title 体现需求关键词（如"Sticker Maker"、"AI Sticker Generator"）。</li>
+<li><strong>Description 太短</strong>：只用21个字符，建议写到接近160字符限制，包含核心关键词和行动号召。</li>
+<li><strong>Canonical 缺失</strong>：每个页面都应该设置 Canonical 标签，防止重复内容分散权重。</li>
+<li><strong>H 标签层级混乱</strong>：首页出现两个 H1，且都没有体现网站的核心关键词。建议：</li>
+<li>只保留一个 H1，格式如"AI Sticker Generator - Create Custom Stickers Online"</li>
+<li>"Latest" 改为 "Latest Generated Stickers" 并用 H2</li>
+<li>"Upload" 不应用 H1 或 H2，建议用 H3</li>
+<li><strong>图片 Alt 可以更长</strong>：生成的 Sticker 图片 Alt 如"Ayna"建议改为"Ayna Sticker"，包含更多关键词信息。</li>
+<li><strong>建议增加 Discover 链接</strong>：目前"更多贴纸"通过上拉获取，搜索引擎爬虫无法做上拉操作。建议增加 Discover 页面入口，能够分页展示所有贴纸，让爬虫能爬到全部内容。</li>
+</ol>
+<p><strong>（二）贴纸详情页（以 /sticker/29961 为例）</strong></p>
+<p><strong>URL 结构</strong>：</p>
+<pre><code>/sticker/29961-fairy-unicorn
+</code></pre>
+<p>URL 直接用数字 ID，容易被爬虫从1开始遍历。生成贴纸时的提示词如果很长，不建议直接拿来做 URL，可以抽取主要关键词。</p>
+<p><strong>Title 优化</strong>：当前 Title 可能是"I made an AI sticker of fairy unicorn"，其中"I made an"是分享用途的前缀，实际上可以去掉，改为"AI Sticker of Fairy Unicorn - fairy unicorn Sticker"，这样核心关键词"AI Sticker"和长尾关键词"fairy unicorn"都照顾到了。如果担心分享出去标题不好看，可以单独在 Open Graph 和 Twitter Card 中设置带前缀的标题。</p>
+<p><strong>H 标签</strong>：H1 建议体现核心关键词，如"AI Stickers of fairy unicorn"，"Similar-ish stickers"可放在 H2。</p>
+<p><strong>相似贴纸功能</strong>：这是神来之笔，可以有效提升长尾关键词的覆盖。但目前是前端获取数据并渲染的，<strong>建议改为后端渲染</strong>，这样才能被搜索引擎抓取，从而提升关键词密度和排名。</p>
+<p><strong>（三）搜索首页（/search）</strong></p>
+<p>"Sticker Search"这个关键词有一定搜索量，专门做一个搜索入口页是正确的做法。但注意：
+- Title 用了"StickerSearch"连写，用户更可能搜索的是带空格的"Sticker Search"，需要在 Title、Description、H1 等处都兼容有空格的写法。
+- 目前只用了一个 H5，极其不合理，应该改成 H1，并增加更多内容和标签。</p>
+<p><strong>（四）搜索结果页</strong></p>
+<p>搜索结果页是获取大量长尾关键词流量的关键，但目前存在严重问题：</p>
+<ol>
+<li><strong>前端渲染导致内容重复</strong>：不管搜索什么关键词，Title 和 Description 都固定了，搜索引擎爬虫看来，不同 URL 的页面 HTML 内容都是重复的，这是 SEO 大忌。</li>
+<li><strong>建议改为后端渲染</strong>：这样可以利用真实用户搜索生成的大量长尾关键词页面，每个搜索结果页都有独特的 Title（包含搜索关键词）、H1 和 Description。</li>
+<li><strong>H 标签应动态生成</strong>：例如 /search?query=unicorn，H1 和 Title 都应该是"160 Best Unicorn Stickers"，其中"160"是搜索结果数量。</li>
+</ol>
+<h4>第三步：改进优先级排序</h4>
+<p>根据以上分析，给出改进优先级建议：</p>
+<p><strong>P0（立即修复，影响排名）</strong>：
+1. 修复 Canonical 标签缺失问题
+2. 搜索结果页改为后端渲染（SEO 价值最大，但改动量也最大）</p>
+<p><strong>P1（本周内修复，影响排名）</strong>：
+1. Title 和 Description 补充完整
+2. 修复 H 标签层级（每个页面只保留一个 H1）
+3. 相似贴纸改为后端渲染</p>
+<p><strong>P2（近期优化，提升流量）</strong>：
+1. 增加 Discover 分页页面
+2. 搜索首页 H 标签和内容补充
+3. 增加结构化数据（FAQ、Product 等）</p>
+<p><strong>P3（长期优化）</strong>：
+1. 增加专题页面（用向量搜索实现智能聚合）
+2. 增加搜索关键词列表页面（让爬虫能爬到所有搜索结果页）
+3. 多语言支持及 hreflang 配置</p>
+<h4>SEO评测报告模板框架</h4>
+<p>给自己网站做评测时，可以参考以下框架逐项检查：</p>
+<pre><code>一、网站概览
+   - 域名、类型、目标关键词
+   - 页面结构（列出主要页面类型）
+
+二、首页SEO分析
+   - Title / Description / Keywords 评估
+   - H 标签评估
+   - 图片 Alt 评估
+   - 内链外链评估
+   - 社媒标签评估
+
+三、内页SEO分析（按页面类型）
+   - URL 结构
+   - Title / H1 动态生成能力
+   - 内容渲染方式（前端/后端）
+
+四、做得好的地方（3-5条）
+
+五、需要改进的地方（按优先级排序，每条给出具体建议）
+
+六、后续行动计划
+</code></pre>
+<p><strong>SEO 拼的就是细节</strong>：谁愿意花更多时间去死磕每一个细节，谁就有可能拿到更高的排名，获取更多的流量。用上面这个模板定期给自己的网站做体检，是保持竞争力的关键动作。</p>
+<hr />
+<h2>第十五章 实战案例：群友的成功经验</h2>
+<blockquote>
+<p>本章汇集了哥飞付费社群"哥飞的朋友们"中真实群友的实战经验，涵盖从新词抓取、快速建站到高收入变现的完整路径。每一个案例都经过真实操作验证，代表着从方法论到实践的闭环。</p>
+</blockquote>
+<h3>15.1 Threads新站上线9天获得11030个独立访客</h3>
+<p>这是哥飞社群最经典的案例之一，也是"新词策略"的完美示范。</p>
+<h4>背景：Threads上线那天的社群讨论</h4>
+<p>2023年7月6日，Instagram母公司Meta推出了Threads应用，上线5小时就突破了1000万注册用户。当天，哥飞在付费社群里发了一条关键判断：</p>
+<blockquote>
+<p>因为（Threads）是Instagram出的，所以我们可以赌一把，赌他能做起来。那么就可以去分析一下，目前各个社交网络平台的周边服务，有哪些是开发者赚到钱的，也可以在Threads上布局一下。</p>
+</blockquote>
+<p>群友@赖嘉伟Gray看到后，基于他之前验证成功的经验，建议可以看看在Twitter上已经被验证过的工具：https://www.producthunt.com/search?q=Twitter。例如Twitter Video Downloader，这个站目前每个月独立访客超过1000万。他还建议域名也可以买几个，挑一些之前成熟周边产品可能还没注册的Threads名词。</p>
+<h4>完整操作过程</h4>
+<p><strong>第一步：分析需求，确定方向</strong></p>
+<p>看到群友建议后，Gray开始分析Threads用户可能有哪些周边需求——能否下载Threads视频？能否分析Threads数据？能否下载Threads头像/图片？有没有用户名生成/检测工具？参考Product Hunt上Twitter周边工具的验证结果，Gray锁定了几个方向。</p>
+<p><strong>第二步：注册域名——犹豫之间被抢注</strong></p>
+<p>Gray原本想注册的域名，因为犹豫了一下被别人抢先注册了。这再次印证了：<strong>做网站，动作要快，犹豫就会错过机会。</strong></p>
+<p><strong>第三步：快速注册第二个域名，30分钟上线</strong></p>
+<p>Gray没有纠结，立刻注册了第二个域名，用哥飞教过的方法快速建站并上线，整个过程不超过30分钟。</p>
+<p><strong>第四步：快速收录——让谷歌在1小时内发现网站</strong></p>
+<p>通过哥飞教过的快速收录方法（提交到Google Search Console + 在高权重平台发布外链），网站在1小时内就被谷歌收录。</p>
+<h4>九天真实数据复盘</h4>
+<table>
+<thead>
+<tr>
+<th>天数</th>
+<th>日期</th>
+<th>平均排名</th>
+<th>曝光量</th>
+<th>点击率</th>
+<th>关键事件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第1天</td>
+<td>7月6日</td>
+<td>6.8</td>
+<td>15</td>
+<td>40%</td>
+<td>上线当天就有数据，排名第6.8</td>
+</tr>
+<tr>
+<td>第2天</td>
+<td>7月7日</td>
+<td>5.7</td>
+<td>593</td>
+<td>40%</td>
+<td>谷歌开始认可网站，给更高排名</td>
+</tr>
+<tr>
+<td>第3天</td>
+<td>7月8日</td>
+<td>~5.8</td>
+<td>~5000</td>
+<td>33.7%</td>
+<td>接近五千次曝光，1604次点击</td>
+</tr>
+<tr>
+<td>第4天</td>
+<td>7月9日</td>
+<td>~5.5</td>
+<td>~5500</td>
+<td>~34%</td>
+<td>排名继续前进，1864次点击</td>
+</tr>
+<tr>
+<td>第5天</td>
+<td>7月10日</td>
+<td>6.2</td>
+<td>~4000</td>
+<td>~31%</td>
+<td>竞品开始出现，排名下降</td>
+</tr>
+<tr>
+<td>第9天</td>
+<td>7月14日</td>
+<td>5.3</td>
+<td>~2000</td>
+<td>上升</td>
+<td>排名上升后点击率反而提高</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键发现</strong>：
+- 第1天排名第6.8位，15个曝光就有40%点击率，说明页面内容和用户需求高度匹配
+- 第2-4天排名持续上升，说明谷歌在积极验证页面质量
+- 第5天起竞品出现，热度开始下降，这是正常的市场竞争
+- 排名因竞品增加而波动是正常现象，通过增加自然外链可以恢复并提升排名</p>
+<h4>应对策略：增加自然外链维持排名</h4>
+<p>周四（第5天前后），哥飞和Gray讨论过：热度开始下降，竞品变多。哥飞提出的核心解决办法是<strong>多搞自然外链</strong>。自然外链是用户发自内心觉得网站有用而自愿分享的链接，这正是谷歌PageRank算法最看重的"背书"。</p>
+<p>实操技巧：找到真实用户，真诚请求他们帮忙分享。这种外链比任何人工制造的外链都更有价值。</p>
+<h4>Gray案例的核心操作总结</h4>
+<ol>
+<li><strong>新鲜事物出现时，迅速分析用户需求</strong>：Threads刚上线，判断其周边工具可能存在市场机会</li>
+<li><strong>基于关键字注册域名，快速建站</strong>：即使功能暂时没完善，也先把网站上线参与排名</li>
+<li><strong>通过GSC提交+高权重平台外链快速收录</strong>：让谷歌在48小时甚至更短时间内发现网站</li>
+<li><strong>页面真的满足用户需求</strong>：用户点击进来后能够解决问题，停留时间高，跳出率低</li>
+<li><strong>持续增加自然外链</strong>：进一步提升网站权重和排名稳定性</li>
+</ol>
+<blockquote>
+<p>以上所有操作方法和理论，其实哥飞都在社群里分享过了。学习后行动起来的不止Gray一个，Threads和Claude相关工具网站已经有至少5个上线了。</p>
+</blockquote>
+<hr />
+<h3>15.2 工具站日收入破千美元</h3>
+<p>在哥飞社群里，有多位群友实现了令人羡慕的高收入：</p>
+<table>
+<thead>
+<tr>
+<th>案例</th>
+<th>成绩</th>
+<th>关键动作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@banbri</td>
+<td>两个网站即将日UV破万</td>
+<td>养网站防老，多站并行</td>
+</tr>
+<tr>
+<td>某群友</td>
+<td>日收入超过1000美元</td>
+<td>死磕用户付费模式</td>
+</tr>
+<tr>
+<td>朋友乙</td>
+<td>单日收入1700美元</td>
+<td>凌晨发666元红包报喜</td>
+</tr>
+<tr>
+<td>出海4个月群友</td>
+<td>月入3W+美金</td>
+<td>SEO+高价值变现</td>
+</tr>
+<tr>
+<td>社群整体</td>
+<td>2023年10月回顾：有日入千刀的，有月入千刀的，也有日UV破万的</td>
+<td>多路并发</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>15.3 日PV从10万到20万（仅13天）</h3>
+<p><strong>方法</strong>：
+1. 抓住了特定工具类关键词
+2. 快速迭代，持续优化页面
+3. 积极做外链</p>
+<p><strong>关键</strong>：速度和执行力。看到机会后快速行动，不要等到完美再上线。</p>
+<hr />
+<h3>15.4 AdSense实验：测试不同广告配置</h3>
+<p><strong>方法</strong>：用Adsense内置A/B测试功能，持续测试：
+- 不同广告格式（展示广告 vs 搜索广告）
+- 不同广告位置
+- 不同广告数量</p>
+<p><strong>关键</strong>：细节优化。即使ECPM只提升0.5美元，日UV1万的站，月收入也能多出1500美元。</p>
+<hr />
+<h3>15.5 Custom Cursor：网站+浏览器插件留存飞轮</h3>
+<p>哥飞在2024年8月分享了一个完美解决"网站留存差"问题的案例——Custom Cursor（custom-cursor.com）。</p>
+<p><strong>发现过程</strong>：哥飞在谷歌搜索"Cursor"时发现该网站排名第四，点击"Add"按钮后弹出提示引导安装Chrome插件。进入插件商店后发现，该插件周活高达400万。</p>
+<p><strong>商业模式拆解</strong>：</p>
+<p>该网站的核心逻辑是：
+1. 用户在官网选择喜欢的鼠标光标图案
+2. 点击"Add"引导用户安装Chrome插件
+3. 插件把光标设置好，用户每天使用浏览器时都在"使用"这个产品
+4. 如果要换光标样式，可以打开官网浏览更多选择</p>
+<p>通过网站引导安装插件，把一次性流量<strong>沉淀为长期用户</strong>。</p>
+<p><strong>流量数据</strong>（Similarweb估算）：
+- 最近12个月访问量：2028万
+- 直接访问：1060万（每月约88万）
+- 自然搜索：920万（每月约76万）
+- 插件周活：400万</p>
+<p><strong>变现方式</strong>：网站放Adsense广告。按2个广告位/年曝光4056万次/ECPM 3美元估算，年广告收入约12万美元（约87万人民币）。</p>
+<p>更关键的是，这个开发者不止这一款产品，仅官网就列出了其他5款产品，综合年收入200万人民币以上完全可能。</p>
+<p><strong>这个案例的启示</strong>：
+- 做工具站不要只做网站，可以考虑配套浏览器插件/App形成产品矩阵
+- 工具免费+增值服务收费，是经典的高毛利模式
+- 多产品矩阵可以显著提升整体收入天花板</p>
+<hr />
+<h3>15.6 千篇国学：双引擎优化的内容站典范</h3>
+<p>哥飞在2023年8月分享了一个谷歌和百度<strong>双端优化</strong>都很出色的案例——千篇国学（qianp.com）。</p>
+<p><strong>基础数据</strong>：
+- 域名注册于2008年，但千篇国学网站实际是<strong>2020年5月</strong>才开始做的
+- 这说明：<strong>做网站任何时候都不晚，2023年了也还可以做网站</strong>
+- 最近三个月流量：172万、169万、140万</p>
+<p><strong>SEO数据</strong>：
+- 谷歌收录：484万条
+- 百度收录：193万条
+- 89%流量来自搜索引擎</p>
+<p><strong>双端都能做好的关键策略</strong>：</p>
+<p><strong>策略一：用子域名做栏目</strong>（子域名比目录权重高）</p>
+<table>
+<thead>
+<tr>
+<th>站点</th>
+<th>网址</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>字典</td>
+<td>zidian.qianp.com</td>
+</tr>
+<tr>
+<td>词典</td>
+<td>cidian.qianp.com</td>
+</tr>
+<tr>
+<td>成语</td>
+<td>chengyu.qianp.com</td>
+</tr>
+</tbody>
+</table>
+<p><strong>策略二：关键字重复不如用相关词来解释关键字</strong></p>
+<p>例如优化"成语"、"成语大全"时，不是简单堆砌关键字，而是按类型分：生肖、四季、数字、动物、植物、颜色、方位；按结构分：AABB式、ABAB式、A里AB式等；按语法分：联合式、主谓式、复句式等。这些分类词本身不含"成语"两字，但语义上高度相关，谷歌能够理解这种相关性。</p>
+<p>这正是哥飞总结的<strong>"分门别类、罗列成语"</strong>精髓所在。</p>
+<hr />
+<h3>15.7 Reddit推广实战：如何快速积累Karma获得曝光</h3>
+<p>社群成员建波分享了多篇Reddit运营经验，是社群外链建设和社交流量获取的实战代表。</p>
+<p><strong>案例一：单篇帖子狂赚2000+ Karma</strong></p>
+<p>建波发了一个小鹦鹉躺在主人腿上睡觉的可爱视频，配上标题：</p>
+<blockquote>
+<p>"This guy is napping on my legs, and I am in a hurry to use the bathroom, should I wake him up?"</p>
+</blockquote>
+<p>这个充满冲突感的场景引发外国网友强烈共鸣，大家纷纷在评论区劝他"千万别叫醒"。48小时内：143K views、2700+ upvotes、93 comments，获得第一个Reddit "Popular Post"徽章（1000+ upvotes）。</p>
+<p><strong>高赞Comment分析</strong>：帖子下第一条高赞评论获735个upvotes，只是一句话留言。说明：<strong>即使在别人的帖子上评论，只要选对时机、说对话，也能赚大量Karma</strong>。</p>
+<p><strong>关键经验</strong>：
+1. <strong>选对Subreddit（子社区）至关重要</strong>：parrots有100W+成员，每秒几百人在线；birbhostage只有1W成员，有时只有个位数在线
+2. <strong>文案要有冲突感</strong>：视频图片满天飞，有反差感的文案才能脱颖而出
+3. <strong>越早评论越容易获得高赞</strong>：1楼和2楼评论最容易获得upvotes，越往后概率越低
+4. <strong>Reddit对新人非常友好</strong>：即使只有0 follower，内容足够好也能获得大量曝光</p>
+<p><strong>案例二：如何通过Comment赚Karma</strong></p>
+<p>核心发现：绝大部分Reddit用户的Comment Karma远高于Post Karma，因为Reddit本质是讨论社区，评论比发帖更活跃。</p>
+<p><strong>实操方法</strong>：
+1. 在自己的帖子下积极回复，越早的评论位置越容易获得upvotes
+2. 在别人的热帖里找"热坑位"和"早坑位"——找已有很多upvotes的评论，在其下方进一步回复蹭曝光
+3. 培养网感，能发掘可能会大火的帖子，第一时间去评论</p>
+<p><strong>推荐的Comment类Subreddit</strong>：r/AskReddit、r/NoStupidQuestions、r/AskWomen、r/AskMen、r/AskScience、r/AskHistorians</p>
+<hr />
+<h3>15.8 更多群友喜报：从日UV破万到月入万刀</h3>
+<p>哥飞社群中实战成果不断涌现，以下是部分代表性案例：</p>
+<table>
+<thead>
+<tr>
+<th>案例</th>
+<th>成绩</th>
+<th>关键动作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>群友甲</td>
+<td>上线第4天UV破11K，PV破70K；总UV 28K，总PV 162K</td>
+<td>快速建站+快速收录</td>
+</tr>
+<tr>
+<td>群友乙</td>
+<td>单日收入1700美元</td>
+<td>死磕用户付费</td>
+</tr>
+<tr>
+<td>出海4个月群友</td>
+<td>月入3W+美金</td>
+<td>SEO+高价值变现</td>
+</tr>
+<tr>
+<td>@banbri</td>
+<td>两个网站即将日UV破万</td>
+<td>养网站防老，多站并行</td>
+</tr>
+<tr>
+<td>某群友</td>
+<td>9月新站谷歌1万个点击</td>
+<td>SEO外链建设</td>
+</tr>
+<tr>
+<td>建波</td>
+<td>开源GPTs导航程序，出海第一周就有收入</td>
+<td>Reddit推广+开源获客</td>
+</tr>
+<tr>
+<td>群友</td>
+<td>AI工具站日收入破千美元</td>
+<td>直接向用户收费</td>
+</tr>
+<tr>
+<td>群友</td>
+<td>日PV从10万到20万，用了13天</td>
+<td>快速迭代+外链</td>
+</tr>
+<tr>
+<td>DragganAI站</td>
+<td>域名5月28日注册，6月份月访问量4.5万</td>
+<td>抓住新词</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心规律总结</strong>：
+- <strong>速度是第一竞争力</strong>：新词出现时，犹豫就会被抢注
+- <strong>SEO+Adsense是基础变现，直接收费是高阶玩法</strong>
+- <strong>多站并行分散风险，养网站防老</strong>
+- <strong>外链+社交流量双驱动</strong></p>
+<hr />
+<h3>15.9 做网站任何时候都不晚：新词策略的持续验证</h3>
+<p>即使没有赶上Threads这样的超级热点，日常的新词机会同样巨大。</p>
+<p>在谷歌搜索"draggan ai"，排名第一的网站并不是官方网站，而是draganaitool.com。这个域名5月28日才注册，6月份就拿到了4.5万月访问量。</p>
+<p>凭什么一个新网站能排到第一？<strong>答案：新词竞争极少</strong>。只要页面质量及格、上线快，就能拿到排名。</p>
+<p>谷歌官方数据：每天处理的搜索中，<strong>15%是从来没有被搜索过的新词</strong>。按每天3万亿次搜索计算，每天有约1.2亿次全新搜索等待被满足。这些新词，就是新网站的流量机会。</p>
+<hr />
+<h2>附录</h2>
+<h3>A. 常用工具清单</h3>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>用途</th>
+<th>网址</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Semrush</strong></td>
+<td>关键词研究、竞品分析</td>
+<td>semrush.com</td>
+</tr>
+<tr>
+<td><strong>Ahrefs</strong></td>
+<td>外链分析、难度评估</td>
+<td>ahrefs.com</td>
+</tr>
+<tr>
+<td><strong>Similarweb</strong></td>
+<td>流量分析、子域名发现</td>
+<td>similarweb.com</td>
+</tr>
+<tr>
+<td><strong>Google Trends</strong></td>
+<td>判断关键词趋势</td>
+<td>trends.google.com</td>
+</tr>
+<tr>
+<td><strong>Google Search Console</strong></td>
+<td>收录监控</td>
+<td>search.google.com/search-console</td>
+</tr>
+<tr>
+<td><strong>Google Analytics</strong></td>
+<td>网站流量统计</td>
+<td>analytics.google.com</td>
+</tr>
+<tr>
+<td><strong>ChatGPT (GPT-4)</strong></td>
+<td>生成内容、代码</td>
+<td>chat.openai.com</td>
+</tr>
+<tr>
+<td><strong>Vercel</strong></td>
+<td>前端/SSR免费托管</td>
+<td>vercel.com</td>
+</tr>
+<tr>
+<td><strong>Cloudflare</strong></td>
+<td>DNS/CDN/Workers</td>
+<td>cloudflare.com</td>
+</tr>
+</tbody>
+</table>
+<h3>B. KDRoi计算器</h3>
+<p>社群成员开发的在线工具：https://roi-calculator-flame.vercel.app/</p>
+<p>上传Semrush导出的关键词表格，自动计算KDRoi。</p>
+<p>开源代码：https://github.com/Kunsect/roi-calculator</p>
+<h3>C. 建站模板</h3>
+<ul>
+<li><strong>ChatLLM</strong>：AI对话工具站模板，适合做套壳AI站</li>
+<li><strong>StickerShow</strong>：内容型AI工具站模板，用户生成内容自动展示</li>
+</ul>
+<h3>D. 快速上站SOP</h3>
+<ol>
+<li>选好关键词（用KDRoi公式）</li>
+<li>注册域名</li>
+<li>用ChatGPT生成网页代码</li>
+<li>Vercel部署上线</li>
+<li>提交Google Search Console</li>
+<li>做3-5个导航站外链</li>
+<li>等待48小时收录</li>
+<li>放上Adsense代码</li>
+<li>持续优化</li>
+</ol>
+<hr />
+<h2>后记</h2>
+<p>哥飞说：</p>
+<blockquote>
+<p>做网站这件事，说难也难，说简单也简单。难在需要长期坚持，简单在只要掌握方法，谁都能学会。</p>
+</blockquote>
+<p><strong>核心理念回顾</strong>：</p>
+<ol>
+<li><strong>养网站防老</strong>：把网站当成种树，持续种树，果园越来越大</li>
+<li><strong>KDRoi选词</strong>：用公式量化，不凭感觉</li>
+<li><strong>AI辅助开发</strong>：不会编程也能做网站，GPT帮你写代码</li>
+<li><strong>搜索意图优先</strong>：先理解用户想要什么，再做页面</li>
+<li><strong>有比没有好</strong>：先上线，边运营边优化</li>
+</ol>
+<hr />
+<p><em>本书由哥飞公众号文章整理编辑，2023-2024年，共120余篇。</em>
+<em>公众号：gefei</em>
+<em>社群：哥飞的朋友们（web.cafe）</em></p>
+</div>
+
+<script>
+  // Highlight active nav item
+  const items = document.querySelectorAll('.nav-item');
+  const sections = document.querySelectorAll('h2[id], h3[id]');
+  function onScroll() {
+    let top = window.scrollY + 80;
+    let active = items[0];
+    sections.forEach(s => {
+      if (s.offsetTop <= top) active = document.querySelector(`.nav-item[href="#${s.id}"]`) || active;
+    });
+    items.forEach(i => i.classList.remove('active'));
+    if (active) active.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+</script>
+</body>
+</html>
