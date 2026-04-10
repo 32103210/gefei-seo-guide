@@ -4,6 +4,14 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![知识库](https://img.shields.io/badge/文章数-80+-green.svg)](#)
+[![阅读版](https://img.shields.io/badge/在线阅读--blue?style=for-the-badge)](https://32103210.github.io/gefei-seo-guide/)
+
+---
+
+## 🌍 在线阅读
+
+**在线阅读版（深色主题，带侧边栏导航）**：
+https://32103210.github.io/gefei-seo-guide/
 
 ---
 
